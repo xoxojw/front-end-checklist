@@ -111,23 +111,23 @@ Some resources possess an emoticon to help you understand which type of content 
 > * 📖 [Favicons, Touch Icons, Tile Icons, etc. Which Do You Need? - CSS Tricks](https://css-tricks.com/favicon-quiz/)
 > * 📖 [PNG favicons - caniuse](https://caniuse.com/#feat=link-icon-png)
 
-* [ ] **Apple Touch Icon:** ![Low][low_img] Apple touch favicon apple-mobile-web-app-capable are present. *(Create your Apple Icon file with at least 200x200px dimension to support all dimensions that you may need)*
+* [ ] **Apple 터치 아이콘:** ![Low][low_img] 아이폰의 모바일 웹 어플리케이션의 아이콘으로 사용되는 favicon을 설정해주는 apple-touch-icon 속성이 사용되었나? *(최소한 200x200px의 크기로 Apple 아이콘을 생성하면, 필요한 모든 크기의 아이콘을 지원할 수 있습니다.)*
 
 ```html
-<!-- Apple Touch Icon -->
+<!-- Apple 터치 아이콘 -->
 <link rel="apple-touch-icon" href="/custom-icon.png">
 ```
 
-> 📖 [Configuring Web Applications](https://developer.apple.com/library/content/documentation/AppleApplications/Reference/SafariWebContent/ConfiguringWebApplications/ConfiguringWebApplications.html)
+> 📖 [웹 어플리케이션 설정하기](https://developer.apple.com/library/content/documentation/AppleApplications/Reference/SafariWebContent/ConfiguringWebApplications/ConfiguringWebApplications.html)
 
-- [ ] **Windows Tiles:**![Low][low_img] Windows tiles are present and linked.
+- [ ] **윈도우 타일** **Windows Tiles:**![Low][low_img] 윈도우 타일을 설정하는 msapplication-config 속성이 사용되었나?
 
 ```html
-<!-- Microsoft Tiles -->
+<!-- Microsoft 타일 -->
 <meta name="msapplication-config" content="browserconfig.xml" />
 ```
 
-Minimum required xml markup for the browserconfig.xml file is as follows:
+browserconfig.xml 파일에서 사용되는 최소한의 XML 내용은 다음과 같습니다:
 
 ```xml
 <?xml version="1.0" encoding="utf-8"?>
@@ -143,24 +143,24 @@ Minimum required xml markup for the browserconfig.xml file is as follows:
 </browserconfig>
 ```
 
-> 📖 [Browser configuration schema reference](https://msdn.microsoft.com/en-us/library/dn320426(v=vs.85).aspx)
+> 📖 [브라우저 설정 스키마 레퍼런스](https://msdn.microsoft.com/en-us/library/dn320426(v=vs.85).aspx)
 
-* [ ] **Canonical:** ![Medium][medium_img] Use `rel="canonical"` to avoid duplicate content.
+* [ ] **Canonical:** ![Medium][medium_img] 컨텐츠의 중복을 피하기 위하여 `rel="canonical"` 을 사용하였나?
 
 ```html
-<!-- Helps prevent duplicate content issues -->
+<!-- 컨텐츠가 중복되는 문제를 방지하는데 도움이 됨 -->
 <link rel="canonical" href="http://example.com/2017/09/a-new-article-to-red.html">
 ```
 
-### HTML tags
+### HTML 태그
 
-* [ ] **Language tag:** ![High][high_img] The language tag of your website is specified and related to the language of the current page.
+* [ ] **언어 태그:** ![High][high_img] 현재 페이지 내의 언어에 알맞게 속성 값이 부여되었는가?
 
 ```html
-<html lang="en">
+<html lang="ko">
 ```
 
-* [ ] **Direction tag:** ![Medium][medium_img] The direction of lecture is specified on the body tag (It can be used on another HTML tag).
+* [ ] **글자 방향 태그:** ![Medium][medium_img] 글자들의 방향이 제대로 설정되었나? (우리나라에서는 좌에서 우로 글씨를 읽고 쓰지만 몇몇 나라에서는 우에서 좌로 읽고 쓰는 경우도 있습니다; right to left, rtl)
 
 ```html
 <html dir="rtl">
@@ -168,29 +168,29 @@ Minimum required xml markup for the browserconfig.xml file is as follows:
 
 > 📖 [dir - HTML - MDN](https://developer.mozilla.org/en-US/docs/Web/HTML/Global_attributes/dir)
 
-* [ ] **Alternate language:** ![Low][low_img] The language tag of your website is specified and related to the language of the current page.
+* [ ] **대체 언어:** ![Low][low_img] 현재 페이지를 언어에 맞게 대체할 수 있는 태그 속성 값을 사용하였나?
 
 ```html
-<link rel="alternate" href="https://es.example.com/" hreflang="es">
+<link rel="alternate" href="https://en.example.com/" hreflang="en">
 ```
 
-* [ ] **Conditional comments:** ![Low][low_img] Conditional comments are present for IE if needed.
+* [ ] **조건부 주석:** ![Low][low_img] Internet Explorer 를 위한 조건부 주석을 사용하였나?
 
-> 📖 [About conditional comments (Internet Explorer) - MSDN - Microsoft](https://msdn.microsoft.com/en-us/library/ms537512(v=vs.85).aspx)
+> 📖 [조건부 주석에 관하여 (Internet Explorer) - MSDN - Microsoft](https://msdn.microsoft.com/en-us/library/ms537512(v=vs.85).aspx)
 
-* [ ] **RSS feed:** ![Low][low_img] If your project is a blog or has articles, an RSS link was provided.
+* [ ] **RSS 피드:** ![Low][low_img] 만일 페이지가 블로그이거나 기사가 있다면, RSS 링크에 대해 확인하도록 하자
 
 * [ ] **CSS Critical:** ![Medium][medium_img] The CSS critical (or "above the fold") collects all the CSS used to render the visible portion of the page. It is embedded before your principal CSS call and between `<style></style>` in a single line (minified).
 
 > 🛠 [Critical by Addy Osmani on Github](https://github.com/addyosmani/critical)
 
-* [ ] **CSS order:** ![High][high_img] All CSS files are loaded before any JavaScript files in the `<head>`. (Except the case where sometimes JS files are loaded asynchronously on top of your page).
+* [ ] **CSS의 순서:** ![High][high_img] 모든 CSS 파일이 `<head>` 내에서 자바스크립트 파일보다 이전에 로딩이 완료되었나? (자바스크립트 파일이 비동기적으로 로딩되는 특정한 경우는 제외함).
 
-### Social meta
+### 소셜미디어 관련 메타 태그
 
-***Facebook OG*** and ***Twitter Cards*** are, for any website, highly recommended. The other social media tags can be considered if you target a particular presence on those and want to ensure the display.
+***Facebook의 OG*** 와 ***Twitter Cards*** 를 사용하는 것은 어떠한 웹사이트든지간에 권고됩니다. 타 소셜미디어의 태그는 특정하게 그들을 대상으로 하는 경우에는 고려해 볼 수 있습니다.
 
-* [ ] **Facebook Open Graph:** ![Low][low_img] All Facebook Open Graph (OG) are tested and no one is missing or with a false information. Images need to be at least 600 x 315 pixels, 1200 x 630 pixels recommended.
+* [ ] **Facebook Open Graph:** ![Low][low_img] 모든 Facebook의 Open Graph (OG) 가 테스트 되었으며, 그것들 중에 누락된 정보나 잘못된 정보를 가지고 있지는 않나? (이미지의 경우 최소한 600 x 315 픽셀은 되어야 하며, 1200 x 630 픽셀 크기를 권장함)
 
 ```html
 <meta property="og:type" content="website">
@@ -202,8 +202,8 @@ Minimum required xml markup for the browserconfig.xml file is as follows:
 <meta property="og:locale" content="en_US">
 ```
 
-> * 📖 [A Guide to Sharing for Webmasters](https://developers.facebook.com/docs/sharing/webmasters/)
-> * 🛠 Test your page with the [Facebook OG testing](https://developers.facebook.com/tools/debug/)
+> * 📖 [웹마스터를 위한 공유 가이드](https://developers.facebook.com/docs/sharing/webmasters/)
+> * 🛠 [Facebook OG testing](https://developers.facebook.com/tools/debug/) 도구를 이용하여 당신의 페이지 테스트하기
 
 * [ ] **Twitter Card:** ![Low][low_img]
 
@@ -217,22 +217,22 @@ Minimum required xml markup for the browserconfig.xml file is as follows:
 <meta name="twitter:image" content="https://example.com/image.jpg">
 ```
 
-> * 📖 [Getting started with cards — Twitter Developers](https://developer.twitter.com/en/docs/tweets/optimize-with-cards/guides/getting-started)
-> * 🛠 Test your page with the [Twitter card validator](https://cards-dev.twitter.com/validator)
+> * 📖 [Twitter cards 시작하기 — Twitter Developers](https://developer.twitter.com/en/docs/tweets/optimize-with-cards/guides/getting-started)
+> * 🛠 [Twitter card validator](https://cards-dev.twitter.com/validator) 도구를 이용하여 당신의 페이지 테스트하기
 
-**[⬆ back to top](#table-of-contents)**
+**[⬆ 최상단으로](#table-of-contents)**
 
 ---
 
 ## HTML
 
-### Best practices
+### 최선의 습관들
 
-* [ ] **HTML5 Semantic Elements:** ![High][high_img] HTML5 Semantic Elements are used appropriately (header, section, footer, main...).
+* [ ] **HTML5 시맨틱 엘리먼트:** ![High][high_img] HTML5의 시맨틱 엘리먼트들이 적절히 사용되었나? (header, section, footer, main... 등).
 
-> 📖 [HTML Reference](http://htmlreference.io/)
+> 📖 [HTML 레퍼런스](http://htmlreference.io/)
 
-* [ ] **Error pages:** ![High][high_img] Error 404 page and 5xx exist. Remember that the 5xx error page needs to have his CSS integrated (no external call on the current server).
+* [ ] **에러 페이지:** ![High][high_img] 에러를 위한 404 페이지와 5xx 페이지가 존재하는가? 5xx 페이지는 서버로부터의 데이터를 전송받지 않고 독립적인 자체 CSS를 포함하고 있어야 함을 기억하라 (5xx 에러는 서버 에러이므로!).
 
 * [ ] **Noopener:** ![Medium][medium_img] In case you are using external links with `target="_blank"`, your link should have a `rel="noopener"` attribute to prevent tab nabbing. If you need to support older versions of Firefox, use `rel="noopener noreferrer"`.
 
