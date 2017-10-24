@@ -44,64 +44,64 @@ Some resources possess an emoticon to help you understand which type of content 
 
 > **노트:** [a list of everything](https://github.com/joshbuchea/HEAD) 에서 HTML 문서 내의 `<head>` 에서 사용할 수 있는 모든 것을 찾아보실 수 있습니다.
 
-### Meta tag
+### 메타 태그
 
-* [ ] **Doctype:** ![High][high_img] The Doctype is HTML5 and is at the top of all your HTML pages.
+* [ ] **Doctype:** ![High][high_img] HTML5 을 사용하며, Doctype이 모든 HTML 페이지의 최상단에 위치하는가?
 
 ```html
 <!-- Doctype HTML5 -->
 <!doctype html>
 ```
 
-> 📖 [Determining the character encoding - HTML5 W3C](https://www.w3.org/TR/html5/syntax.html#determining-the-character-encoding)
+> 📖 [문자 인코딩 결정하기 - HTML5 W3C](https://www.w3.org/TR/html5/syntax.html#determining-the-character-encoding)
 
-*The next 3 meta tags (Charset, X-UA Compatible and Viewport) need to come first in the head.*
+*다음 3개의 메타 태그(Charset, X-UA Compatible and Viewport)들은 다른 요소들에 비해 head 안에서도 상단에 위치해야만 합니다.*
 
-* [ ] **Charset:** ![High][high_img] The charset declared (UTF-8) is declared correctly.
+* [ ] **Charset:** ![High][high_img] 문자집합(UTF-8)이 올바르게 선언되었는가?
 
 ```html
-<!-- Set character encoding for the document -->
+<!-- 이 문서에 대한 문자 인코딩을 설정 -->
 <meta charset="utf-8">
 ```
 
-* [ ] **X-UA-Compatible:** ![Medium][medium_img] The X-UA-Compatible meta tag is present.
+* [ ] **X-UA-Compatible:** ![Medium][medium_img] X-UA-Compatible 메타 태그가 존재하는가?
 
 ```html
-<!-- Instruct Internet Explorer to use its latest rendering engine -->
+<!-- Internet Explorer에게 최신의 렌더링 엔진을 사용하라고 지시 -->
 <meta http-equiv="x-ua-compatible" content="ie=edge">
 ```
 
 > 📖 [Specifying legacy document modes (Internet Explorer)](https://msdn.microsoft.com/en-us/library/jj676915(v=vs.85).aspx)
 
-* [ ] **Viewport:** ![High][high_img] The viewport is declared correctly.
+* [ ] **Viewport:** ![High][high_img] Viewport가 제대로 선언되었나?
 
 ```html
-<!-- Viewport for responsive web design -->
+<!-- 반응형 웹디자인을 위한 Viewport 설정 -->
 <meta name="viewport" content="width=device-width, initial-scale=1">
 ```
 
-* [ ] **Title:** ![High][high_img] A title is used on all pages (SEO: No more than 65 characters, website title included).
+* [ ] **Title:** ![High][high_img] 모든 페이지에 title이 사용되었나? (SEO 가이드: 웹사이트의 타이틀을 포함하여 65개 이하의 문자로 구성하기).
 
 ```html
 <!-- Document Title -->
-<title>Page Title less than 65 characters</title>
+<title>65개 이하의 문자로 구성된 페이지 제목</title>
 ```
 
 > 📖 [Title - HTML - MDN](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/title)
 
-* [ ] **Description:** ![High][high_img] A meta description is provided, it is unique and doesn't possess more than 150 characters.
+* [ ] **Description:** ![High][high_img] description이 제대로 기재되었나? (설명값은 유일해야 하며, 150개 이하의 문자로 구성되어야 함)
 
 ```html
-<!-- Meta Description -->
-<meta name="description" content="Description of the page less than 150 characters">
+<!-- 메타 설명 -->
+<meta name="description" content="페이지에 대한 설명 (150개 이하의 문자)">
 ```
 
-* [ ] **Favicons:** ![Medium][medium_img] Each favicon has been created and displays correctly. If you have only a `favicon.ico`, put it at the root of your site. Normally you won't need to use any markup. However, it's still good practice to link to it using the example below. Today, **PNG format is recommended** over `.ico` format (dimensions: 32x32px).
+* [ ] **Favicons:** ![Medium][medium_img] 각각의 favicon이 제대로 생성되었고 올바르게 보여지는가? 만약 `favicon.ico` 파일만 가지고 있다면, 해당 내용을 페이지의 상단부에 추가하세요. 일반적으로는 해당 태그를 사용할 필요는 없지만, 아래의 예시를 포함하는 것이 좋은 습관입니다. 오늘날에는 `.ico` 포맷보다 **PNG 포맷의 아이콘 사용을 추천**합니다 (크기: 32x32px).
 
 ```html
-<!-- Standard favicon -->
+<!-- 표준 favicon -->
 <link rel="icon" type="image/x-icon" href="https://example.com/favicon.ico">
-<!-- Recommended favicon format -->
+<!-- 추천 favicon 포맷 -->
 <link rel="icon" type="image/png" href="https://example.com/favicon.png">
 ```
 
