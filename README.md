@@ -12,6 +12,8 @@
 
 
 ## 목차
+*Product Hunt에 추천과 투표를 통해 프론트엔드 체크리스트를 널리 알리는데 도움을 주세요*
+[![](http://res.cloudinary.com/djnyaloac/image/upload/v1508896898/upvote-producthunt_vzys4c.jpg)](https://www.producthunt.com/posts/front-end-checklist)
 
 1. **[Head](#head)**
 2. **[HTML](#html)**
@@ -77,7 +79,7 @@
 * [ ] **Viewport:** ![High][high_img] Viewport가 제대로 선언됨
 
 ```html
-<!-- 반응형 웹디자인을 위한 Viewport 설정 -->
+<!-- 반응형 웹 디자인을 위한 Viewport 설정 -->
 <meta name="viewport" content="width=device-width, initial-scale=1">
 ```
 
@@ -154,6 +156,8 @@ browserconfig.xml 파일에서 사용되는 최소한의 XML 내용은 다음과
 ```
 
 ### HTML 태그
+> 📖 [표준 URL을 사용하기 - Search Console Help - Google Support](https://support.google.com/webmasters/answer/139066?hl=en)
+> 📖 [rel=canonical을 사용할 때 흔히 겪는 5가지 실수 - Google Webmaster Blog](https://webmasters.googleblog.com/2013/04/5-common-mistakes-with-relcanonical.html)
 
 * [ ] **언어 태그:** ![High][high_img] 현재 페이지 내의 언어에 알맞게 속성 값이 부여됨
 ```html
@@ -311,14 +315,14 @@ browserconfig.xml 파일에서 사용되는 최소한의 XML 내용은 다음과
 
 ### 성능
 
-- [ ] **Concatenation:** ![High][high_img] CSS files are concatenated in a single file. *(Not for HTTP/2)*
-- [ ] **Minification:** ![High][high_img] All CSS files are minified.
-- [ ] **Non-blocking:** ![Medium][medium_img] CSS files need to be non-blocking to prevent the DOM from taking time to load.
+- [ ] **파일 단일화:** ![High][high_img] CSS 파일들이 단일 CSS 파일로 합쳐짐 *(HTTP/2의 경우는 여러 개의 파일을 사용하는 것이 더 성능에 좋음)*
+- [ ] **최소화:** ![High][high_img] 모든 CSS 파일들이 최소화 됨
+- [ ] **Non-blocking:** ![Medium][medium_img] CSS 파일들은 DOM이 로딩하는데에 방해가 되지 않도록 non-blocking(비동기적) 해야 함
 
 > * 📖 [loadCSS by filament group](https://github.com/filamentgroup/loadCSS)
 > * 📖 [Example of preload CSS using loadCSS](https://gist.github.com/thedaviddias/c24763b82b9991e53928e66a0bafc9bf)
 
-- [ ] **Unused CSS:** ![Low][low_img] Remove unused CSS.
+- [ ] **사용하지 않은 CSS:** ![Low][low_img] 사용되지 않은 CSS는 제거함
 
 > * 🛠 [UnCSS Online](https://uncss-online.com/) 🛠
 > * 🛠 [PurifyCSS](https://github.com/purifycss/purifycss)
@@ -327,16 +331,16 @@ browserconfig.xml 파일에서 사용되는 최소한의 XML 내용은 다음과
 
 ### CSS 테스트
 
-* [ ] **Stylelint:** ![High][high_img] All CSS or SCSS files are without any errors.
+* [ ] **Stylelint:** ![High][high_img] 모든 CSS와 SCSS 파일들에 아무런 에러가 없는지 확인
 
 > * 🛠 [stylelint, a CSS linter](https://stylelint.io/)
-> * 📖 [Sass guidelines](https://sass-guidelin.es/)
+> * 📖 [Sass 가이드라인](https://sass-guidelin.es/)
 
-* [ ] **Responsive web design:** ![High][high_img] All pages were tested at the following breakpoints: 320px, 768px, 1024px (can be more / different according to your analytics).
+* [ ] **반응형 웹 디자인:** ![High][high_img] 모든 페이지가 다음 지점에서 테스트 완료되었음: 320px, 768px, 1024px (그 외 당신이 필요한 크기에 따라 다를 수 있음)
 
-* [ ] **CSS Validator:** ![Medium][medium_img] The CSS was tested and pertinent errors were corrected.
+* [ ] **CSS 검사기:** ![Medium][medium_img] CSS가 제대로 테스트 되었고, 오류들이 알맞게 수정되었음
 
-> 🛠 [CSS Validator](https://jigsaw.w3.org/css-validator/)
+> 🛠 [CSS 검사기](https://jigsaw.w3.org/css-validator/)
 
 * [ ] **Reading direction:** ![High][high_img] All pages need to be tested for LTR and RTL languages if they need to be supported.
 
@@ -598,6 +602,7 @@ browserconfig.xml 파일에서 사용되는 최소한의 XML 내용은 다음과
 * 🇪🇸 Spanish: [eoasakura/Front-End-Checklist-ES](https://github.com/eoasakura/Front-End-Checklist-ES)
 * 🇨🇳 Chinese: [JohnsenZhou/Front-End-Checklist](https://github.com/JohnsenZhou/Front-End-Checklist)
 * 🇰🇷 Korean: [kesuskim/Front-End-Checklist](https://github.com/kesuskim/Front-End-Checklist)
+* 🇧🇷 Portuguese: [jcezarms/Front-End-Checklist](https://github.com/jcezarms/Front-End-Checklist)
 
 ---
 
