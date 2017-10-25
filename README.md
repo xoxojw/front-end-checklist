@@ -16,13 +16,13 @@
 
 1. **[Head](#head)**
 2. **[HTML](#html)**
-3. **[웹폰트](#webfonts)**
+3. **[웹폰트](#웹폰트)**
 4. **[CSS](#css)**
-5. **[이미지](#images)**
-6. **[자바스크립트](#javascript)**
-7. **[보안](#security)**
-8. **[성능](#performance-1)**
-9. **[접근성](#accessibility)**
+5. **[이미지](#이미지)**
+6. **[자바스크립트](#자바스크립트)**
+7. **[보안](#보안)**
+8. **[성능](#성능-1)**
+9. **[접근성](#접근성)**
 10. **[SEO](#seo)**
 
 ## 이 리스트는 어떻게 사용하나요?
@@ -223,7 +223,7 @@ browserconfig.xml 파일에서 사용되는 최소한의 XML 내용은 다음과
 > * 📖 [Twitter cards 시작하기 — Twitter Developers](https://developer.twitter.com/en/docs/tweets/optimize-with-cards/guides/getting-started)
 > * 🛠 [Twitter card validator](https://cards-dev.twitter.com/validator) 도구를 이용하여 당신의 페이지 테스트하기
 
-**[⬆ 최상단으로](#table-of-contents)**
+**[⬆ 목차로](#목차)**
 
 ---
 
@@ -266,7 +266,7 @@ browserconfig.xml 파일에서 사용되는 최소한의 XML 내용은 다음과
 
 > [Pixel Perfect - Chrome 확장도구](https://chrome.google.com/webstore/detail/perfectpixel-by-welldonec/dkaagdgjmgdmbnecmcefdhjekcoceebi?hl=en)
 
-**[⬆ 최상단으로](#table-of-contents)**
+**[⬆ 목차로](#목차)**
 
 ---
 
@@ -281,7 +281,7 @@ browserconfig.xml 파일에서 사용되는 최소한의 XML 내용은 다음과
 
 * [ ] **웹폰트 크기:** ![High][high_img] 모든 종류(이탤릭, 볼드체 등등)를 포함한 웹폰트 크기의 총 합계는 2 MB를 넘지 않도록 함
 
-**[⬆ 최상단으로](#table-of-contents)**
+**[⬆ 목차로](#목차)**
 
 ---
 
@@ -346,7 +346,7 @@ browserconfig.xml 파일에서 사용되는 최소한의 XML 내용은 다음과
 > * 📖 [Building RTL-Aware Web Apps & Websites: Part 1 - Mozilla Hacks](https://hacks.mozilla.org/2015/09/building-rtl-aware-web-apps-and-websites-part-1/)
 > * 📖 [Building RTL-Aware Web Apps & Websites: Part 2 - Mozilla Hacks](https://hacks.mozilla.org/2015/10/building-rtl-aware-web-apps-websites-part-2/)
 
-**[⬆ 최상단으로](#table-of-contents)**
+**[⬆ 목차로](#목차)**
 
 ---
 
@@ -370,7 +370,7 @@ browserconfig.xml 파일에서 사용되는 최소한의 XML 내용은 다음과
 * [ ] **Alternative text:** ![High][high_img] All `<img>` have an alternative text which describe the image visually.
 * [ ] **Lazy loading:** ![Medium][medium_img] Images are lazyloaded (A noscript fallback is always provided).
 
-**[⬆ 최상단으로](#table-of-contents)**
+**[⬆ 목차로](#목차)**
 
 ---
 
@@ -402,7 +402,7 @@ browserconfig.xml 파일에서 사용되는 최소한의 XML 내용은 다음과
 
 > * 📖 [ESLint - The pluggable linting utility for JavaScript and JSX](https://eslint.org/)
 
-**[⬆ 최상단으로](#table-of-contents)**
+**[⬆ 목차로](#목차)**
 
 ---
 
@@ -446,7 +446,7 @@ browserconfig.xml 파일에서 사용되는 최소한의 XML 내용은 다음과
 > * 📖 [X-Frame-Options - Scott Helme](https://scotthelme.co.uk/hardening-your-http-response-headers/#x-frame-options)
 > * 📖 [RFC7034 - HTTP Header Field X-Frame-Options](https://tools.ietf.org/html/rfc7034)
 
-**[⬆ 최상단으로](#table-of-contents)**
+**[⬆ 목차로](#목차)**
 
 ---
 
@@ -508,7 +508,7 @@ browserconfig.xml 파일에서 사용되는 최소한의 XML 내용은 다음과
 > * 🛠 [Google에서 모바일 속도를 측정해보세요](https://testmysite.withgoogle.com)
 > * 🛠 [WebPagetest - 웹사이트 성능 및 최적화 테스트](https://www.webpagetest.org/)
 
-**[⬆ 최상단으로](#table-of-contents)**
+**[⬆ 목차로](#목차)**
 
 ---
 
@@ -565,7 +565,7 @@ browserconfig.xml 파일에서 사용되는 최소한의 XML 내용은 다음과
 
 > 📹 [Managing Focus - A11ycasts #22](https://www.youtube.com/watch?v=srLRSQg6Jgg&index=5&list=PLNYkxOF6rcICWx0C9LVWWVqvHlYJyqw7g)
 
-**[⬆ 최상단으로](#table-of-contents)**
+**[⬆ 목차로](#목차)**
 
 ---
 
@@ -589,7 +589,7 @@ browserconfig.xml 파일에서 사용되는 최소한의 XML 내용은 다음과
 > * 🛠 [Sitemap 생성기](https://websiteseochecker.com/html-sitemap-generator/)
 
 
-**[⬆ 최상단으로](#table-of-contents)**
+**[⬆ 목차로](#목차)**
 
 ---
 
@@ -615,7 +615,7 @@ browserconfig.xml 파일에서 사용되는 최소한의 XML 내용은 다음과
 [![Front‑End_Checklist followed](https://img.shields.io/badge/Front‑End_Checklist-followed-brightgreen.svg)](https://github.com/thedaviddias/Front-End-Checklist/)
 ```
 
-**[⬆ 최상단으로](#table-of-contents)**
+**[⬆ 목차로](#목차)**
 
 ---
 
@@ -654,7 +654,7 @@ If you have any question or suggestion, don't hesitate to use Gitter or Twitter:
 
 [![CC0](https://i.creativecommons.org/p/zero/1.0/88x31.png)](https://creativecommons.org/publicdomain/zero/1.0/)
 
-**[⬆ 최상단으로](#table-of-contents)**
+**[⬆ 목차로](#목차)**
 
 [low_img]: http://res.cloudinary.com/djnyaloac/image/upload/v1508238836/level-checklist-low.png
 [medium_img]: http://res.cloudinary.com/djnyaloac/image/upload/v1508238836/level-checklist-medium.png
