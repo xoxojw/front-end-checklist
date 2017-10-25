@@ -37,7 +37,7 @@
 몇몇 추가 내용들은 그것들이 어떠한 종류의 내용인지 이해하는데에 도움을 주기 위하여 이모티콘을 추가하였습니다. 이로 인해 체크리스트에서 해당 항목들을 이해하는 데에 도움이 될 것입니다:
 
 * 📖: 문서 또는 기사
-* 🛠: 온라인 도구 / 테스팅 도구
+* 🛠: 온라인 도구 / 테스트 도구
 * 📹: 미디어 또는 비디오 컨텐츠
 
 ---
@@ -279,7 +279,7 @@ browserconfig.xml 파일에서 사용되는 최소한의 XML 내용은 다음과
 > * 📖 [TTF/OTF - TrueType and OpenType font support](https://caniuse.com/#feat=ttf)
 > * 📖 [Using @font-face - CSS-Tricks](https://css-tricks.com/snippets/css/using-font-face/)
 
-* [ ] **웹폰트 크기:** ![High][high_img] 모든 종류(이탤릭, 볼드체 등등)를 포함한 웹폰트의 총 합은 2 MB를 넘지 않도록 함
+* [ ] **웹폰트 크기:** ![High][high_img] 모든 종류(이탤릭, 볼드체 등등)를 포함한 웹폰트 크기의 총 합계는 2 MB를 넘지 않도록 함
 
 **[⬆ 최상단으로](#table-of-contents)**
 
@@ -307,16 +307,16 @@ browserconfig.xml 파일에서 사용되는 최소한의 XML 내용은 다음과
 <div id="id-used-by-cms" class="js-slider my-slider">
 ```
 
-* [ ] **CSS embed or line:** ![High][high_img] Avoid at all cost the use of CSS embed or inline: only used for valid reasons (ex: background-image for slider, CSS critical).
-* [ ] **Vendor prefixes:** ![High][high_img] CSS vendor prefixes are used and are generated accordingly with your browser support compatibility.
+* [ ] **CSS 임베딩 또는 인라인:** ![High][high_img] 어떠한 경우에도 CSS를 직접 임베딩하거나 인라인으로 사용하지 마시오: 타당한 이유가 있는 경우에만 사용하시오 (예: 슬라이더 내의 background-image, 또는 CSS critical)
+* [ ] **벤더 프리픽스:** ![High][high_img] CSS 벤더 프리픽스들이 사용되었고 브라우저 지원 호환성에 따라 알맞게 생성되었는지 확인
 
 > 🛠 [Autoprefixer CSS online](https://autoprefixer.github.io/)
 
 ### 성능
 
-- [ ] **파일 단일화:** ![High][high_img] CSS 파일들이 단일 CSS 파일로 합쳐짐 *(HTTP/2의 경우는 여러 개의 파일을 사용하는 것이 더 성능에 좋음)*
+- [ ] **파일 단일화:** ![High][high_img] CSS 파일들이 하나의 CSS 파일로 단일화 되었음 *(HTTP/2의 경우는 여러 개의 파일을 사용하는 것이 더 성능에 좋음)*
 - [ ] **최소화:** ![High][high_img] 모든 CSS 파일들이 최소화 됨
-- [ ] **Non-blocking:** ![Medium][medium_img] CSS 파일들은 DOM이 로딩하는데에 방해가 되지 않도록 non-blocking(비동기적) 해야 함
+- [ ] **Non-blocking:** ![Medium][medium_img] CSS 파일들은 DOM이 로딩하는데에 방해가 되지 않도록 비동기적으로 로드 되어야 함
 
 > * 📖 [loadCSS by filament group](https://github.com/filamentgroup/loadCSS)
 > * 📖 [Example of preload CSS using loadCSS](https://gist.github.com/thedaviddias/c24763b82b9991e53928e66a0bafc9bf)
@@ -378,27 +378,27 @@ browserconfig.xml 파일에서 사용되는 최소한의 XML 내용은 다음과
 
 ### 모범 사례
 
-* [ ] **JavaScript Inline:** ![High][high_img] You don't have any JavaScript code inline (mixed with your HTML code).
-* [ ] **Concatenation:** ![High][high_img] JavaScript files are concatenated.
-* [ ] **Minification:** ![High][high_img] JavaScript files are minified (you can add the `.min` suffix).
+* [ ] **인라인 자바스크립트:** ![High][high_img] HTML 코드와 섞어 자바스크립트 코드를 인라인으로 포함하지 않도록 하시오
+* [ ] **파일 단일화:** ![High][high_img] 자바스크립트 파일들이 하나의 자바스크립트 파일로 단일화 되었음
+* [ ] **최소화:** ![High][high_img] 모든 자바스크립트 파일이 최소화 되었음(뒤에 `.min` 접미사를 붙이는 것을 추천)
 
-> [Minify Resources (HTML, CSS, and JavaScript)](https://developers.google.com/speed/docs/insights/MinifyResources)
+> [리소스(HTML, CSS, and JavaScript) 최소화하기](https://developers.google.com/speed/docs/insights/MinifyResources)
 
-* [ ] **JavaScript security:**
+* [ ] **자바스크립트 보안:**
 
-> [Guidelines for Developing Secure Applications Utilizing JavaScript](https://www.owasp.org/index.php/DOM_based_XSS_Prevention_Cheat_Sheet#Guidelines_for_Developing_Secure_Applications_Utilizing_JavaScript)*
+> [자바스크립트를 활용하여 보안에 안전한 어플리케이션 개발 가이드라인](https://www.owasp.org/index.php/DOM_based_XSS_Prevention_Cheat_Sheet#Guidelines_for_Developing_Secure_Applications_Utilizing_JavaScript)*
 
-* [ ] **Non-blocking:** ![Medium][medium_img] JavaScript files are loaded asynchronously using `async` or deferred using `defer` attribute.
+* [ ] **Non-blocking:** ![Medium][medium_img] JavaScript 파일들은 `async`와 `defer` 속성값을 이용하여 비동기적으로 로드 되어야 함
 
-> 📖 [Remove Render-Blocking JavaScript](https://developers.google.com/speed/docs/insights/BlockingJS)
+> 📖 [렌더링을 막는 자바스크립트 제거하기](https://developers.google.com/speed/docs/insights/BlockingJS)
 
-* [ ] **Modernizr:** ![Low][low_img] If you need to target some specific features you can use a custom Modernizr to add classes in your `<html>` tag.
+* [ ] **Modernizr:** ![Low][low_img] 특정한 기능을 지칭하고 싶다면, 커스터마이징 된 Modernizr를 이용하여 `<html>` 태그 내에 클래스들을 추가할 수 있음
 
-> 🛠 [Customize your Modernizr](https://modernizr.com/download?setclasses)
+> 🛠 [당신의 Modernizr 커스터마이징 하기](https://modernizr.com/download?setclasses)
 
-### JavaScript testing
+### 자바스크립트 테스트 
 
-* [ ] **ESLint:** ![High][high_img] No errors are flagged by ESLint (based on your configuration or standards rules).
+* [ ] **ESLint:** ![High][high_img] 표준 규칙이나 당신의 설정에 따라 ESLint를 에러 없이 통과함
 
 > * 📖 [ESLint - The pluggable linting utility for JavaScript and JSX](https://eslint.org/)
 
@@ -457,7 +457,7 @@ browserconfig.xml 파일에서 사용되는 최소한의 XML 내용은 다음과
 - [ ] **페이지 용량:** ![High][high_img] 각 페이지의 용량이 500KB 이하임
 
 > * 🛠 [웹사이트 페이지 분석](https://tools.pingdom.com)
-> * 📖 [용량 제한: 웹을 더욱 가볍게 만드세요](https://evilmartians.com/chronicles/size-limit-make-the-web-lighter)
+> * 📖 [페이지 용량을 제한함으로써 웹을 더욱 가볍게 만드세요](https://evilmartians.com/chronicles/size-limit-make-the-web-lighter)
 
 - [ ] **최소화:** ![Medium][medium_img] HTML이 최소화가 되었음
 > 🛠 [W3C 검사기](https://validator.w3.org/)
@@ -533,31 +533,31 @@ browserconfig.xml 파일에서 사용되는 최소한의 XML 내용은 다음과
 
 > 📹 [Why headings and landmarks are so important -- A11ycasts #18](https://www.youtube.com/watch?v=vAAzdi1xuUY&index=9&list=PLNYkxOF6rcICWx0C9LVWWVqvHlYJyqw7g)
 
-#### Landmarks
+#### 랜드마크
 
-- [ ] **Role banner:** ![High][high_img] `<header>` has `role="banner"`.
-- [ ] **Role navigation:** ![High][high_img] `<nav>` has `role="navigation"`.
-- [ ] **Role main:** ![High][high_img] `<main>` has `role="main"`.
+- [ ] **banner 역할:** ![High][high_img] `<header>` 태그가 `role="banner"` 속성값을 가지고 있음
+- [ ] **navigation 역할:** ![High][high_img] `<nav>` 태그가 `role="navigation"` 속성값을 가지고 있음
+- [ ] **main 역할:** ![High][high_img] `<main>` 태그가 `role="main"` 속성값을 가지고 있음
 
-> 📖 [Using ARIA landmarks to identify regions of a page](https://www.w3.org/WAI/GL/wiki/Using_ARIA_landmarks_to_identify_regions_of_a_page)
+> 📖 [ARIA 랜드마크를 이용하여 페이지 내의 특정 지점을 식별하기](https://www.w3.org/WAI/GL/wiki/Using_ARIA_landmarks_to_identify_regions_of_a_page)
 
-### Semantics
+### 시맨틱
 
-- [ ] **Specific HTML5 input types are used:** ![Medium][medium_img] This is especially important for mobile devices that show customized keypads and widgets for different types.
+- [ ] **특정한 HTML5의 input 타입들이 사용됨:** ![Medium][medium_img] 이것은 각각 다른 타입에 대하여 개별적인 키패드나 위젯을 보여주는 모바일 장치들에 대해 특히 더욱 중요함
 
-> 📖 [Mobile Input Types](http://mobileinputtypes.com/)
+> 📖 [모바일 Input 타입](http://mobileinputtypes.com/)
 
-### Form
+### 폼
 
-* [ ] **Label:** ![High][high_img] A label is associated with each input form element. In case a label can't be displayed, use `aria-label` instead.
+* [ ] **레이블:** ![High][high_img] 레이블은 각각의 입력 폼 엘리먼트와 연관됨. 레이블이 보여질 수 없는 경우라면, `aria-label` 을 대신 사용하라
 
-> 📖 [Using the aria-label attribute - MDN](https://developer.mozilla.org/en-US/docs/Web/Accessibility/ARIA/ARIA_Techniques/Using_the_aria-label_attribute)
+> 📖 [aria-label 속성 사용하기 - MDN](https://developer.mozilla.org/en-US/docs/Web/Accessibility/ARIA/ARIA_Techniques/Using_the_aria-label_attribute)
 
 ### 접근성 테스트
 
 * [ ] **접근성 표준 테스트:** ![High][high_img] WAVE 도구를 이용하여 당신의 페이지가 접근성 표준을 만족하였는지 테스트 해보세요
 
-> 🛠 [Wave 테스팅](http://wave.webaim.org/)
+> 🛠 [Wave 테스트](http://wave.webaim.org/)
 
 * [ ] **키보드 네비게이션:** ![High][high_img] 키보드만을 이용하여 웹사이트를 예측 가능하도록 움직일 수 있는지 테스트 하시오. 모든 인터랙티브 엘리먼트들은 접근 가능하고 사용 가능해야 함 
 * [ ] **스크린 리더:** ![Medium][medium_img] 모든 페이지들이 스크린 리더 (VoiceOver, ChromeVox, NVDA or Lynx) 테스트를 완료함
