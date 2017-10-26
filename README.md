@@ -55,7 +55,11 @@
 <!doctype html>
 ```
 
+<<<<<<< HEAD
 > 📖 [문자 인코딩 결정하기 - HTML5 W3C](https://www.w3.org/TR/html5/syntax.html#determining-the-character-encoding)
+=======
+> * 📖 [Determining the character encoding - HTML5 W3C](https://www.w3.org/TR/html5/syntax.html#determining-the-character-encoding)
+>>>>>>> upstream/master
 
 *다음 3개의 메타 태그(Charset, X-UA Compatible and Viewport)들은 다른 요소들에 비해 head 안에서도 상단에 위치해야만 합니다.*
 
@@ -73,7 +77,7 @@
 <meta http-equiv="x-ua-compatible" content="ie=edge">
 ```
 
-> 📖 [Specifying legacy document modes (Internet Explorer)](https://msdn.microsoft.com/en-us/library/jj676915(v=vs.85).aspx)
+> * 📖 [Specifying legacy document modes (Internet Explorer)](https://msdn.microsoft.com/en-us/library/jj676915(v=vs.85).aspx)
 
 * [ ] **Viewport:** ![High][high_img] Viewport가 제대로 선언됨
 
@@ -89,7 +93,7 @@
 <title>65개 이하의 문자로 구성된 페이지 제목</title>
 ```
 
-> 📖 [Title - HTML - MDN](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/title)
+> * 📖 [Title - HTML - MDN](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/title)
 
 * [ ] **Description:** ![High][high_img] description이 제대로 기재됨 (설명값은 고유해야 하며, 150개 이하의 문자로 구성되어야 함)
 
@@ -120,7 +124,7 @@
 <link rel="apple-touch-icon" href="/custom-icon.png">
 ```
 
-> 📖 [웹 어플리케이션 설정하기](https://developer.apple.com/library/content/documentation/AppleApplications/Reference/SafariWebContent/ConfiguringWebApplications/ConfiguringWebApplications.html)
+> * 📖 [웹 어플리케이션 설정하기](https://developer.apple.com/library/content/documentation/AppleApplications/Reference/SafariWebContent/ConfiguringWebApplications/ConfiguringWebApplications.html)
 
 - [ ] **윈도우 타일** **Windows Tiles:**![Low][low_img] 윈도우 타일을 설정하는 msapplication-config 속성이 사용함
 
@@ -145,7 +149,7 @@ browserconfig.xml 파일에서 사용되는 최소한의 XML 내용은 다음과
 </browserconfig>
 ```
 
-> 📖 [브라우저 설정 스키마 레퍼런스](https://msdn.microsoft.com/en-us/library/dn320426(v=vs.85).aspx)
+> * 📖 [브라우저 설정 스키마 레퍼런스](https://msdn.microsoft.com/en-us/library/dn320426(v=vs.85).aspx)
 
 * [ ] **Canonical:** ![Medium][medium_img] 컨텐츠의 중복을 피하기 위하여 `rel="canonical"` 을 사용함
 
@@ -155,21 +159,21 @@ browserconfig.xml 파일에서 사용되는 최소한의 XML 내용은 다음과
 ```
 
 ### HTML 태그
-> 📖 [표준 URL을 사용하기 - Search Console Help - Google Support](https://support.google.com/webmasters/answer/139066?hl=en)
-> 📖 [rel=canonical을 사용할 때 흔히 겪는 5가지 실수 - Google Webmaster Blog](https://webmasters.googleblog.com/2013/04/5-common-mistakes-with-relcanonical.html)
+> * 📖 [표준 URL을 사용하기 - Search Console Help - Google Support](https://support.google.com/webmasters/answer/139066?hl=en)
+> * 📖 [rel=canonical을 사용할 때 흔히 겪는 5가지 실수 - Google Webmaster Blog](https://webmasters.googleblog.com/2013/04/5-common-mistakes-with-relcanonical.html)
 
-* [ ] **언어 태그:** ![High][high_img] 현재 페이지 내의 언어에 알맞게 속성 값이 부여됨
+* [ ] **언어 속성:** ![High][high_img] 현재 페이지 내의 언어에 알맞게 속성 값이 부여됨
 ```html
 <html lang="ko">
 ```
 
-* [ ] **글자 방향 태그:** ![Medium][medium_img] 글자들의 방향이 제대로 설정됨 (우리나라에서는 좌에서 우로 글씨를 읽고 쓰지만 몇몇 나라에서는 우에서 좌로 읽고 쓰는 경우도 있습니다; right to left, rtl)
+* [ ] **글자 방향 속성:** ![Medium][medium_img] 글자들의 방향이 제대로 설정됨 (우리나라에서는 좌에서 우로 글씨를 읽고 쓰지만 몇몇 나라에서는 우에서 좌로 읽고 쓰는 경우도 있습니다; right to left, rtl)
 
 ```html
 <html dir="rtl">
 ```
 
-> 📖 [dir - HTML - MDN](https://developer.mozilla.org/en-US/docs/Web/HTML/Global_attributes/dir)
+> * 📖 [dir - HTML - MDN](https://developer.mozilla.org/en-US/docs/Web/HTML/Global_attributes/dir)
 
 * [ ] **대체 언어:** ![Low][low_img] 현재 페이지를 언어에 맞게 대체할 수 있는 태그 속성 값을 사용함
 
@@ -179,13 +183,13 @@ browserconfig.xml 파일에서 사용되는 최소한의 XML 내용은 다음과
 
 * [ ] **조건부 주석:** ![Low][low_img] Internet Explorer 를 위한 조건부 주석을 사용함
 
-> 📖 [조건부 주석에 관하여 (Internet Explorer) - MSDN - Microsoft](https://msdn.microsoft.com/en-us/library/ms537512(v=vs.85).aspx)
+> * 📖 [조건부 주석에 관하여 (Internet Explorer) - MSDN - Microsoft](https://msdn.microsoft.com/en-us/library/ms537512(v=vs.85).aspx)
 
 * [ ] **RSS 피드:** ![Low][low_img] 만일 페이지가 블로그이거나 기사가 있다면, RSS 링크에 대해 확인하도록 하자
 
 * [ ] **CSS Critical:** ![Medium][medium_img] The CSS critical (or "above the fold") collects all the CSS used to render the visible portion of the page. It is embedded before your principal CSS call and between `<style></style>` in a single line (minified).
 
-> 🛠 [Critical by Addy Osmani on Github](https://github.com/addyosmani/critical)
+> * 🛠 [Critical by Addy Osmani on Github](https://github.com/addyosmani/critical)
 
 * [ ] **CSS의 순서:** ![High][high_img] 모든 CSS 파일이 `<head>` 내에서 자바스크립트 파일보다 이전에 로딩이 완료됨 (자바스크립트 파일이 비동기적으로 로딩되는 특정한 경우는 제외함).
 
@@ -233,13 +237,13 @@ browserconfig.xml 파일에서 사용되는 최소한의 XML 내용은 다음과
 
 * [ ] **HTML5 시맨틱 엘리먼트:** ![High][high_img] HTML5의 시맨틱 엘리먼트들이 적절히 사용됨 (header, section, footer, main... 등).
 
-> 📖 [HTML 레퍼런스](http://htmlreference.io/)
+> * 📖 [HTML 레퍼런스](http://htmlreference.io/)
 
 * [ ] **에러 페이지:** ![High][high_img] 에러를 위한 404 페이지와 5xx 페이지가 존재하는가? 5xx 페이지는 서버로부터의 데이터를 전송받지 않고 독립적인 자체 CSS를 포함하고 있어야 함을 기억하라 (5xx 에러는 서버 에러이므로!).
 
 * [ ] **Noopener:** ![Medium][medium_img] 외부 링크를 `target="_blank"`를 이용하여 연 경우, [tab nabbing 피싱 공격](https://blog.coderifleman.com/2017/05/30/tabnabbing_attack_and_noopener/)을 방지하기 위하여 `rel="noopener"` 속성을 사용해야만 한다. 만약 Firefox 옛 버전을 지원해야만 한다면, `rel="noopener noreferrer"` 을 사용하라.
 
-> 📖 [rel=noopener에 대하여](https://mathiasbynens.github.io/rel-noopener/)
+> * 📖 [rel=noopener에 대하여](https://mathiasbynens.github.io/rel-noopener/)
 
 * [ ] **주석 지우기:** ![Low][low_img] 웹사이트를 프로덕션 하기 이전에 불필요한 코드는 제거하였는지, 주석은 제거하였는지 점검하라
 
@@ -247,18 +251,18 @@ browserconfig.xml 파일에서 사용되는 최소한의 XML 내용은 다음과
 
 * [ ] **W3C 규격:** ![High][high_img] 모든 페이지는 HTML 코드 내에서 일어날 수 있는 경우를 확인하기 위하여 W3C 의 validator를 이용하여 테스트 되어야 함
 
-> 🛠 [W3C validator](https://validator.w3.org/)
+> * 🛠 [W3C validator](https://validator.w3.org/)
 
 * [ ] **HTML Lint:** ![High][high_img] 도구를 이용하여 HTML 코드 내에 발생할 수 있는 문제들을 분석하도록 하자
 
-> 🛠 [Dirty markup](https://dirtymarkup.com/)
+> * 🛠 [Dirty markup](https://dirtymarkup.com/)
 
 * [ ] **데스크탑 브라우저:** ![High][high_img] 모든 페이지가 모든 현존하는 데스크탑 브라우저에서 테스트 됨 (Safari, Firefox, Chrome, Internet Explorer, EDGE... 등).
 * [ ] **모바일 브라우저:**  ![High][high_img] 모든 페이지가 모든 현존하는 모바일 브라우저에서 테스트 됨 (Native browser, Chrome, Safari... 등).
 
 * [ ] **Link checker:** ![High][high_img] 페이지 내에 깨진 링크는 없는지, 404 에러가 존재하지 않는지 다시 한번 확인하도록 함
 
-> 🛠 [W3C Link Checker](https://validator.w3.org/checklink)
+> * 🛠 [W3C Link Checker](https://validator.w3.org/checklink)
 
 * [ ] **광고차단기 테스트:** ![Medium][medium_img] 광고차단기가 활성화 된 상태에서도 컨텐츠가 제대로 보여짐 (사람들에게 광고차단기를 비활성화 해달라고 메세지를 알릴수도 있습니다)
 
@@ -310,7 +314,7 @@ browserconfig.xml 파일에서 사용되는 최소한의 XML 내용은 다음과
 * [ ] **CSS 임베딩 또는 인라인:** ![High][high_img] 어떠한 경우에도 CSS를 직접 임베딩하거나 인라인으로 사용하지 마시오: 타당한 이유가 있는 경우에만 사용하시오 (예: 슬라이더 내의 background-image, 또는 CSS critical)
 * [ ] **벤더 프리픽스:** ![High][high_img] CSS 벤더 프리픽스들이 사용되었고 브라우저 지원 호환성에 따라 알맞게 생성되었는지 확인
 
-> 🛠 [Autoprefixer CSS online](https://autoprefixer.github.io/)
+> * 🛠 [Autoprefixer CSS online](https://autoprefixer.github.io/)
 
 ### 성능
 
@@ -339,7 +343,7 @@ browserconfig.xml 파일에서 사용되는 최소한의 XML 내용은 다음과
 
 * [ ] **CSS 검사기:** ![Medium][medium_img] CSS가 제대로 테스트 되었고, 오류들이 알맞게 수정되었음
 
-> 🛠 [CSS 검사기](https://jigsaw.w3.org/css-validator/)
+> * 🛠 [CSS 검사기](https://jigsaw.w3.org/css-validator/)
 
 * [ ] **Reading direction:** ![High][high_img] All pages need to be tested for LTR and RTL languages if they need to be supported.
 
@@ -368,6 +372,9 @@ browserconfig.xml 파일에서 사용되는 최소한의 XML 내용은 다음과
 > ***Note:*** Lots of developers assume that width and height are not compatible with responsive web design. It's absolutely not the case.
 
 * [ ] **Alternative text:** ![High][high_img] All `<img>` have an alternative text which describe the image visually.
+
+> * 📖 [Alt-texts: The Ultimate Guide](https://axesslab.com/alt-texts/)
+
 * [ ] **Lazy loading:** ![Medium][medium_img] Images are lazyloaded (A noscript fallback is always provided).
 
 **[⬆ 목차로](#목차)**
@@ -382,19 +389,19 @@ browserconfig.xml 파일에서 사용되는 최소한의 XML 내용은 다음과
 * [ ] **파일 단일화:** ![High][high_img] 자바스크립트 파일들이 하나의 자바스크립트 파일로 단일화 되었음
 * [ ] **최소화:** ![High][high_img] 모든 자바스크립트 파일이 최소화 되었음(뒤에 `.min` 접미사를 붙이는 것을 추천)
 
-> [리소스(HTML, CSS, and JavaScript) 최소화하기](https://developers.google.com/speed/docs/insights/MinifyResources)
+> * [리소스(HTML, CSS, and JavaScript) 최소화하기](https://developers.google.com/speed/docs/insights/MinifyResources)
 
 * [ ] **자바스크립트 보안:**
 
-> [자바스크립트를 활용하여 보안에 안전한 어플리케이션 개발 가이드라인](https://www.owasp.org/index.php/DOM_based_XSS_Prevention_Cheat_Sheet#Guidelines_for_Developing_Secure_Applications_Utilizing_JavaScript)*
+> * [자바스크립트를 활용하여 보안에 안전한 어플리케이션 개발 가이드라인](https://www.owasp.org/index.php/DOM_based_XSS_Prevention_Cheat_Sheet#Guidelines_for_Developing_Secure_Applications_Utilizing_JavaScript)*
 
 * [ ] **Non-blocking:** ![Medium][medium_img] JavaScript 파일들은 `async`와 `defer` 속성값을 이용하여 비동기적으로 로드 되어야 함
 
-> 📖 [렌더링을 막는 자바스크립트 제거하기](https://developers.google.com/speed/docs/insights/BlockingJS)
+> * 📖 [렌더링을 막는 자바스크립트 제거하기](https://developers.google.com/speed/docs/insights/BlockingJS)
 
 * [ ] **Modernizr:** ![Low][low_img] 특정한 기능을 지칭하고 싶다면, 커스터마이징 된 Modernizr를 이용하여 `<html>` 태그 내에 클래스들을 추가할 수 있음
 
-> 🛠 [당신의 Modernizr 커스터마이징 하기](https://modernizr.com/download?setclasses)
+> * 🛠 [당신의 Modernizr 커스터마이징 하기](https://modernizr.com/download?setclasses)
 
 ### 자바스크립트 테스트 
 
@@ -430,7 +437,7 @@ browserconfig.xml 파일에서 사용되는 최소한의 XML 내용은 다음과
 
 * [ ] **사이트 간 요청 위조(CSRF; Cross Site Request Forgery):** ![High][high_img] CSRF 공격을 방지하기 위하여 위하여 당신의 서버 쪽으로 발생하는 모든 HTTP 요청이 합법적이고 당신의 웹사이트나 어플리케이션으로부터 발생한 것임을 확신함
 
-> 📖 [CSRF 예방 참조서 - OWASP](https://www.owasp.org/index.php/Cross-Site_Request_Forgery_(CSRF)_Prevention_Cheat_Sheet)
+> * 📖 [CSRF 예방 참조서 - OWASP](https://www.owasp.org/index.php/Cross-Site_Request_Forgery_(CSRF)_Prevention_Cheat_Sheet)
 
 * [ ] **사이트 간 스크립팅(XSS; Cross Site Scripting):** ![High][high_img] 당신의 페이지나 웹사이트가 사이트 간 스크립팅이 발생할 여지가 전혀 없음
 
@@ -460,7 +467,7 @@ browserconfig.xml 파일에서 사용되는 최소한의 XML 내용은 다음과
 > * 📖 [페이지 용량을 제한함으로써 웹을 더욱 가볍게 만드세요](https://evilmartians.com/chronicles/size-limit-make-the-web-lighter)
 
 - [ ] **최소화:** ![Medium][medium_img] HTML이 최소화가 되었음
-> 🛠 [W3C 검사기](https://validator.w3.org/)
+> * 🛠 [W3C 검사기](https://validator.w3.org/)
 
 * [ ] **Lazy 로딩:** ![Medium][medium_img] 이미지, 스크립트, CSS 파일들이 lazy 로드 되어서 현 페이지의 응답시간을 향상시킴 (각 섹션의 자세한 부분을 참조하시오).
 
@@ -472,7 +479,7 @@ browserconfig.xml 파일에서 사용되는 최소한의 XML 내용은 다음과
 
 ### Preparing upcoming requests
 
-> 📖 [Explanation of the following techniques](https://css-tricks.com/prefetching-preloading-prebrowsing/)
+> * 📖 [Explanation of the following techniques](https://css-tricks.com/prefetching-preloading-prebrowsing/)
 
 * [ ] **DNS resolution:** ![Low][low_img] DNS of third-party services that may be needed are resolved in advance during idle time using `dns-prefetch`.
 
@@ -498,7 +505,7 @@ browserconfig.xml 파일에서 사용되는 최소한의 XML 내용은 다음과
 <link rel="preload" href="app.js">
 ```
 
-> 📖 [prefetch와 preload의 차이점](https://medium.com/reloading/preload-prefetch-and-priorities-in-chrome-776165961bbf)
+> * 📖 [prefetch와 preload의 차이점](https://medium.com/reloading/preload-prefetch-and-priorities-in-chrome-776165961bbf)
 
 ### 성능 테스트
 
@@ -520,18 +527,18 @@ browserconfig.xml 파일에서 사용되는 최소한의 XML 내용은 다음과
 
 - [ ] **Progressive enhancement:** ![Medium][medium_img] 메인 네비게이션이나 검색과 같은 대다수의 기능들이 자바스크립트가 작동하지 않고도 동작해야 함
 
-> 📖 [Chrome 개발자 도구를 이용하여 자바스크립트 키고 끄기](https://www.youtube.com/watch?v=kBmvq2cE0D8)
+> * 📖 [Chrome 개발자 도구를 이용하여 자바스크립트 키고 끄기](https://www.youtube.com/watch?v=kBmvq2cE0D8)
 
 - [ ] **Color contrast:** ![Medium][medium_img] Color contrast should at least pass WCAG AA (AAA for mobile).
 
-> 🛠 [Contrast ratio](https://leaverou.github.io/contrast-ratio/)
+> * 🛠 [Contrast ratio](https://leaverou.github.io/contrast-ratio/)
 
 #### Headings
 
 * [ ] **H1:** ![High][high_img] All pages have an H1 which is not the title of the website.
 * [ ] **Headings:** ![High][high_img] Headings should be used properly in the right order (H1 to H6).
 
-> 📹 [Why headings and landmarks are so important -- A11ycasts #18](https://www.youtube.com/watch?v=vAAzdi1xuUY&index=9&list=PLNYkxOF6rcICWx0C9LVWWVqvHlYJyqw7g)
+> * 📹 [Why headings and landmarks are so important -- A11ycasts #18](https://www.youtube.com/watch?v=vAAzdi1xuUY&index=9&list=PLNYkxOF6rcICWx0C9LVWWVqvHlYJyqw7g)
 
 #### 랜드마크
 
@@ -539,31 +546,31 @@ browserconfig.xml 파일에서 사용되는 최소한의 XML 내용은 다음과
 - [ ] **navigation 역할:** ![High][high_img] `<nav>` 태그가 `role="navigation"` 속성값을 가지고 있음
 - [ ] **main 역할:** ![High][high_img] `<main>` 태그가 `role="main"` 속성값을 가지고 있음
 
-> 📖 [ARIA 랜드마크를 이용하여 페이지 내의 특정 지점을 식별하기](https://www.w3.org/WAI/GL/wiki/Using_ARIA_landmarks_to_identify_regions_of_a_page)
+> * 📖 [ARIA 랜드마크를 이용하여 페이지 내의 특정 지점을 식별하기](https://www.w3.org/WAI/GL/wiki/Using_ARIA_landmarks_to_identify_regions_of_a_page)
 
 ### 시맨틱
 
 - [ ] **특정한 HTML5의 input 타입들의 사용:** ![Medium][medium_img] 이 항목은 각각 다른 input 타입에 대하여 개별적인 키패드나 위젯을 보여주는 모바일 장치들에 대해 특히 더욱 중요함
 
-> 📖 [모바일 Input 타입](http://mobileinputtypes.com/)
+> * 📖 [모바일 Input 타입](http://mobileinputtypes.com/)
 
 ### 폼
 
 * [ ] **레이블:** ![High][high_img] 레이블은 각각의 입력 폼 엘리먼트와 연관됨. 레이블이 보여질 수 없는 경우 `aria-label` 을 대신 사용하라
 
-> 📖 [aria-label 속성 사용하기 - MDN](https://developer.mozilla.org/en-US/docs/Web/Accessibility/ARIA/ARIA_Techniques/Using_the_aria-label_attribute)
+> * 📖 [aria-label 속성 사용하기 - MDN](https://developer.mozilla.org/en-US/docs/Web/Accessibility/ARIA/ARIA_Techniques/Using_the_aria-label_attribute)
 
 ### 접근성 테스트
 
 * [ ] **접근성 표준 테스트:** ![High][high_img] WAVE 도구를 이용하여 당신의 페이지가 접근성 표준을 만족하였는지 테스트 해보세요
 
-> 🛠 [Wave 테스트](http://wave.webaim.org/)
+> * 🛠 [Wave 테스트](http://wave.webaim.org/)
 
 * [ ] **키보드 네비게이션:** ![High][high_img] 키보드만을 이용하여 웹사이트를 예측 가능하도록 움직일 수 있는지 테스트 하시오. 모든 인터랙티브 엘리먼트들은 접근 가능하고 사용 가능해야 함 
 * [ ] **스크린 리더:** ![Medium][medium_img] 모든 페이지들이 스크린 리더 (VoiceOver, ChromeVox, NVDA or Lynx) 테스트를 완료함
 * [ ] **포커스 스타일링:** ![High][high_img] 포커스 되지 않은 경우, 눈에 보이는 상태의 CSS로 대체되어야 함
 
-> 📹 [포커스 관리하기 - A11ycasts #22](https://www.youtube.com/watch?v=srLRSQg6Jgg&index=5&list=PLNYkxOF6rcICWx0C9LVWWVqvHlYJyqw7g)
+> * 📹 [포커스 관리하기 - A11ycasts #22](https://www.youtube.com/watch?v=srLRSQg6Jgg&index=5&list=PLNYkxOF6rcICWx0C9LVWWVqvHlYJyqw7g)
 
 **[⬆ 목차로](#목차)**
 
@@ -582,6 +589,7 @@ browserconfig.xml 파일에서 사용되는 최소한의 XML 내용은 다음과
 
 > * 📖 [구조화 된 데이터 소개 - Search - Google Developers](https://developers.google.com/search/docs/guides/intro-structured-data)
 > * 🛠 [구조화 된 데이터 테스트 도구](https://developers.google.com/structured-data/testing-tool/)를 이용하여 당신의 페이지를 테스트 해보세요
+> * 🛠 Complete list of vocabularies that can be used as structured data. [Schema.org Full Heirarchy](http://schema.org/docs/full.html)
 
 * [ ] **HTML 사이트맵:** ![Medium][medium_img] HTML 사이트맵이 제공되었으며 웹사이트의 푸터 내에 존재하는 링크를 통하여 접근이 가능함
 
@@ -602,6 +610,7 @@ browserconfig.xml 파일에서 사용되는 최소한의 XML 내용은 다음과
 * 🇨🇳 Chinese: [JohnsenZhou/Front-End-Checklist](https://github.com/JohnsenZhou/Front-End-Checklist)
 * 🇰🇷 Korean: [kesuskim/Front-End-Checklist](https://github.com/kesuskim/Front-End-Checklist)
 * 🇧🇷 Portuguese: [jcezarms/Front-End-Checklist](https://github.com/jcezarms/Front-End-Checklist)
+* 🇻🇳 Vietnamese: [euclid1990/Front-End-Checklist](https://github.com/euclid1990/Front-End-Checklist)
 
 ---
 
