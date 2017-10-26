@@ -73,7 +73,7 @@
 <meta http-equiv="x-ua-compatible" content="ie=edge">
 ```
 
-> * 📖 [Specifying legacy document modes (Internet Explorer)](https://msdn.microsoft.com/en-us/library/jj676915(v=vs.85).aspx)
+> * 📖 [Internet Explorer를 위한 레거시 문서 모드 지정하기](https://msdn.microsoft.com/en-us/library/jj676915(v=vs.85).aspx)
 
 * [ ] **Viewport:** ![High][high_img] Viewport가 제대로 선언됨
 
@@ -85,7 +85,7 @@
 * [ ] **Title:** ![High][high_img] 모든 페이지에 title이 사용됨 (SEO 가이드: 웹사이트의 타이틀을 포함하여 65개 이하의 문자로 구성하기)
 
 ```html
-<!-- Document Title -->
+<!-- 문서의 Title -->
 <title>65개 이하의 문자로 구성된 페이지 제목</title>
 ```
 
@@ -113,7 +113,7 @@
 > * 📖 [Favicons, Touch Icons, Tile Icons, etc. Which Do You Need? - CSS Tricks](https://css-tricks.com/favicon-quiz/)
 > * 📖 [PNG favicons - caniuse](https://caniuse.com/#feat=link-icon-png)
 
-* [ ] **Apple 터치 아이콘:** ![Low][low_img] 아이폰의 모바일 웹 어플리케이션의 아이콘으로 사용되는 favicon을 설정해주는 apple-touch-icon 속성이 사용됨 *(최소한 200x200px의 크기로 Apple 아이콘을 생성하면, 필요한 모든 크기의 아이콘을 지원할 수 있습니다.)*
+* [ ] **Apple 터치 아이콘:** ![Low][low_img] 아이폰의 모바일 웹 어플리케이션의 아이콘으로 사용되는 favicon을 설정해주는 apple-touch-icon 속성을 사용함 *(최소한 200x200px의 크기로 Apple 아이콘을 생성하면, 필요한 모든 크기의 아이콘을 지원할 수 있음)*
 
 ```html
 <!-- Apple 터치 아이콘 -->
@@ -122,7 +122,7 @@
 
 > * 📖 [웹 어플리케이션 설정하기](https://developer.apple.com/library/content/documentation/AppleApplications/Reference/SafariWebContent/ConfiguringWebApplications/ConfiguringWebApplications.html)
 
-- [ ] **윈도우 타일** **Windows Tiles:**![Low][low_img] 윈도우 타일을 설정하는 msapplication-config 속성이 사용함
+- [ ] **윈도우 타일:** ![Low][low_img] 윈도우 타일을 설정하는 msapplication-config 속성을 사용함
 
 ```html
 <!-- Microsoft 타일 -->
@@ -163,9 +163,10 @@ browserconfig.xml 파일에서 사용되는 최소한의 XML 내용은 다음과
 <html lang="ko">
 ```
 
-* [ ] **글자 방향 속성:** ![Medium][medium_img] 글자들의 방향이 제대로 설정됨 (우리나라에서는 좌에서 우로 글씨를 읽고 쓰지만 몇몇 나라에서는 우에서 좌로 읽고 쓰는 경우도 있습니다; right to left, rtl)
+* [ ] **글자 방향 속성:** ![Medium][medium_img] 글자들의 방향이 제대로 설정됨 (우리나라에서는 좌에서 우로 글씨를 읽고 쓰지만 몇몇 나라에서는 우에서 좌로 읽고 쓰는 경우도 있음)
 
 ```html
+<!-- rtl: right to left -->
 <html dir="rtl">
 ```
 
@@ -183,7 +184,7 @@ browserconfig.xml 파일에서 사용되는 최소한의 XML 내용은 다음과
 
 * [ ] **RSS 피드:** ![Low][low_img] 만일 페이지가 블로그이거나 기사가 있다면, RSS 링크에 대해 확인하시오
 
-* [ ] **CSS Critical:** ![Medium][medium_img] The CSS critical (or "above the fold") collects all the CSS used to render the visible portion of the page. It is embedded before your principal CSS call and between `<style></style>` in a single line (minified).
+* [ ] **CSS Critical:** ![Medium][medium_img] CSS critical 또는 "above the fold" 는 페이지 내에 시각적으로 보이는 부분을 렌더링 하는 데에 사용된 CSS 집합이다. CSS critical은 당신의 실질적인 CSS 부분과, `<style></style>` 태그 사이에 최소화 된 상태로 한 줄 추가되어 임베딩 된다.
 
 > * 🛠 [Critical by Addy Osmani on Github](https://github.com/addyosmani/critical)
 
@@ -332,7 +333,7 @@ browserconfig.xml 파일에서 사용되는 최소한의 XML 내용은 다음과
 
 * [ ] **Stylelint:** ![High][high_img] 모든 CSS와 SCSS 파일들에 아무런 에러가 없는지 확인
 
-> * 🛠 [stylelint, a CSS linter](https://stylelint.io/)
+> * 🛠 [stylelint, a CSS 린터](https://stylelint.io/)
 > * 📖 [Sass 가이드라인](https://sass-guidelin.es/)
 
 * [ ] **반응형 웹 디자인:** ![High][high_img] 모든 페이지가 다음 지점에서 테스트 완료되었음: 320px, 768px, 1024px (그 외 당신이 필요한 크기에 따라 다를 수 있음)
@@ -403,7 +404,7 @@ browserconfig.xml 파일에서 사용되는 최소한의 XML 내용은 다음과
 
 * [ ] **ESLint:** ![High][high_img] 표준 규칙이나 당신의 설정에 따라 ESLint를 에러 없이 통과함
 
-> * 📖 [ESLint - The pluggable linting utility for JavaScript and JSX](https://eslint.org/)
+> * 📖 [ESLint - 자바스크립트와 JSX를 위한, 언제든지 사용할 수 있는 린팅 유틸리티](https://eslint.org/)
 
 **[⬆ 목차로](#목차)**
 
@@ -428,8 +429,8 @@ browserconfig.xml 파일에서 사용되는 최소한의 XML 내용은 다음과
 * [ ] **HTTP Strict Transport Security (HSTS):** ![Medium][medium_img] HTTP 헤더 값으로 'Strict-Transport-Security'가 설정됨.
 
 > * 🛠 [Check HSTS preload status and eligibility](https://hstspreload.org/)
-> * 📖 [HTTP Strict Transport Security Cheat Sheet - OWASP](https://www.owasp.org/index.php/HTTP_Strict_Transport_Security_Cheat_Sheet)
-> * 📖 [Transport Layer Protection Cheat Sheet - OWASP](https://www.owasp.org/index.php/Transport_Layer_Protection_Cheat_Sheet)
+> * 📖 [HSTS 참조서 - OWASP](https://www.owasp.org/index.php/HTTP_Strict_Transport_Security_Cheat_Sheet)
+> * 📖 [전송 계층 보안 참조서 - OWASP](https://www.owasp.org/index.php/Transport_Layer_Protection_Cheat_Sheet)
 
 * [ ] **사이트 간 요청 위조(CSRF; Cross Site Request Forgery):** ![High][high_img] CSRF 공격을 방지하기 위하여 위하여 당신의 서버 쪽으로 발생하는 모든 HTTP 요청이 합법적이고 당신의 웹사이트나 어플리케이션으로부터 발생한 것임을 확신함
 
@@ -473,7 +474,7 @@ browserconfig.xml 파일에서 사용되는 최소한의 XML 내용은 다음과
 > * 📖 [쿠키](https://developer.mozilla.org/en-US/docs/Web/HTTP/Cookies)
 > * 🛠 [브라우저 쿠키의 제한점](http://browsercookielimits.squawky.net/)
 
-### Preparing upcoming requests
+### 다음에 발생할 HTTP 요청을 미리 준비하기
 
 > * 📖 [Explanation of the following techniques](https://css-tricks.com/prefetching-preloading-prebrowsing/)
 
@@ -505,7 +506,7 @@ browserconfig.xml 파일에서 사용되는 최소한의 XML 내용은 다음과
 
 ### 성능 테스트
 
-* [ ] **Google PageSpeed:** ![High][high_img] 홈페이지 뿐 아니라 모든 페이지가 테스트 완료 되었고 최소한 100점 만점 90점은 획득하였음.
+* [ ] **Google PageSpeed:** ![High][high_img] 홈페이지 뿐 아니라 모든 페이지가 테스트 완료 되었고 최소한 100점 만점 90점은 획득하였음
 
 > * 🛠 [Google PageSpeed](https://developers.google.com/speed/pagespeed/insights/)
 > * 🛠 [Google에서 모바일 속도를 측정해보세요](https://testmysite.withgoogle.com)
@@ -534,7 +535,7 @@ browserconfig.xml 파일에서 사용되는 최소한의 XML 내용은 다음과
 * [ ] **H1:** ![High][high_img] 모든 페이지 내에 웹사이트의 타이틀과 다른 H1 태그가 존재해야 함
 * [ ] **헤딩:** ![High][high_img] 헤딩이 올바른 순서(H1부터 H6까지)로 적절히 사용되어야 함
 
-> * 📹 [헤딩과 랜드마크가 왜 그렇게나 중요한가 -- A11ycasts #18](https://www.youtube.com/watch?v=vAAzdi1xuUY&index=9&list=PLNYkxOF6rcICWx0C9LVWWVqvHlYJyqw7g)
+> * 📹 [헤딩과 랜드마크가 그렇게 중요한 이유 -- A11ycasts #18](https://www.youtube.com/watch?v=vAAzdi1xuUY&index=9&list=PLNYkxOF6rcICWx0C9LVWWVqvHlYJyqw7g)
 
 #### 랜드마크
 
@@ -552,7 +553,7 @@ browserconfig.xml 파일에서 사용되는 최소한의 XML 내용은 다음과
 
 ### 폼
 
-* [ ] **레이블:** ![High][high_img] 레이블은 각각의 입력 폼 엘리먼트와 연관됨. 레이블이 보여질 수 없는 경우 `aria-label` 을 대신 사용하라
+* [ ] **레이블:** ![High][high_img] 레이블은 각각의 입력 폼 엘리먼트와 연관됨. 레이블이 보여질 수 없는 경우 `aria-label` 을 대신 사용하시오
 
 > * 📖 [aria-label 속성 사용하기 - MDN](https://developer.mozilla.org/en-US/docs/Web/Accessibility/ARIA/ARIA_Techniques/Using_the_aria-label_attribute)
 
@@ -585,7 +586,7 @@ browserconfig.xml 파일에서 사용되는 최소한의 XML 내용은 다음과
 
 > * 📖 [구조화 된 데이터 소개 - Search - Google Developers](https://developers.google.com/search/docs/guides/intro-structured-data)
 > * 🛠 [구조화 된 데이터 테스트 도구](https://developers.google.com/structured-data/testing-tool/)를 이용하여 당신의 페이지를 테스트 해보세요
-> * 🛠 Complete list of vocabularies that can be used as structured data. [Schema.org Full Heirarchy](http://schema.org/docs/full.html)
+> * 🛠 구조화 된 데이터로 사용될 수 있는 단어들의 목록을 만들어보세요 [Schema.org Full Heirarchy](http://schema.org/docs/full.html)
 
 * [ ] **HTML 사이트맵:** ![Medium][medium_img] HTML 사이트맵이 제공되었으며 웹사이트의 푸터 내에 존재하는 링크를 통하여 접근이 가능함
 
