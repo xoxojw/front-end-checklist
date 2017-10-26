@@ -55,11 +55,7 @@
 <!doctype html>
 ```
 
-<<<<<<< HEAD
 > 📖 [문자 인코딩 결정하기 - HTML5 W3C](https://www.w3.org/TR/html5/syntax.html#determining-the-character-encoding)
-=======
-> * 📖 [Determining the character encoding - HTML5 W3C](https://www.w3.org/TR/html5/syntax.html#determining-the-character-encoding)
->>>>>>> upstream/master
 
 *다음 3개의 메타 태그(Charset, X-UA Compatible and Viewport)들은 다른 요소들에 비해 head 안에서도 상단에 위치해야만 합니다.*
 
@@ -185,7 +181,7 @@ browserconfig.xml 파일에서 사용되는 최소한의 XML 내용은 다음과
 
 > * 📖 [조건부 주석에 관하여 (Internet Explorer) - MSDN - Microsoft](https://msdn.microsoft.com/en-us/library/ms537512(v=vs.85).aspx)
 
-* [ ] **RSS 피드:** ![Low][low_img] 만일 페이지가 블로그이거나 기사가 있다면, RSS 링크에 대해 확인하도록 하자
+* [ ] **RSS 피드:** ![Low][low_img] 만일 페이지가 블로그이거나 기사가 있다면, RSS 링크에 대해 확인하시오
 
 * [ ] **CSS Critical:** ![Medium][medium_img] The CSS critical (or "above the fold") collects all the CSS used to render the visible portion of the page. It is embedded before your principal CSS call and between `<style></style>` in a single line (minified).
 
@@ -225,7 +221,7 @@ browserconfig.xml 파일에서 사용되는 최소한의 XML 내용은 다음과
 ```
 
 > * 📖 [Twitter cards 시작하기 — Twitter Developers](https://developer.twitter.com/en/docs/tweets/optimize-with-cards/guides/getting-started)
-> * 🛠 [Twitter card validator](https://cards-dev.twitter.com/validator) 도구를 이용하여 당신의 페이지 테스트하기
+> * 🛠 [Twitter card 검사기](https://cards-dev.twitter.com/validator) 도구를 이용하여 당신의 페이지 테스트하기
 
 **[⬆ 목차로](#목차)**
 
@@ -251,7 +247,7 @@ browserconfig.xml 파일에서 사용되는 최소한의 XML 내용은 다음과
 
 * [ ] **W3C 규격:** ![High][high_img] 모든 페이지는 HTML 코드 내에서 일어날 수 있는 경우를 확인하기 위하여 W3C 의 validator를 이용하여 테스트 되어야 함
 
-> * 🛠 [W3C validator](https://validator.w3.org/)
+> * 🛠 [W3C 검사기](https://validator.w3.org/)
 
 * [ ] **HTML Lint:** ![High][high_img] 도구를 이용하여 HTML 코드 내에 발생할 수 있는 문제들을 분석하도록 하자
 
@@ -360,22 +356,22 @@ browserconfig.xml 파일에서 사용되는 최소한의 XML 내용은 다음과
 
 ### 모범 사례
 
-* [ ] **최적화:** ![High][high_img] All images are optimized to be rendered in the browser. WebP format could be used for critical pages (like Homepage).
+* [ ] **최적화:** ![High][high_img] 모든 이미지가 브라우저에 렌더링 될 수 있도록 최적화 되었나? 홈페이지 같이 성능이 중요한 페이지에는 WebP 포맷을 사용할 수도 있습니다.
 
 > * 🛠 [Imagemin](https://github.com/imagemin/imagemin)
 > * 🛠 [ImageOptim](https://imageoptim.com/)를 사용하여 당신의 이미지를 무료로 최적화하세요
 
-* [ ] **Retina:** ![Low][low_img] You provide layout images x2 or 3x, support retina display.
-* [ ] **Sprite:** ![Medium][medium_img] Small images are in a sprite file (in the case of icons, they can be in an SVG sprite image).
-* [ ] **Width and Height:** ![High][high_img] All `<img>` have height and width set (Don't specify px or %).
+* [ ] **레티나 디스플레이 지원:** ![Low][low_img] 레티나 디스플레이를 지원하기 위하여 당신의 현 레이아웃에 해당하는 2배, 또는 3배 이상 큰 이미지를 지원함
+* [ ] **[이미지 스프라이트](https://www.w3schools.com/css/css_image_sprites.asp):** ![Medium][medium_img] 작은 이미지의 경우 스프라이트 파일로 구성되어져 있음 (아이콘의 경우, SVG 스프라이트 이미지 일 수도 있음).
+* [ ] **너비와 높이:** ![High][high_img] 모든 `<img>` 태그에 너비와 높이가 설정되었음 (px이나 %로 지정하지 마시오)
 
-> ***Note:*** Lots of developers assume that width and height are not compatible with responsive web design. It's absolutely not the case.
+> ***노트:*** 많은 개발자들이 반응형 웹 디자인에 너비와 높이를 지정하는 것은 안 좋을 것이라고 생각하는데, 절대 그렇지 않습니다.
 
-* [ ] **Alternative text:** ![High][high_img] All `<img>` have an alternative text which describe the image visually.
+* [ ] **대체 텍스트:** ![High][high_img] 모든 `<img>` 태그가 이미지를 잘 서술하는 대체 텍스트를 가지고 있음 (`alt` 속성으로 부여)
 
-> * 📖 [Alt-texts: The Ultimate Guide](https://axesslab.com/alt-texts/)
+> * 📖 [대체 텍스트: 최고의 가이드](https://axesslab.com/alt-texts/)
 
-* [ ] **Lazy loading:** ![Medium][medium_img] Images are lazyloaded (A noscript fallback is always provided).
+* [ ] **Lazy 로딩:** ![Medium][medium_img] 이미지들이 lazy 로드 됨 (자바스크립트 미지원에 대한 예외처리가 항상 제공 되어야 함)
 
 **[⬆ 목차로](#목차)**
 
@@ -579,7 +575,7 @@ browserconfig.xml 파일에서 사용되는 최소한의 XML 내용은 다음과
 ## SEO
 
 * [ ] **구글 애널리틱스:** ![High][high_img] 구글 애널리틱스가 설치되었고 제대로 설정되었음
-* [ ] **Headings logic:** ![Medium][medium_img] Heading text helps to understand the content in the current page.
+* [ ] **적절한 제목 배치:** ![Medium][medium_img] 제목은 현 페이지의 내용을 이해하는 데에 도움을 줌
 * [ ] **sitemap.xml:** ![High][high_img] sitemap.xml 파일이 존재하고 Google Search Console(예전 이름: Google Webmaster Tools)으로 제출되었음
 * [ ] **robots.txt:** ![High][high_img] robots.txt 파일이 웹페이지를 블록킹 하지 않음
 
