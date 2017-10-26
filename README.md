@@ -82,7 +82,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1">
 ```
 
-* [ ] **Title:** ![High][high_img] 모든 페이지에 title이 사용됨 (SEO 가이드: 웹사이트의 타이틀을 포함하여 65개 이하의 문자로 구성하기).
+* [ ] **Title:** ![High][high_img] 모든 페이지에 title이 사용됨 (SEO 가이드: 웹사이트의 타이틀을 포함하여 65개 이하의 문자로 구성하기)
 
 ```html
 <!-- Document Title -->
@@ -251,7 +251,7 @@ browserconfig.xml 파일에서 사용되는 최소한의 XML 내용은 다음과
 
 * [ ] **HTML Lint:** ![High][high_img] 도구를 이용하여 HTML 코드 내에 발생할 수 있는 문제들을 분석하도록 하자
 
-> * 🛠 [Dirty markup](https://dirtymarkup.com/)
+> * 🛠 [Dirty markup](https://dirtymarkup.com/): HTML 코드를 정돈해주는 온라인 도구
 
 * [ ] **데스크탑 브라우저:** ![High][high_img] 모든 페이지가 모든 현존하는 데스크탑 브라우저에서 테스트 됨 (Safari, Firefox, Chrome, Internet Explorer, EDGE... 등).
 * [ ] **모바일 브라우저:**  ![High][high_img] 모든 페이지가 모든 현존하는 모바일 브라우저에서 테스트 됨 (Native browser, Chrome, Safari... 등).
@@ -299,7 +299,7 @@ browserconfig.xml 파일에서 사용되는 최소한의 XML 내용은 다음과
 > * 📖 [Normalize.css](https://necolas.github.io/normalize.css/)
 > * 📖 [Reboot](https://getbootstrap.com/docs/4.0/content/reboot/)
 
-* [ ] **JS 접두사:** ![Low][low_img] **js-**로 시작하는 자바스크립트 파일 내에서 사용되는 모든 클래스나 ID는 CSS 파일에서 스타일링 되지 않도록 함
+* [ ] **JS 접두사:** ![Low][low_img] **js**-로 시작하는 자바스크립트 파일 내에서 사용되는 모든 클래스나 ID는 CSS 파일에서 스타일링 되지 않도록 함
 
 ```html
 <div id="js-slider" class="my-slider">
@@ -529,12 +529,12 @@ browserconfig.xml 파일에서 사용되는 최소한의 XML 내용은 다음과
 
 > * 🛠 [Contrast ratio](https://leaverou.github.io/contrast-ratio/)
 
-#### Headings
+#### 헤딩
 
-* [ ] **H1:** ![High][high_img] All pages have an H1 which is not the title of the website.
-* [ ] **Headings:** ![High][high_img] Headings should be used properly in the right order (H1 to H6).
+* [ ] **H1:** ![High][high_img] 모든 페이지 내에 웹사이트의 타이틀과 다른 H1 태그가 존재해야 함
+* [ ] **헤딩:** ![High][high_img] 헤딩이 올바른 순서(H1부터 H6까지)로 적절히 사용되어야 함
 
-> * 📹 [Why headings and landmarks are so important -- A11ycasts #18](https://www.youtube.com/watch?v=vAAzdi1xuUY&index=9&list=PLNYkxOF6rcICWx0C9LVWWVqvHlYJyqw7g)
+> * 📹 [헤딩과 랜드마크가 왜 그렇게나 중요한가 -- A11ycasts #18](https://www.youtube.com/watch?v=vAAzdi1xuUY&index=9&list=PLNYkxOF6rcICWx0C9LVWWVqvHlYJyqw7g)
 
 #### 랜드마크
 
