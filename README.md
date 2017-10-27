@@ -94,9 +94,11 @@
 * [ ] **Description:** ![High][high_img] description이 제대로 기재됨 (설명값은 고유해야 하며, 150개 이하의 문자로 구성되어야 함)
 
 ```html
-<!-- 메타 설명 -->
+<!-- Meta Description -->
 <meta name="description" content="페이지에 대한 설명 (150개 이하의 문자)">
 ```
+
+> * 📖[Meta Description - HTML - MDN](https://developer.mozilla.org/en-US/docs/Learn/HTML/Introduction_to_HTML/The_head_metadata_in_HTML#Adding_an_author_and_description)
 
 * [ ] **Favicons:** ![Medium][medium_img] 각각의 favicon이 제대로 생성되었고 올바르게 보여지는가? 만약 `favicon.ico` 파일만 가지고 있다면, 해당 내용을 페이지의 상단부에 추가하라. 일반적으로는 해당 태그를 사용할 필요는 없지만, 아래의 예시를 포함하는 것이 좋은 습관임. 오늘날에는 `.ico` 포맷보다 **PNG 포맷의 아이콘 사용을 추천**함(크기: 32x32px).
 
@@ -154,10 +156,11 @@ browserconfig.xml 파일에서 사용되는 최소한의 XML 내용은 다음과
 <link rel="canonical" href="http://example.com/2017/09/a-new-article-to-red.html">
 ```
 
-### HTML 태그
+
 > * 📖 [표준 URL을 사용하기 - Search Console Help - Google Support](https://support.google.com/webmasters/answer/139066?hl=en)
 > * 📖 [rel=canonical을 사용할 때 흔히 겪는 5가지 실수 - Google Webmaster Blog](https://webmasters.googleblog.com/2013/04/5-common-mistakes-with-relcanonical.html)
 
+### HTML 태그
 * [ ] **언어 속성:** ![High][high_img] 현재 페이지 내의 언어에 알맞게 속성 값이 부여됨
 ```html
 <html lang="ko">
@@ -308,7 +311,7 @@ browserconfig.xml 파일에서 사용되는 최소한의 XML 내용은 다음과
 <div id="id-used-by-cms" class="js-slider my-slider">
 ```
 
-* [ ] **CSS 임베딩 또는 인라인:** ![High][high_img] 어떠한 경우에도 CSS를 직접 임베딩하거나 인라인으로 사용하지 마시오: 타당한 이유가 있는 경우에만 사용하시오 (예: 슬라이더 내의 background-image, 또는 CSS critical)
+* [ ] **CSS 임베딩 또는 인라인:** ![High][high_img] 어떠한 경우에도 CSS를 직접 임베딩하거나 인라인으로 사용하지 마시오! 타당한 이유가 있는 경우에만 사용하시오 (예: 슬라이더 내의 background-image, 또는 CSS critical)
 * [ ] **벤더 프리픽스:** ![High][high_img] CSS 벤더 프리픽스들이 사용되었고 브라우저 지원 호환성에 따라 알맞게 생성되었는지 확인
 
 > * 🛠 [Autoprefixer CSS online](https://autoprefixer.github.io/)
@@ -365,9 +368,6 @@ browserconfig.xml 파일에서 사용되는 최소한의 XML 내용은 다음과
 * [ ] **레티나 디스플레이 지원:** ![Low][low_img] 레티나 디스플레이를 지원하기 위하여 당신의 현 레이아웃에 해당하는 2배, 또는 3배 이상 큰 이미지를 지원함
 * [ ] **[이미지 스프라이트](https://www.w3schools.com/css/css_image_sprites.asp):** ![Medium][medium_img] 작은 이미지의 경우 스프라이트 파일로 구성되어져 있음 (아이콘의 경우, SVG 스프라이트 이미지 일 수도 있음).
 * [ ] **너비와 높이:** ![High][high_img] 모든 `<img>` 태그에 너비와 높이가 설정되었음 (px이나 %로 지정하지 마시오)
-
-> ***노트:*** 많은 개발자들이 반응형 웹 디자인에 너비와 높이를 지정하는 것은 안 좋을 것이라고 생각하는데, 절대 그렇지 않습니다.
-
 * [ ] **대체 텍스트:** ![High][high_img] 모든 `<img>` 태그가 이미지를 잘 서술하는 대체 텍스트를 가지고 있음 (`alt` 속성으로 부여)
 
 > * 📖 [대체 텍스트: 최고의 가이드](https://axesslab.com/alt-texts/)
@@ -473,6 +473,10 @@ browserconfig.xml 파일에서 사용되는 최소한의 XML 내용은 다음과
 > * 📖 [쿠키 사양: RFC 6265](https://tools.ietf.org/html/rfc6265)
 > * 📖 [쿠키](https://developer.mozilla.org/en-US/docs/Web/HTTP/Cookies)
 > * 🛠 [브라우저 쿠키의 제한점](http://browsercookielimits.squawky.net/)
+
+* [ ] **서드 파티 컴포넌트:** ![Medium][medium_img] 공유하기 버튼처럼 외부 자바스크립트 파일에 의존하는 서드파티 iframe이나 컴포넌트의 경우, 가급적 정적인 컴포넌트로 교체하여서 외부 API 호출을 제한하고 사용자들의 활동들을 외부로 유출되지 않도록 하시오
+
+> * 🛠 [간단한 공유하기 버튼 생성기](https://simplesharingbuttons.com/)
 
 ### 다음에 발생할 HTTP 요청을 미리 준비하기
 
