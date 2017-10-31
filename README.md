@@ -86,7 +86,7 @@
 
 ```html
 <!-- 문서의 Title -->
-<title>65개 이하의 문자로 구성된 페이지 제목</title>
+<title>55개 이하의 문자로 구성된 페이지 제목</title>
 ```
 
 > * 📖 [Title - HTML - MDN](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/title)
@@ -264,6 +264,8 @@ browserconfig.xml 파일에서 사용되는 최소한의 XML 내용은 다음과
 
 > * 🛠 [Dirty markup](https://dirtymarkup.com/): HTML 코드를 정돈해주는 온라인 도구
 
+> * 🛠 [Sonar a linting tool for the web](https://sonarwhal.com/)
+
 * [ ] **Link checker:** ![High][high_img] 페이지 내에 깨진 링크는 없는지, 404 에러가 존재하지 않는지 다시 한번 확인하도록 함
 
 > * 🛠 [W3C Link Checker](https://validator.w3.org/checklink)
@@ -278,6 +280,7 @@ browserconfig.xml 파일에서 사용되는 최소한의 XML 내용은 다음과
 ## 웹폰트
 
 > **노트:** 웹폰트를 사용하면 스타일링 되지 않은 글자나 보이지 않는 글자들이 깜빡일 수 있습니다. 실패했을 경우를 대비한 대체용 폰트를 포함하거나, 웹폰트 로더를 활용하여 이러한 동작들을 제어하세요.
+> * 📖 [구글의 웹폰트에 대한 기술적 고려사항](https://developers.google.com/fonts/docs/technical_considerations)
 
 * [ ] **웹폰트 포맷:** ![High][high_img] WOFF, WOFF2 와 TTF는 모든 최신 브라우저에서 지원됨
 
@@ -373,10 +376,11 @@ browserconfig.xml 파일에서 사용되는 최소한의 XML 내용은 다음과
 
 ### 모범 사례
 
-* [ ] **최적화:** ![High][high_img] 모든 이미지가 브라우저에 렌더링 될 수 있도록 최적화 되었나? 홈페이지 같이 성능이 중요한 페이지에는 WebP 포맷을 사용할 수도 있습니다.
+* [ ] **최적화:** ![High][high_img] 모든 이미지가 브라우저에 렌더링 될 수 있도록 최적화 되었나? 홈페이지 같이 성능이 중요한 페이지에는 WebP 포맷을 사용할 수도 있음
 
 > * 🛠 [Imagemin](https://github.com/imagemin/imagemin)
 > * 🛠 [ImageOptim](https://imageoptim.com/)를 사용하여 당신의 이미지를 무료로 최적화하세요
+> * 🛠 [Kraken.io](https://kraken.io/web-interface)를 사용하여 깔쌈한 png 이미지와 jpg 이미지의 최적화를 수행할 수 있습니다. 파일당 1MB의 크기에 대해서는 무료입니다
 
 * [ ] **Picture/Srcset:** ![Medium][medium_img] You use picture/srcset to provide the most appropriate image for the current viewport of the user.
 
@@ -417,7 +421,7 @@ browserconfig.xml 파일에서 사용되는 최소한의 XML 내용은 다음과
 
 > * 🛠 [당신의 Modernizr 커스터마이징 하기](https://modernizr.com/download?setclasses)
 
-### 자바스크립트 테스트 
+### 자바스크립트 테스트
 
 * [ ] **ESLint:** ![High][high_img] 표준 규칙이나 당신의 설정에 따라 ESLint를 에러 없이 통과함
 
@@ -466,6 +470,12 @@ browserconfig.xml 파일에서 사용되는 최소한의 XML 내용은 다음과
 
 > * 📖 [X-Frame-Options - Scott Helme](https://scotthelme.co.uk/hardening-your-http-response-headers/#x-frame-options)
 > * 📖 [RFC7034 - HTTP Header Field X-Frame-Options](https://tools.ietf.org/html/rfc7034)
+
+* [ ] **컨텐츠 보안 정책(CSP; Content Security Policy)** ![Medium][medium_img] 사이트 내의 컨텐츠가 어떻게 로딩되고, 어디서 로딩되도록 허가받았는지를 확인. 이를 적용함으로써 클릭재킹 공격을 방지할 수 있음
+
+> * 📖 [컨텐츠 보안 정책 소개 - Scott Helme](https://scotthelme.co.uk/content-security-policy-an-introduction/)
+> * 📖 [컨텐츠 보안 정책 가이드라인 - Scott Helme](https://scotthelme.co.uk/csp-cheat-sheet/)
+> * 📖 [컨텐츠 보안 정책 가이드라인 - OWASP](https://www.owasp.org/index.php/Content_Security_Policy_Cheat_Sheet)
 
 **[⬆ 목차로](#목차)**
 
@@ -532,6 +542,7 @@ browserconfig.xml 파일에서 사용되는 최소한의 XML 내용은 다음과
 > * 🛠 [Google PageSpeed](https://developers.google.com/speed/pagespeed/insights/)
 > * 🛠 [Google에서 모바일 속도를 측정해보세요](https://testmysite.withgoogle.com)
 > * 🛠 [WebPagetest - 웹사이트 성능 및 최적화 테스트](https://www.webpagetest.org/)
+> * 🛠 [GTmetrix - 웹사이드 속도 및 성능 최적화](https://gtmetrix.com/)
 
 **[⬆ 목차로](#목차)**
 
@@ -565,6 +576,7 @@ browserconfig.xml 파일에서 사용되는 최소한의 XML 내용은 다음과
 - [ ] **main 역할:** ![High][high_img] `<main>` 태그가 `role="main"` 속성값을 가지고 있음
 
 > * 📖 [ARIA 랜드마크를 이용하여 페이지 내의 특정 지점을 식별하기](https://www.w3.org/WAI/GL/wiki/Using_ARIA_landmarks_to_identify_regions_of_a_page)
+> * 📖 [ARIA 역할의 범주](https://www.w3.org/TR/wai-aria/roles#roles_categorization)
 
 ### 시맨틱
 
@@ -584,7 +596,7 @@ browserconfig.xml 파일에서 사용되는 최소한의 XML 내용은 다음과
 
 > * 🛠 [Wave 테스트](http://wave.webaim.org/)
 
-* [ ] **키보드 네비게이션:** ![High][high_img] 키보드만을 이용하여 웹사이트를 예측 가능하도록 움직일 수 있는지 테스트 하시오. 모든 인터랙티브 엘리먼트들은 접근 가능하고 사용 가능해야 함 
+* [ ] **키보드 네비게이션:** ![High][high_img] 키보드만을 이용하여 웹사이트를 예측 가능하도록 움직일 수 있는지 테스트 하시오. 모든 인터랙티브 엘리먼트들은 접근 가능하고 사용 가능해야 함
 * [ ] **스크린 리더:** ![Medium][medium_img] 모든 페이지들이 스크린 리더 (VoiceOver, ChromeVox, NVDA or Lynx) 테스트를 완료함
 * [ ] **포커스 스타일링:** ![High][high_img] 포커스 되지 않은 경우, 눈에 보이는 상태의 CSS로 대체되어야 함
 
