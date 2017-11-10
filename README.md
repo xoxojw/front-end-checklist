@@ -681,7 +681,7 @@ browserconfig.xml 파일에서 사용되는 최소한의 XML 내용은 다음과
 
 이 브랜치는 필요하다면 구조나 컨텐츠에 상당한 변화를 줄 수 있습니다. 간단한 에러 수정을 하거나 새로운 항목을 추가할 경우, master 브랜치에 직접 하는 것을 추천드립니다.
 
-## 서포트
+## support
 
 질문이나 제안이 있다면, 주저하지 말고 Gitter나 Twitter를 이용하세요:
 
@@ -693,20 +693,20 @@ browserconfig.xml 파일에서 사용되는 최소한의 XML 내용은 다음과
 
 **[David Dias](https://github.com/thedaviddias/Front-End-Checklist)**
 
-## 컨트리뷰터
+## contributors
 
 This project exists thanks to all the people who contribute. [[Contribute]](CONTRIBUTING.md).
 <a href="graphs/contributors"><img src="https://opencollective.com/front-end-checklist/contributors.svg?width=890" /></a>
 
 
-## 후원자
+## backers
 
 Thank you to all our backers! 🙏 [[Become a backer](https://opencollective.com/front-end-checklist#backer)]
 
 <a href="https://opencollective.com/front-end-checklist#backers" target="_blank"><img src="https://opencollective.com/front-end-checklist/backers.svg?width=890"></a>
 
 
-## 스폰서
+## sponsors
 
 Support this project by becoming a sponsor. Your logo will show up here with a link to your website. [[Become a sponsor](https://opencollective.com/front-end-checklist#sponsor)]
 
