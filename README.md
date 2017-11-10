@@ -2,6 +2,7 @@
 
 [![Join the chat at https://gitter.im/Front-End-Checklist/Lobby](https://badges.gitter.im/Front-End-Checklist/Lobby.svg)](https://gitter.im/Front-End-Checklist/Lobby?utm_source=badge&utm_medium=badge&utm_campaign=pr-badge&utm_content=badge)
 [![Front‑End_Checklist followed](https://img.shields.io/badge/Front‑End_Checklist-followed-brightgreen.svg)](https://github.com/thedaviddias/Front-End-Checklist/)
+[![Backers on Open Collective](https://opencollective.com/front-end-checklist/backers/badge.svg)](#backers) [![Sponsors on Open Collective](https://opencollective.com/front-end-checklist/sponsors/badge.svg)](#sponsors)
 [![Contributors](https://img.shields.io/github/contributors/thedaviddias/Front-End-Checklist.svg)](https://github.com/thedaviddias/Front-End-Checklist/graphs/contributors)
 [![StackShare](https://img.shields.io/badge/tech-stack-0690fa.svg?style=flat)](https://stackshare.io/thedaviddias/front-end-checklist)
 [![CC0](https://img.shields.io/badge/license-CC0-green.svg)](https://creativecommons.org/publicdomain/zero/1.0/)
@@ -86,7 +87,7 @@
 
 ```html
 <!-- 문서의 Title -->
-<title>65개 이하의 문자로 구성된 페이지 제목</title>
+<title>55개 이하의 문자로 구성된 페이지 제목</title>
 ```
 
 > * 📖 [Title - HTML - MDN](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/title)
@@ -189,7 +190,6 @@ browserconfig.xml 파일에서 사용되는 최소한의 XML 내용은 다음과
 * [ ] **RSS 피드:** ![Low][low_img] 만일 페이지가 블로그이거나 기사가 있다면, RSS 링크에 대해 확인하시오
 
 * [ ] **인라인 CSS Critical:** ![Medium][medium_img] 페이지가 로딩되는 즉시(펼쳐지는 그 순간) 컨텐츠에 영향을 끼치는 CSS를 "critical CSS" 라고 함. 이는 당신의 실질적인 어플리케이션의 CSS 가 로딩되기 이전에 `<style></style>` 태그 사이에 최소화 된 상태로 한 줄로 추가되어 임베딩 됨
-
 > * 🛠 [Critical by Addy Osmani on Github](https://github.com/addyosmani/critical) 이 레포는 CSS Critical을 자동화 하는데에 도움을 줍니다.
 
 * [ ] **CSS의 순서:** ![High][high_img] 모든 CSS 파일이 `<head>` 내에서 자바스크립트 파일보다 이전에 로딩이 완료됨 (자바스크립트 파일이 비동기적으로 로딩되는 특정한 경우는 제외함).
@@ -200,7 +200,7 @@ browserconfig.xml 파일에서 사용되는 최소한의 XML 내용은 다음과
 
 * [ ] **Facebook Open Graph:** ![Low][low_img] 모든 Facebook의 Open Graph (OG) 가 테스트 되었으며, 그것들 중에 누락된 정보나 잘못된 정보를 가지고 있지는 않나? (이미지의 경우 최소한 600 x 315 픽셀은 되어야 하며, 1200 x 630 픽셀 크기를 권장함)
 
-> **Notes:** Using use `og:image:width` and `og:image:height` will specify the image dimensions to the crawler so that it can render the image immediately without having to asynchronously download and process it.
+> **Notes:** Using `og:image:width` and `og:image:height` will specify the image dimensions to the crawler so that it can render the image immediately without having to asynchronously download and process it.
 
 ```html
 <meta property="og:type" content="website">
@@ -264,6 +264,7 @@ browserconfig.xml 파일에서 사용되는 최소한의 XML 내용은 다음과
 
 > * 🛠 [Dirty markup](https://dirtymarkup.com/): HTML 코드를 정돈해주는 온라인 도구
 
+> * 🛠 [Sonar a linting tool for the web](https://sonarwhal.com/)
 * [ ] **Link checker:** ![High][high_img] 페이지 내에 깨진 링크는 없는지, 404 에러가 존재하지 않는지 다시 한번 확인하도록 함
 
 > * 🛠 [W3C Link Checker](https://validator.w3.org/checklink)
@@ -278,6 +279,7 @@ browserconfig.xml 파일에서 사용되는 최소한의 XML 내용은 다음과
 ## 웹폰트
 
 > **노트:** 웹폰트를 사용하면 스타일링 되지 않은 글자나 보이지 않는 글자들이 깜빡일 수 있습니다. 실패했을 경우를 대비한 대체용 폰트를 포함하거나, 웹폰트 로더를 활용하여 이러한 동작들을 제어하세요.
+> * 📖 [Google Technical considerations about webfonts](https://developers.google.com/fonts/docs/technical_considerations)
 
 * [ ] **웹폰트 포맷:** ![High][high_img] WOFF, WOFF2 와 TTF는 모든 최신 브라우저에서 지원됨
 
@@ -377,8 +379,9 @@ browserconfig.xml 파일에서 사용되는 최소한의 XML 내용은 다음과
 
 > * 🛠 [Imagemin](https://github.com/imagemin/imagemin)
 > * 🛠 [ImageOptim](https://imageoptim.com/)를 사용하여 당신의 이미지를 무료로 최적화하세요
+> * 🛠 [Kraken.io](https://kraken.io/web-interface)를 사용하여 png와 jpg을 꽤나 대단하게 최적화 할 수 있습니다. 파일 당 1MB에 대해서는 무료입니다.
 
-* [ ] **Picture/Srcset:** ![Medium][medium_img] You use picture/srcset to provide the most appropriate image for the current viewport of the user.
+* [ ] **Picture/Srcset:** ![Medium][medium_img] picture와 srcset을 이용하여 사용자의 현재 뷰포트에 가장 적합한 이미지를 제공하였음
 
 > * 📖 [srcset을 사용하여 반응형 이미지 만드는 방법](https://www.sitepoint.com/how-to-build-responsive-images-with-srcset/)
 
@@ -467,6 +470,12 @@ browserconfig.xml 파일에서 사용되는 최소한의 XML 내용은 다음과
 > * 📖 [X-Frame-Options - Scott Helme](https://scotthelme.co.uk/hardening-your-http-response-headers/#x-frame-options)
 > * 📖 [RFC7034 - HTTP Header Field X-Frame-Options](https://tools.ietf.org/html/rfc7034)
 
+* [ ] **Content Security Policy** ![Medium][medium_img] Defines how content is loaded on your site and from where it is permitted to be loaded. Can also be used to protect against clickjacking attacks.
+
+> * 📖 [Content Security Policy - An Introduction - Scott Helme](https://scotthelme.co.uk/content-security-policy-an-introduction/)
+> * 📖 [CSP Cheat Sheet - Scott Helme](https://scotthelme.co.uk/csp-cheat-sheet/)
+> * 📖 [CSP Cheat Sheet - OWASP](https://www.owasp.org/index.php/Content_Security_Policy_Cheat_Sheet)
+
 **[⬆ 목차로](#목차)**
 
 ---
@@ -481,7 +490,6 @@ browserconfig.xml 파일에서 사용되는 최소한의 XML 내용은 다음과
 > * 📖 [페이지 용량을 제한함으로써 웹을 더욱 가볍게 만드세요](https://evilmartians.com/chronicles/size-limit-make-the-web-lighter)
 
 - [ ] **최소화:** ![Medium][medium_img] HTML이 최소화가 되었음
-> * 🛠 [W3C 검사기](https://validator.w3.org/)
 
 * [ ] **Lazy 로딩:** ![Medium][medium_img] 이미지, 스크립트, CSS 파일들이 lazy 로드 되어서 현 페이지의 응답시간을 향상시킴 (각 섹션의 자세한 부분을 참조하시오).
 
@@ -505,7 +513,7 @@ browserconfig.xml 파일에서 사용되는 최소한의 XML 내용은 다음과
 <link rel="dns-prefetch" href="https://example.com">
 ```
 
-* [ ] **Preconnection:** ![Low][low_img] DNS lookup, TCP handshake and TLS negociation with services that will be needed soon is done in advance during idle time using `preconnect`.
+* [ ] **Preconnection:** ![Low][low_img] DNS lookup, TCP handshake and TLS negotiation with services that will be needed soon is done in advance during idle time using `preconnect`.
 
 ```html
 <link rel="preconnect" href="https://example.com">
@@ -532,6 +540,7 @@ browserconfig.xml 파일에서 사용되는 최소한의 XML 내용은 다음과
 > * 🛠 [Google PageSpeed](https://developers.google.com/speed/pagespeed/insights/)
 > * 🛠 [Google에서 모바일 속도를 측정해보세요](https://testmysite.withgoogle.com)
 > * 🛠 [WebPagetest - 웹사이트 성능 및 최적화 테스트](https://www.webpagetest.org/)
+> * 🛠 [GTmetrix - 웹사이트 속도 및 성능 최적화](https://gtmetrix.com/)
 
 **[⬆ 목차로](#목차)**
 
@@ -565,6 +574,7 @@ browserconfig.xml 파일에서 사용되는 최소한의 XML 내용은 다음과
 - [ ] **main 역할:** ![High][high_img] `<main>` 태그가 `role="main"` 속성값을 가지고 있음
 
 > * 📖 [ARIA 랜드마크를 이용하여 페이지 내의 특정 지점을 식별하기](https://www.w3.org/WAI/GL/wiki/Using_ARIA_landmarks_to_identify_regions_of_a_page)
+> * 📖 [ARIA 역할 분류](https://www.w3.org/TR/wai-aria/roles#roles_categorization)
 
 ### 시맨틱
 
@@ -608,12 +618,14 @@ browserconfig.xml 파일에서 사용되는 최소한의 XML 내용은 다음과
 > * 📖 [구조화 된 데이터 소개 - Search - Google Developers](https://developers.google.com/search/docs/guides/intro-structured-data)
 > * 🛠 [구조화 된 데이터 테스트 도구](https://developers.google.com/structured-data/testing-tool/)를 이용하여 당신의 페이지를 테스트 해보세요
 > * 🛠 구조화 된 데이터로 사용될 수 있는 단어들의 목록을 만들어보세요 [Schema.org Full Heirarchy](http://schema.org/docs/full.html)
+> * 📖 [RDFa - Linked Data in HTML](https://rdfa.info/)
+> * 📖 [JSON-LD](https://json-ld.org/)
+> * 📖 [Microdata](https://www.w3.org/TR/microdata/)
 
 * [ ] **HTML 사이트맵:** ![Medium][medium_img] HTML 사이트맵이 제공되었으며 웹사이트의 푸터 내에 존재하는 링크를 통하여 접근이 가능함
 
 > * 📖 [사이트맵 가이드라인 - Google Support](https://support.google.com/webmasters/answer/183668?hl=en)
 > * 🛠 [Sitemap 생성기](https://websiteseochecker.com/html-sitemap-generator/)
-
 
 **[⬆ 목차로](#목차)**
 
@@ -630,6 +642,8 @@ browserconfig.xml 파일에서 사용되는 최소한의 XML 내용은 다음과
 * 🇧🇷 Portuguese: [jcezarms/Front-End-Checklist](https://github.com/jcezarms/Front-End-Checklist)
 * 🇻🇳 Vietnamese: [euclid1990/Front-End-Checklist](https://github.com/euclid1990/Front-End-Checklist)
 * 🇹🇼 Traditional Chinese: [EngineLin/Front-End-Checklist](https://github.com/EngineLin/Front-End-Checklist)
+* 🇫🇷 French: [ynizon/Front-End-Checklist](https://github.com/ynizon/Front-End-Checklist)
+* 🇷🇺 Russian: [ungear/Front-End-Checklist](https://github.com/ungear/Front-End-Checklist)
 
 ---
 
@@ -663,11 +677,7 @@ browserconfig.xml 파일에서 사용되는 최소한의 XML 내용은 다음과
 
 이 브랜치는 필요하다면 구조나 컨텐츠에 상당한 변화를 줄 수 있습니다. 간단한 에러 수정을 하거나 새로운 항목을 추가할 경우, master 브랜치에 직접 하는 것을 추천드립니다.
 
-### Contributors
-
-Check out all the super awesome [contributors](https://github.com/thedaviddias/frontendchecklist/graphs/contributors).
-
-## Support
+## 서포트
 
 질문이나 제안이 있다면, 주저하지 말고 Gitter나 Twitter를 이용하세요:
 
@@ -678,6 +688,36 @@ Check out all the super awesome [contributors](https://github.com/thedaviddias/f
 ## 저자
 
 **[David Dias](https://github.com/thedaviddias/Front-End-Checklist)**
+
+## 컨트리뷰터
+
+This project exists thanks to all the people who contribute. [[Contribute]](CONTRIBUTING.md).
+<a href="graphs/contributors"><img src="https://opencollective.com/front-end-checklist/contributors.svg?width=890" /></a>
+
+
+## 후원자
+
+Thank you to all our backers! 🙏 [[Become a backer](https://opencollective.com/front-end-checklist#backer)]
+
+<a href="https://opencollective.com/front-end-checklist#backers" target="_blank"><img src="https://opencollective.com/front-end-checklist/backers.svg?width=890"></a>
+
+
+## 스폰서
+
+Support this project by becoming a sponsor. Your logo will show up here with a link to your website. [[Become a sponsor](https://opencollective.com/front-end-checklist#sponsor)]
+
+<a href="https://opencollective.com/front-end-checklist/sponsor/0/website" target="_blank"><img src="https://opencollective.com/front-end-checklist/sponsor/0/avatar.svg"></a>
+<a href="https://opencollective.com/front-end-checklist/sponsor/1/website" target="_blank"><img src="https://opencollective.com/front-end-checklist/sponsor/1/avatar.svg"></a>
+<a href="https://opencollective.com/front-end-checklist/sponsor/2/website" target="_blank"><img src="https://opencollective.com/front-end-checklist/sponsor/2/avatar.svg"></a>
+<a href="https://opencollective.com/front-end-checklist/sponsor/3/website" target="_blank"><img src="https://opencollective.com/front-end-checklist/sponsor/3/avatar.svg"></a>
+<a href="https://opencollective.com/front-end-checklist/sponsor/4/website" target="_blank"><img src="https://opencollective.com/front-end-checklist/sponsor/4/avatar.svg"></a>
+<a href="https://opencollective.com/front-end-checklist/sponsor/5/website" target="_blank"><img src="https://opencollective.com/front-end-checklist/sponsor/5/avatar.svg"></a>
+<a href="https://opencollective.com/front-end-checklist/sponsor/6/website" target="_blank"><img src="https://opencollective.com/front-end-checklist/sponsor/6/avatar.svg"></a>
+<a href="https://opencollective.com/front-end-checklist/sponsor/7/website" target="_blank"><img src="https://opencollective.com/front-end-checklist/sponsor/7/avatar.svg"></a>
+<a href="https://opencollective.com/front-end-checklist/sponsor/8/website" target="_blank"><img src="https://opencollective.com/front-end-checklist/sponsor/8/avatar.svg"></a>
+<a href="https://opencollective.com/front-end-checklist/sponsor/9/website" target="_blank"><img src="https://opencollective.com/front-end-checklist/sponsor/9/avatar.svg"></a>
+
+
 
 ## 라이센스
 
