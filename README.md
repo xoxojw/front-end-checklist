@@ -190,10 +190,7 @@ browserconfig.xml 파일에서 사용되는 최소한의 XML 내용은 다음과
 * [ ] **RSS 피드:** ![Low][low_img] 만일 페이지가 블로그이거나 기사가 있다면, RSS 링크에 대해 확인하시오
 
 * [ ] **인라인 CSS Critical:** ![Medium][medium_img] 페이지가 로딩되는 즉시(펼쳐지는 그 순간) 컨텐츠에 영향을 끼치는 CSS를 "critical CSS" 라고 함. 이는 당신의 실질적인 어플리케이션의 CSS 가 로딩되기 이전에 `<style></style>` 태그 사이에 최소화 된 상태로 한 줄로 추가되어 임베딩 됨
-<<<<<<< HEAD
-=======
 
->>>>>>> e39b757e03296e2b2ad12caba1d1b17ceb1c3de4
 > * 🛠 [Critical by Addy Osmani on Github](https://github.com/addyosmani/critical) 이 레포는 CSS Critical을 자동화 하는데에 도움을 줍니다.
 
 * [ ] **CSS의 순서:** ![High][high_img] 모든 CSS 파일이 `<head>` 내에서 자바스크립트 파일보다 이전에 로딩이 완료됨 (자바스크립트 파일이 비동기적으로 로딩되는 특정한 경우는 제외함).
