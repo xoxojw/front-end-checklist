@@ -1,4 +1,10 @@
-# 프론트엔드 체크리스트
+[![프론트엔드 체크리스트 로고](https://github.com/thedaviddias/Front-End-Checklist/blob/master/src/img/banners/front-end-checklist-banner-light.jpg?raw=true)](https://frontendchecklist.io)
+
+<h2 align="center"><a href="https://frontendchecklist.io">프론트엔드 체크리스트</a></h2>
+
+<p align="center">
+  <em>프론트엔드 체크리스트는 당신의 HTML 사이트 또는 페이지를 프로덕션으로 런칭하기 이전에 가지고 있어야 할, 또한 테스트 되어야 할 전반적인 요소들의 집합입니다.</em>
+</p>
 
 [![Join the chat at https://gitter.im/Front-End-Checklist/Lobby](https://badges.gitter.im/Front-End-Checklist/Lobby.svg)](https://gitter.im/Front-End-Checklist/Lobby?utm_source=badge&utm_medium=badge&utm_campaign=pr-badge&utm_content=badge)
 [![Front‑End_Checklist followed](https://img.shields.io/badge/Front‑End_Checklist-followed-brightgreen.svg)](https://github.com/thedaviddias/Front-End-Checklist/)
@@ -7,9 +13,11 @@
 [![StackShare](https://img.shields.io/badge/tech-stack-0690fa.svg?style=flat)](https://stackshare.io/thedaviddias/front-end-checklist)
 [![CC0](https://img.shields.io/badge/license-CC0-green.svg)](https://creativecommons.org/publicdomain/zero/1.0/)
 
-**프론트엔드 체크리스트**는 당신의 HTML 사이트 또는 페이지를 프로덕션으로 런칭하기 이전에 가지고 있어야 할, 또한 테스트 되어야 할 전반적인 요소들의 집합입니다.
-이 리스트는 다년간의 프론트엔드 개발자들의 경험으로 작성되었으며, 몇몇 타 오픈소스 체크리스트들의 참고를 통해 추가되었습니다.
+이 리스트는 다년간의 프론트엔드 개발자들의 경험으로 작성되었으며, 몇몇 항목들은 타 오픈소스 체크리스트들의 참고를 통해 추가되었습니다.
 
+<a target='_blank' rel='nofollow' href='https://app.codesponsor.io/link/HxqChNNHFKFaMpEpEikk4EM4/thedaviddias/Front-End-Checklist'>
+  <img alt='Sponsor' width='888' height='68' src='https://app.codesponsor.io/embed/HxqChNNHFKFaMpEpEikk4EM4/thedaviddias/Front-End-Checklist.svg' />
+</a>
 
 ## 목차
 
@@ -78,10 +86,10 @@
 
 ```html
 <!-- 반응형 웹 디자인을 위한 Viewport 설정 -->
-<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
 ```
 
-* [ ] **Title:** ![High][high_img] 모든 페이지에 title이 사용됨 (SEO 가이드: 웹사이트의 타이틀을 포함하여 65개 이하의 문자로 구성하기)
+* [ ] **Title:** ![High][high_img] 모든 페이지에 title이 사용됨 (SEO 가이드: Google은 제목에 사용된 글자들의 너비의 픽셀 값을 계산한 뒤, 472~482px 사이의 값으로 잘라냅니다. 평균적인 글자 길이의 제한은 약 55개의 글자입니다.)
 
 ```html
 <!-- 문서의 Title -->
@@ -98,7 +106,7 @@
 <meta name="description" content="페이지에 대한 설명 (150개 이하의 문자)">
 ```
 
-> * 📖[Meta Description - HTML - MDN](https://developer.mozilla.org/en-US/docs/Learn/HTML/Introduction_to_HTML/The_head_metadata_in_HTML#Adding_an_author_and_description)
+> * 📖 [Meta Description - HTML - MDN](https://developer.mozilla.org/en-US/docs/Learn/HTML/Introduction_to_HTML/The_head_metadata_in_HTML#Adding_an_author_and_description)
 
 * [ ] **Favicons:** ![Medium][medium_img] 각각의 favicon이 제대로 생성되었고 올바르게 보여지는가? 만약 `favicon.ico` 파일만 가지고 있다면, 해당 내용을 페이지의 상단부에 추가하라. 일반적으로는 해당 태그를 사용할 필요는 없지만, 아래의 예시를 포함하는 것이 좋은 습관임. 오늘날에는 `.ico` 포맷보다 **PNG 포맷의 아이콘 사용을 추천**함(크기: 32x32px).
 
@@ -115,14 +123,22 @@
 > * 📖 [Favicons, Touch Icons, Tile Icons, etc. Which Do You Need? - CSS Tricks](https://css-tricks.com/favicon-quiz/)
 > * 📖 [PNG favicons - caniuse](https://caniuse.com/#feat=link-icon-png)
 
-* [ ] **Apple 터치 아이콘:** ![Low][low_img] 아이폰의 모바일 웹 어플리케이션의 아이콘으로 사용되는 favicon을 설정해주는 apple-touch-icon 속성을 사용함 *(최소한 200x200px의 크기로 Apple 아이콘을 생성하면, 필요한 모든 크기의 아이콘을 지원할 수 있음)*
+* [ ] **Apple 터치 아이콘:** ![Low][low_img] 아이폰의 모바일 웹 어플리케이션의 아이콘으로 사용되는 favicon을 설정해주는 apple-touch-icon 속성을 사용함
 
 ```html
-<!-- Apple 터치 아이콘 -->
+<!-- Apple 터치 아이콘 (최소한 200x200 px) -->
 <link rel="apple-touch-icon" href="/custom-icon.png">
+
+<!-- To run web application in full-screen -->
+<meta name="apple-mobile-web-app-capable" content="yes">
+
+<!-- Status Bar Style (see Supported Meta Tags below for available values) -->
+<!-- Has no effect unless you have the previous meta tag -->
+<meta name="apple-mobile-web-app-status-bar-style" content="black">
 ```
 
 > * 📖 [웹 어플리케이션 설정하기](https://developer.apple.com/library/content/documentation/AppleApplications/Reference/SafariWebContent/ConfiguringWebApplications/ConfiguringWebApplications.html)
+> * 📖 [Meta Tags 지원하기](https://developer.apple.com/library/content/documentation/AppleApplications/Reference/SafariHTMLRef/Articles/MetaTags.html)
 
 - [ ] **윈도우 타일:** ![Low][low_img] 윈도우 타일을 설정하는 msapplication-config 속성을 사용함
 
@@ -152,8 +168,7 @@ browserconfig.xml 파일에서 사용되는 최소한의 XML 내용은 다음과
 * [ ] **Canonical:** ![Medium][medium_img] 컨텐츠의 중복을 피하기 위하여 `rel="canonical"` 을 사용함
 
 ```html
-<!-- 컨텐츠가 중복되는 문제를 방지하는데 도움이 됨 -->
-<link rel="canonical" href="http://example.com/2017/09/a-new-article-to-red.html">
+<link rel="canonical" href="http://example.com/2017/09/a-new-article-to-read.html">
 ```
 
 
@@ -187,7 +202,7 @@ browserconfig.xml 파일에서 사용되는 최소한의 XML 내용은 다음과
 
 * [ ] **RSS 피드:** ![Low][low_img] 만일 페이지가 블로그이거나 기사가 있다면, RSS 링크에 대해 확인하시오
 
-* [ ] **인라인 CSS Critical:** ![Medium][medium_img] 페이지가 로딩되는 즉시(펼쳐지는 그 순간) 컨텐츠에 영향을 끼치는 CSS를 "critical CSS" 라고 함. 이는 당신의 실질적인 어플리케이션의 CSS 가 로딩되기 이전에 `<style></style>` 태그 사이에 최소화 된 상태로 한 줄로 추가되어 임베딩 됨
+* [ ] **CSS Critical:** ![Medium][medium_img] 페이지가 로딩되는 즉시(펼쳐지는 그 순간) 컨텐츠에 영향을 끼치는 CSS를 "critical CSS" 라고 함. 이는 당신의 실질적인 어플리케이션의 CSS 가 로딩되기 이전에 `<style></style>` 태그 사이에 최소화 된 상태로 한 줄로 추가되어 임베딩 됨
 
 > * 🛠 [Critical by Addy Osmani on Github](https://github.com/addyosmani/critical) 이 레포는 CSS Critical을 자동화 하는데에 도움을 줍니다.
 
@@ -195,11 +210,9 @@ browserconfig.xml 파일에서 사용되는 최소한의 XML 내용은 다음과
 
 ### 소셜미디어 관련 메타 태그
 
-***Facebook의 OG*** 와 ***Twitter Cards*** 를 사용하는 것은 어떠한 웹사이트든지간에 권고됩니다. 타 소셜미디어의 태그는 특정하게 그들을 대상으로 페이지를 노출 하려는 경우에는 고려해 볼 수 있습니다.
-
 * [ ] **Facebook Open Graph:** ![Low][low_img] 모든 Facebook의 Open Graph (OG) 가 테스트 되었으며, 그것들 중에 누락된 정보나 잘못된 정보를 가지고 있지는 않나? (이미지의 경우 최소한 600 x 315 픽셀은 되어야 하며, 1200 x 630 픽셀 크기를 권장함)
 
-> **Notes:** Using `og:image:width` and `og:image:height` will specify the image dimensions to the crawler so that it can render the image immediately without having to asynchronously download and process it.
+> **노트:** `og:image:width`와 `og:image:height` 를 사용하는 것은 이미지의 크기를 웹 크롤러에게 알려주어서, 이미지를 비동기적으로 다운로드하고 처리할 필요 없이 즉시 보여줄 수 있도록 합니다.
 
 ```html
 <meta property="og:type" content="website">
@@ -333,7 +346,7 @@ browserconfig.xml 파일에서 사용되는 최소한의 XML 내용은 다음과
 
 - [ ] **사용하지 않은 CSS:** ![Low][low_img] 사용되지 않은 CSS는 제거함
 
-> * 🛠 [UnCSS Online](https://uncss-online.com/) 🛠
+> * 🛠 [UnCSS Online](https://uncss-online.com/)
 > * 🛠 [PurifyCSS](https://github.com/purifycss/purifycss)
 > * 🛠 [Chrome DevTools Coverage](https://developers.google.com/web/updates/2017/04/devtools-release-notes#coverage)
 
@@ -411,6 +424,14 @@ browserconfig.xml 파일에서 사용되는 최소한의 XML 내용은 다음과
 
 > * [자바스크립트를 활용하여 보안에 안전한 어플리케이션 개발 가이드라인](https://www.owasp.org/index.php/DOM_based_XSS_Prevention_Cheat_Sheet#Guidelines_for_Developing_Secure_Applications_Utilizing_JavaScript)*
 
+* [ ] **`noscript` 태그:** ![Medium][medium_img] 브라우저 내에 자바스크립트를 지원하지 않거나 꺼져 있을 경우를 고려하여 HTML 내에 `<noscript>` 태그를 사용하시오. 이는 React.js 어플리케이션처럼 클라이언트 사이드에 렌더링이 굉장히 무거운 어플리케이션의 경우 굉장히 유용함. 다음의 [예제](https://webdesign.tutsplus.com/tutorials/quick-tip-dont-forget-the-noscript-element--cms-25498) 를 살펴보시오
+
+```html
+<noscript>
+  이 어플리케이션을 실행시키기 위해선 자바스크립트를 활성화 시켜야 합니다.
+</noscript>
+```
+
 * [ ] **Non-blocking:** ![Medium][medium_img] JavaScript 파일들은 `async`와 `defer` 속성값을 이용하여 비동기적으로 로드 되어야 함
 
 > * 📖 [렌더링을 막는 자바스크립트 제거하기](https://developers.google.com/speed/docs/insights/BlockingJS)
@@ -460,7 +481,7 @@ browserconfig.xml 파일에서 사용되는 최소한의 XML 내용은 다음과
 > * 📖 [XSS 예방 참조서 - OWASP](https://www.owasp.org/index.php/XSS_(Cross_Site_Scripting)_Prevention_Cheat_Sheet)
 > * 📖 [DOM 기반 XSS 예방 참조서  - OWASP](https://www.owasp.org/index.php/DOM_based_XSS_Prevention_Cheat_Sheet)
 
-* [ ] **Content Type Options** ![Medium][medium_img] Prevents Google Chrome and Internet Explorer from trying to mime-sniff the content-type of a response away from the one being declared by the server.
+* [ ] **Content Type Options:** ![Medium][medium_img] Prevents Google Chrome and Internet Explorer from trying to mime-sniff the content-type of a response away from the one being declared by the server.
 
 > * 📖 [X-Content-Type-Options - Scott Helme](https://scotthelme.co.uk/hardening-your-http-response-headers/#x-content-type-options)
 
@@ -474,7 +495,8 @@ browserconfig.xml 파일에서 사용되는 최소한의 XML 내용은 다음과
 > * 📖 [컨텐츠 보안 정책 소개 - Scott Helme](https://scotthelme.co.uk/content-security-policy-an-introduction/)
 > * 📖 [컨텐츠 보안 정책 가이드라인 - Scott Helme](https://scotthelme.co.uk/csp-cheat-sheet/)
 > * 📖 [컨텐츠 보안 정책 가이드라인 - OWASP](https://www.owasp.org/index.php/Content_Security_Policy_Cheat_Sheet)
-
+> * 📖 [컨텐츠 보안 정책 레퍼런스](https://content-security-policy.com/)
+=======
 **[⬆ 목차로](#목차)**
 
 ---
@@ -606,25 +628,47 @@ browserconfig.xml 파일에서 사용되는 최소한의 XML 내용은 다음과
 ## SEO
 
 * [ ] **구글 애널리틱스:** ![High][high_img] 구글 애널리틱스가 설치되었고 제대로 설정되었음
+
+> * 🛠 [구글 애널리틱스](https://analytics.google.com/analytics/web/)
+> * 🛠 [구글 애널리틱스 체커 (및...)](http://www.gachecker.com/)
+
 * [ ] **적절한 제목 배치:** ![Medium][medium_img] 제목은 현 페이지의 내용을 이해하는 데에 도움을 줌
+
+> * 🛠 [Tota11y, tab Headings](http://khan.github.io/tota11y/#Try-it)
+
 * [ ] **sitemap.xml:** ![High][high_img] sitemap.xml 파일이 존재하고 Google Search Console(예전 이름: Google Webmaster Tools)으로 제출되었음
+
+> * 🛠 [Sitemap 생성기](https://websiteseochecker.com/html-sitemap-generator/)
+
 * [ ] **robots.txt:** ![High][high_img] robots.txt 파일이 웹페이지를 블록킹 하지 않음
 
+> * 📖 [The robots.txt file](https://varvy.com/robottxt.html)
 > * 🛠 [Google Robots 테스트 도구](https://www.google.com/webmasters/tools/robots-testing-tool)를 이용하여 당신의 robots.txt 파일을 테스트 해보세요
 
 * [ ] **구조화 된 데이터:** ![High][high_img] 구조화 된 데이터를 사용하여 페이지가 테스트되었고 에러가 존재하지 않는가? 구조화 된 데이터는 웹 크롤러가 현 페이지 내의 컨텐츠를 이해하는 데에 도움이 됨
 
 > * 📖 [구조화 된 데이터 소개 - Search - Google Developers](https://developers.google.com/search/docs/guides/intro-structured-data)
-> * 🛠 [구조화 된 데이터 테스트 도구](https://developers.google.com/structured-data/testing-tool/)를 이용하여 당신의 페이지를 테스트 해보세요
-> * 🛠 구조화 된 데이터로 사용될 수 있는 단어들의 목록을 만들어보세요 [Schema.org Full Heirarchy](http://schema.org/docs/full.html)
 > * 📖 [RDFa - Linked Data in HTML](https://rdfa.info/)
 > * 📖 [JSON-LD](https://json-ld.org/)
 > * 📖 [Microdata](https://www.w3.org/TR/microdata/)
+> * 🛠 [구조화 된 데이터 테스트 도구](https://developers.google.com/structured-data/testing-tool/)를 이용하여 당신의 페이지를 테스트 해보세요
+> * 🛠 구조화 된 데이터로 사용될 수 있는 단어들의 목록을 만들어보세요 [Schema.org Full Heirarchy](http://schema.org/docs/full.html)
 
 * [ ] **HTML 사이트맵:** ![Medium][medium_img] HTML 사이트맵이 제공되었으며 웹사이트의 푸터 내에 존재하는 링크를 통하여 접근이 가능함
 
-> * 📖 [사이트맵 가이드라인 - Google Support](https://support.google.com/webmasters/answer/183668?hl=en)
-> * 🛠 [Sitemap 생성기](https://websiteseochecker.com/html-sitemap-generator/)
+> * 📖 [사이트맵 가이드라인 - Google Support](https://support.google.com/webmasters/answer/183668?hl=ko)
+* [ ] **Pagination link tags:** ![Medium][medium_img] Provide `rel="prev"` and `rel="next"` to indicate paginated content.
+
+> * 🛠 [Pagination (rel="prev/next") Testing Tool](https://technicalseo.com/seo-tools/rel-prev-next/)
+
+> * 📖 [Pagination guidelines - Google Support](https://support.google.com/webmasters/answer/1663744?hl=en)
+
+```html
+<!-- Example: Pagination link tags for page 2 of a paginated list -->
+<link rel="prev" href="https://example.com/?page=1">
+<link rel="next" href="https://example.com/?page=3">
+```
+>>>>>>> upstream/master
 
 **[⬆ 목차로](#목차)**
 
@@ -643,7 +687,7 @@ browserconfig.xml 파일에서 사용되는 최소한의 XML 내용은 다음과
 * 🇹🇼 Traditional Chinese: [EngineLin/Front-End-Checklist](https://github.com/EngineLin/Front-End-Checklist)
 * 🇫🇷 French: [ynizon/Front-End-Checklist](https://github.com/ynizon/Front-End-Checklist)
 * 🇷🇺 Russian: [ungear/Front-End-Checklist](https://github.com/ungear/Front-End-Checklist)
-* 🇹🇷 Turkish: [erdoganoksuz/Front-End-Checklist](https://github.com/erdoganoksuz/Front-End-Checklist)
+* 🇹🇷 Turkish: [eraycetinay/Front-End-Checklist](https://github.com/eraycetinay/Front-End-Checklist)
 
 ---
 
@@ -692,7 +736,7 @@ browserconfig.xml 파일에서 사용되는 최소한의 XML 내용은 다음과
 ## contributors
 
 This project exists thanks to all the people who contribute. [[Contribute]](CONTRIBUTING.md).
-<a href="graphs/contributors"><img src="https://opencollective.com/front-end-checklist/contributors.svg?width=890" /></a>
+<a href="https://github.com/thedaviddias/Front-End-Checklist/graphs/contributors"><img src="https://opencollective.com/front-end-checklist/contributors.svg?width=890" /></a>
 
 
 ## backers
@@ -725,6 +769,6 @@ Support this project by becoming a sponsor. Your logo will show up here with a l
 
 **[⬆ 목차로](#목차)**
 
-[low_img]: http://res.cloudinary.com/djnyaloac/image/upload/v1508238836/level-checklist-low.png
-[medium_img]: http://res.cloudinary.com/djnyaloac/image/upload/v1508238836/level-checklist-medium.png
-[high_img]: http://res.cloudinary.com/djnyaloac/image/upload/v1508238836/level-checklist-high.png
+[low_img]: https://front-end-checklist.now.sh/low.svg
+[medium_img]: https://front-end-checklist.now.sh/medium.svg
+[high_img]: https://front-end-checklist.now.sh/high.svg
