@@ -497,7 +497,6 @@ browserconfig.xml 파일에서 사용되는 최소한의 XML 내용은 다음과
 > * 📖 [컨텐츠 보안 정책 가이드라인 - OWASP](https://www.owasp.org/index.php/Content_Security_Policy_Cheat_Sheet)
 > * 📖 [컨텐츠 보안 정책 레퍼런스](https://content-security-policy.com/)
 
-=======
 **[⬆ 목차로](#목차)**
 
 ---
