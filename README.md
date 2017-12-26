@@ -496,6 +496,7 @@ browserconfig.xml 파일에서 사용되는 최소한의 XML 내용은 다음과
 > * 📖 [컨텐츠 보안 정책 가이드라인 - Scott Helme](https://scotthelme.co.uk/csp-cheat-sheet/)
 > * 📖 [컨텐츠 보안 정책 가이드라인 - OWASP](https://www.owasp.org/index.php/Content_Security_Policy_Cheat_Sheet)
 > * 📖 [컨텐츠 보안 정책 레퍼런스](https://content-security-policy.com/)
+
 =======
 **[⬆ 목차로](#목차)**
 
@@ -526,7 +527,7 @@ browserconfig.xml 파일에서 사용되는 최소한의 XML 내용은 다음과
 
 ### 다음에 발생할 HTTP 요청을 미리 준비하기
 
-> * 📖 [Explanation of the following techniques](https://css-tricks.com/prefetching-preloading-prebrowsing/)
+> * 📖 [다음 기술들에 대한 설명](https://css-tricks.com/prefetching-preloading-prebrowsing/)
 
 * [ ] **DNS resolution:** ![Low][low_img] DNS of third-party services that may be needed are resolved in advance during idle time using `dns-prefetch`.
 
@@ -577,9 +578,9 @@ browserconfig.xml 파일에서 사용되는 최소한의 XML 내용은 다음과
 
 > * 📖 [Chrome 개발자 도구를 이용하여 자바스크립트 키고 끄기](https://www.youtube.com/watch?v=kBmvq2cE0D8)
 
-- [ ] **Color contrast:** ![Medium][medium_img] Color contrast should at least pass WCAG AA (AAA for mobile).
+- [ ] **색상 대비:** ![Medium][medium_img] 색상 대비 기준이 최소한 WCAG AA를 통과해야 함 (모바일의 경우 AAA를 통과해야 함)
 
-> * 🛠 [Contrast ratio](https://leaverou.github.io/contrast-ratio/)
+> * 🛠 [대비율](https://leaverou.github.io/contrast-ratio/)
 
 #### 헤딩
 
@@ -668,7 +669,6 @@ browserconfig.xml 파일에서 사용되는 최소한의 XML 내용은 다음과
 <link rel="prev" href="https://example.com/?page=1">
 <link rel="next" href="https://example.com/?page=3">
 ```
->>>>>>> upstream/master
 
 **[⬆ 목차로](#목차)**
 
