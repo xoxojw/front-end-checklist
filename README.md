@@ -205,7 +205,7 @@ browserconfig.xml 파일에서 사용되는 최소한의 XML 내용은 다음과
 <link rel="alternate" href="https://en.example.com/" hreflang="en">
 ```
 
-* [ ] **x-default:** [![Low](https://github.com/thedaviddias/Front-End-Checklist/raw/master/data/images/priority/low.svg)](https://github.com/thedaviddias/Front-End-Checklist/blob/master/data/images/priority/low.svg) The language tag of your website for international landing pages.
+* [ ] **x-default:** ![Low][low_img] 운영하지 않는 언어의 사용자가 들어올 경우를 위해 디폴트 페이지를 정해주는 속성
 
 ```html
 <link rel="alternate" href="https://example.com/" hreflang="x-default" />
@@ -400,8 +400,7 @@ Visualize and generate automatically our social meta tags with [Meta Tags](https
 * [ ] **모바일 브라우저:**  ![High][high_img] 모든 페이지가 모든 현존하는 모바일 브라우저에서 테스트 됨 (Native browser, Chrome, Safari... 등).
 * [ ] **운영체제:**  ![High][high_img] 모든 페이지가 모든 현존하는 운영체제에서 테스트 됨 (Windows, Android, iOS, Mac... 등).
 
-- [ ]  **Design fidelity:** [![Low](https://github.com/thedaviddias/Front-End-Checklist/raw/master/data/images/priority/low.svg)](https://github.com/thedaviddias/Front-End-Checklist/blob/master/data/images/priority/low.svg) Depending on the project and the quality of the creatives, you may be asked to be close to the design. You can use some tools to compare creatives with your code implementation and ensure consistency.
-  ~~**Pixel perfect:** ![High][high_img] 페이지가 Pixel perfect한 상태(원래 의도했던 디자인대로 화면에 보여짐)인가? 창작물에 따라서 100% 정확하지 않을 수도 있지만, 의도했던 템플릿에 가까워야 함~~
+- [ ] **디자인과의 정확도:** [![Low](https://github.com/thedaviddias/Front-End-Checklist/raw/master/data/images/priority/low.svg)](https://github.com/thedaviddias/Front-End-Checklist/blob/master/data/images/priority/low.svg) 프로젝트에 따라 원래 의도했던 디자인대로 화면에 보여지는지 정확도가 요구될 수 있음. 도구들을 사용해서 실행된 코드와 비교하고 일관성을 유지.
 
 > [Pixel Perfect - Chrome 확장도구](https://chrome.google.com/webstore/detail/perfectpixel-by-welldonec/dkaagdgjmgdmbnecmcefdhjekcoceebi?hl=en)
 
@@ -425,11 +424,10 @@ Visualize and generate automatically our social meta tags with [Meta Tags](https
 > * 🛠 [Imagemin](https://github.com/imagemin/imagemin)
 > * 🛠 [ImageOptim](https://imageoptim.com/)를 사용하여 당신의 이미지를 무료로 최적화하세요
 > * 🛠 [Kraken.io](https://kraken.io/web-interface)를 사용하여 png와 jpg을 꽤나 대단하게 최적화 할 수 있습니다. 파일 당 1MB에 대해서는 무료입니다.
-> * 🛠 Use [KeyCDN Image Processing](https://www.keycdn.com/support/image-processing) for image optimization in real time.
-> * 🛠 [TinyPNG](https://tinypng.com/) losslessly optimises png, apng (animated png) and jpg images. Free and paid version available.
-> * 🛠 [ZorroSVG](http://quasimondo.com/ZorroSVG/) jpg-like compression for transparent images using svg masking.
-> * 🛠 [SVGO](https://github.com/svg/svgo) a Nodejs-based tool for optimizing SVG vector graphics files.
-> * 🛠 [SVGOMG](https://jakearchibald.github.io/svgomg/) a web-based GUI version of SVGO for optimising your svgs online.
+> * 🛠  [KeyCDN Image Processing](https://www.keycdn.com/support/image-processing) 사용하여 실시간으로 이미지 최적화
+> * 🛠 [TinyPNG](https://tinypng.com/) png, apng (animated png), jpg images를 무손실 최적화 할 수 있습니다. 무료 버전과 유료 버전이 존재 
+> * 🛠 [SVGO](https://github.com/svg/svgo)  SVG 벡터 그래픽 파일들을 최적화하는 Nodejs 기반 도구 
+> * 🛠 [SVGOMG](https://jakearchibald.github.io/svgomg/) SVGO의 웹 버전 
 
 * [ ] **Picture/Srcset:** ![Medium][medium_img] picture와 srcset을 이용하여 사용자의 현재 뷰포트에 가장 적합한 이미지를 제공하였음
 
@@ -525,7 +523,7 @@ Visualize and generate automatically our social meta tags with [Meta Tags](https
 > * 📖 [XSS 예방 참조서 - OWASP](https://www.owasp.org/index.php/XSS_(Cross_Site_Scripting)_Prevention_Cheat_Sheet)
 > * 📖 [DOM 기반 XSS 예방 참조서  - OWASP](https://www.owasp.org/index.php/DOM_based_XSS_Prevention_Cheat_Sheet)
 
-* [ ] **Content Type Options:** ![Medium][medium_img] Prevents Google Chrome and Internet Explorer from trying to mime-sniff the content-type of a response away from the one being declared by the server.
+* [ ] **Content Type Options:** ![Medium][medium_img] 서버에서 설정한 타입과 다른 응답이 올 경우 mime-sniffing을 하지 않도록 함
 
 > * 📖 [X-Content-Type-Options - Scott Helme](https://scotthelme.co.uk/hardening-your-http-response-headers/#x-content-type-options)
 
@@ -549,9 +547,9 @@ Visualize and generate automatically our social meta tags with [Meta Tags](https
 
 ### 모범 사례
 
-- [ ]  **Goals to achieve:** [![Medium](https://github.com/thedaviddias/Front-End-Checklist/raw/master/data/images/priority/medium.svg)](https://github.com/thedaviddias/Front-End-Checklist/blob/master/data/images/priority/medium.svg) Your pages should reach these goals:
-  - First Meaningful Paint under 1 second
-  - Time To Interactive under 5 seconds for the "average" configuration (a $200 Android on a slow 3G network with 400ms RTT and 400kbps transfer speed) and under 2 seconds for repeat visits
+- [ ]  **Goals to achieve:** [![Medium](https://github.com/thedaviddias/Front-End-Checklist/raw/master/data/images/priority/medium.svg)](https://github.com/thedaviddias/Front-End-Checklist/blob/master/data/images/priority/medium.svg) 페이지가 이 목표에 도달하는 것이 좋음:
+  - First Meaningful Paint (사용자에게 의미 있는 컨텐츠가 그려지는 첫 순간)은 1초 이하여야 한다
+  - Time-To-Interactive는 5초 이하여야 하며  (a $200 Android on a slow 3G network with 400ms RTT and 400kbps transfer speed) and 재접속의 경우 2초 이하여야 한다
   - Critical file size under 170Kb gzipped
 
 > * 🛠 [웹사이트 페이지 분석](https://tools.pingdom.com)
@@ -672,7 +670,7 @@ Visualize and generate automatically our social meta tags with [Meta Tags](https
 > * 🛠 [구글 애널리틱스](https://analytics.google.com/analytics/web/)
 > * 🛠 [구글 애널리틱스 체커 (및...)](http://www.gachecker.com/)
 
-* [ ] **Search Console:** [![Low](https://github.com/thedaviddias/Front-End-Checklist/raw/master/data/images/priority/low.svg)](https://github.com/thedaviddias/Front-End-Checklist/blob/master/data/images/priority/low.svg) Search Console is installed and correctly configured. It is a free service offered by Google that helps you monitor, maintain, and troubleshoot your site's presence in Google Search results.
+* [ ] **Search Console:** [![Low](https://github.com/thedaviddias/Front-End-Checklist/raw/master/data/images/priority/low.svg)](https://github.com/thedaviddias/Front-End-Checklist/blob/master/data/images/priority/low.svg) Search Console은 google이 제공하는 무료 서비스이며 사이트의 검색 트래픽 및 실적을 측정하고, 문제를 해결하며, Google 검색결과에서 사이트가 돋보이게 할 수 있습니다.
 
 > - 🛠 [Search Console](https://search.google.com/search-console/about)
 
