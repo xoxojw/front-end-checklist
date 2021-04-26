@@ -1,23 +1,41 @@
-[![프론트엔드 체크리스트 로고](https://github.com/thedaviddias/Front-End-Checklist/blob/master/src/img/banners/front-end-checklist-banner-light.jpg?raw=true)](https://frontendchecklist.io)
-
-<h2 align="center"><a href="https://frontendchecklist.io">프론트엔드 체크리스트</a></h2>
+<h1 align="center">
+<br>
+  <img src="https://raw.githubusercontent.com/thedaviddias/Front-End-Checklist/master/data/images/logo-front-end-checklist.jpg" alt="Front-End Checklist" width="130">
+  <br>
+    <br>
+  Front-End Checklist
+  <br>
+</h1>
 
 <p align="center">
   <em>프론트엔드 체크리스트는 당신의 HTML 사이트 또는 페이지를 프로덕션으로 런칭하기 이전에 가지고 있어야 할, 또한 테스트 되어야 할 전반적인 요소들의 집합입니다.</em>
 </p>
+<p align="center">
+  <a href="http://makeapullrequest.com">
+    <img src="https://img.shields.io/badge/PRs-welcome-brightgreen.svg?style=flat-square" alt="PRs Welcome">
+  </a>
+    <a href="https://github.com/thedaviddias/Front-End-Checklist/graphs/contributors">
+    <img src="https://img.shields.io/github/contributors/thedaviddias/Front-End-Checklist.svg?style=flat-square" alt="Contributors">
+  </a>
+  <a href="https://github.com/thedaviddias/Front-End-Checklist/">
+    <img src="https://img.shields.io/badge/Front‑End_Checklist-followed-brightgreen.svg?style=flat-square" alt="Front‑End_Checklist followed">
+  </a>
+    <a href="https://creativecommons.org/publicdomain/zero/1.0/">
+    <img src="https://img.shields.io/badge/license-CC0-green.svg?style=flat-square" alt="CC0">
+  </a>
+</p>
 
-[![Join the chat at https://gitter.im/Front-End-Checklist/Lobby](https://badges.gitter.im/Front-End-Checklist/Lobby.svg)](https://gitter.im/Front-End-Checklist/Lobby?utm_source=badge&utm_medium=badge&utm_campaign=pr-badge&utm_content=badge)
-[![Front‑End_Checklist followed](https://img.shields.io/badge/Front‑End_Checklist-followed-brightgreen.svg)](https://github.com/thedaviddias/Front-End-Checklist/)
-[![Backers on Open Collective](https://opencollective.com/front-end-checklist/backers/badge.svg)](#backers) [![Sponsors on Open Collective](https://opencollective.com/front-end-checklist/sponsors/badge.svg)](#sponsors)
-[![Contributors](https://img.shields.io/github/contributors/thedaviddias/Front-End-Checklist.svg)](https://github.com/thedaviddias/Front-End-Checklist/graphs/contributors)
-[![StackShare](https://img.shields.io/badge/tech-stack-0690fa.svg?style=flat)](https://stackshare.io/thedaviddias/front-end-checklist)
-[![CC0](https://img.shields.io/badge/license-CC0-green.svg)](https://creativecommons.org/publicdomain/zero/1.0/)
+<p align="center">
+  <a href="#how-to-use">How To Use</a> • <a href="#contributing">Contributing</a> • <a href="https://frontendchecklist.io">Website</a> • <a href="https://www.producthunt.com/posts/front-end-checklist">Product Hunt</a>
+</p>
+<p align="center">
+    <span>Other Checklists:</span>
+    <br>
+  <a href="https://github.com/thedaviddias/Front-End-Performance-Checklist#---------front-end-performance-checklist-">🎮 Front-End Performance Checklist</a> • <a href="https://github.com/thedaviddias/Front-End-Design-Checklist#front-end-design-checklist">💎 Front-End Design Checklist</a>
+</p>
 
 이 리스트는 다년간의 프론트엔드 개발자들의 경험으로 작성되었으며, 몇몇 항목들은 타 오픈소스 체크리스트들의 참고를 통해 추가되었습니다.
 
-<a target='_blank' rel='nofollow' href='https://app.codesponsor.io/link/HxqChNNHFKFaMpEpEikk4EM4/thedaviddias/Front-End-Checklist'>
-  <img alt='Sponsor' width='888' height='68' src='https://app.codesponsor.io/embed/HxqChNNHFKFaMpEpEikk4EM4/thedaviddias/Front-End-Checklist.svg' />
-</a>
 
 ## 목차
 
@@ -64,7 +82,7 @@
 
 > 📖 [문자 인코딩 결정하기 - HTML5 W3C](https://www.w3.org/TR/html5/syntax.html#determining-the-character-encoding)
 
-*다음 3개의 메타 태그(Charset, X-UA Compatible and Viewport)들은 다른 요소들에 비해 head 안에서도 상단에 위치해야만 합니다.*
+*다음 2개의 메타 태그(Charset and Viewport)들은 다른 요소들에 비해 head 안에서도 상단에 위치해야만 합니다.*
 
 * [ ] **Charset:** ![High][high_img] 문자집합(UTF-8)이 올바르게 선언됨
 
@@ -72,15 +90,6 @@
 <!-- 이 문서에 대한 문자 인코딩을 설정 -->
 <meta charset="utf-8">
 ```
-
-* [ ] **X-UA-Compatible:** ![Medium][medium_img] X-UA-Compatible 메타 태그가 존재함
-
-```html
-<!-- Internet Explorer에게 최신의 렌더링 엔진을 사용하라고 지시 -->
-<meta http-equiv="x-ua-compatible" content="ie=edge">
-```
-
-> * 📖 [Internet Explorer를 위한 레거시 문서 모드 지정하기](https://msdn.microsoft.com/en-us/library/jj676915(v=vs.85).aspx)
 
 * [ ] **Viewport:** ![High][high_img] Viewport가 제대로 선언됨
 
@@ -123,7 +132,7 @@
 > * 📖 [Favicons, Touch Icons, Tile Icons, etc. Which Do You Need? - CSS Tricks](https://css-tricks.com/favicon-quiz/)
 > * 📖 [PNG favicons - caniuse](https://caniuse.com/#feat=link-icon-png)
 
-* [ ] **Apple 터치 아이콘:** ![Low][low_img] 아이폰의 모바일 웹 어플리케이션의 아이콘으로 사용되는 favicon을 설정해주는 apple-touch-icon 속성을 사용함
+* [ ] **Apple Web App Meta:** [![Low](https://github.com/thedaviddias/Front-End-Checklist/raw/master/data/images/priority/low.svg)](https://github.com/thedaviddias/Front-End-Checklist/blob/master/data/images/priority/low.svg) Apple meta-tags are present.
 
 ```html
 <!-- Apple 터치 아이콘 (최소한 200x200 px) -->
@@ -140,7 +149,7 @@
 > * 📖 [웹 어플리케이션 설정하기](https://developer.apple.com/library/content/documentation/AppleApplications/Reference/SafariWebContent/ConfiguringWebApplications/ConfiguringWebApplications.html)
 > * 📖 [Meta Tags 지원하기](https://developer.apple.com/library/content/documentation/AppleApplications/Reference/SafariHTMLRef/Articles/MetaTags.html)
 
-- [ ] **윈도우 타일:** ![Low][low_img] 윈도우 타일을 설정하는 msapplication-config 속성을 사용함
+- [ ] **윈도우 타일:** ![Low][low_img] Windows tiles are present and linked.
 
 ```html
 <!-- Microsoft 타일 -->
@@ -196,6 +205,14 @@ browserconfig.xml 파일에서 사용되는 최소한의 XML 내용은 다음과
 <link rel="alternate" href="https://en.example.com/" hreflang="en">
 ```
 
+* [ ] **x-default:** ![Low][low_img] 운영하지 않는 언어의 사용자가 들어올 경우를 위해 디폴트 페이지를 정해주는 속성
+
+```html
+<link rel="alternate" href="https://example.com/" hreflang="x-default" />
+```
+
+> - 📖 [x-default - Google](https://webmasters.googleblog.com/2013/04/x-default-hreflang-for-international-pages.html)
+
 * [ ] **조건부 주석:** ![Low][low_img] Internet Explorer 를 위한 조건부 주석을 사용함
 
 > * 📖 [조건부 주석에 관하여 (Internet Explorer) - MSDN - Microsoft](https://msdn.microsoft.com/en-us/library/ms537512(v=vs.85).aspx)
@@ -209,6 +226,10 @@ browserconfig.xml 파일에서 사용되는 최소한의 XML 내용은 다음과
 * [ ] **CSS의 순서:** ![High][high_img] 모든 CSS 파일이 `<head>` 내에서 자바스크립트 파일보다 이전에 로딩이 완료됨 (자바스크립트 파일이 비동기적으로 로딩되는 특정한 경우는 제외함).
 
 ### 소셜미디어 관련 메타 태그
+
+Visualize and generate automatically our social meta tags with [Meta Tags](https://metatags.io/)
+
+***Facebook OG*** and ***Twitter Cards*** are, for any website, highly recommended. The other social media tags can be considered if you target a particular presence on those and want to ensure the display.
 
 * [ ] **Facebook Open Graph:** ![Low][low_img] 모든 Facebook의 Open Graph (OG) 가 테스트 되었으며, 그것들 중에 누락된 정보나 잘못된 정보를 가지고 있지는 않나? (이미지의 경우 최소한 600 x 315 픽셀은 되어야 하며, 1200 x 630 픽셀 크기를 권장함)
 
@@ -283,6 +304,8 @@ browserconfig.xml 파일에서 사용되는 최소한의 XML 내용은 다음과
 
 * [ ] **광고차단기 테스트:** ![Medium][medium_img] 광고차단기가 활성화 된 상태에서도 컨텐츠가 제대로 보여짐 (사람들에게 광고차단기를 비활성화 해달라고 메세지를 알릴수도 있습니다)
 
+> - 📖 [Use AdBlocking in your Dev Environment](https://andreicioara.com/use-adblocking-in-your-dev-environment-48db500d9b86)
+
 
 **[⬆ 목차로](#목차)**
 
@@ -291,6 +314,7 @@ browserconfig.xml 파일에서 사용되는 최소한의 XML 내용은 다음과
 ## 웹폰트
 
 > **노트:** 웹폰트를 사용하면 스타일링 되지 않은 글자나 보이지 않는 글자들이 깜빡일 수 있습니다. 실패했을 경우를 대비한 대체용 폰트를 포함하거나, 웹폰트 로더를 활용하여 이러한 동작들을 제어하세요.
+>
 > * 📖 [구글의 웹폰트에 대한 기술적 고려사항](https://developers.google.com/fonts/docs/technical_considerations)
 
 * [ ] **웹폰트 포맷:** ![High][high_img] WOFF, WOFF2 와 TTF는 모든 최신 브라우저에서 지원됨
@@ -314,7 +338,7 @@ browserconfig.xml 파일에서 사용되는 최소한의 XML 내용은 다음과
 
 * [ ] **반응형 웹 디자인:** ![High][high_img] 웹사이트가 반응형으로 디자인 됨
 * [ ] **CSS Print:** ![Medium][medium_img] 프린터가 사용할 print 스타일시트 값이 설정되었고, 각각의 페이지마다 올바르게 설정됨
-* [ ] **CSS 전처리기:** ![Medium][medium_img] 디자인에 CSS 전처리기를 이용함 (추천: [Sass](http://sass-lang.com/)).
+* [ ] **CSS 전처리기:** [![Low](https://github.com/thedaviddias/Front-End-Checklist/raw/master/data/images/priority/low.svg)](https://github.com/thedaviddias/Front-End-Checklist/blob/master/data/images/priority/low.svg)  디자인에 CSS 전처리기를 이용함 (추천:  [Sass](http://sass-lang.com/), [Less](http://lesscss.org/), [Stylus](http://stylus-lang.com/)).
 * [ ] **고유 ID값:** ![High][high_img] 여러 개의 ID 값이 사용된 경우, 각각의 ID 값은 페이지 내에 고유해야함
 * [ ] **Reset CSS:** ![High][high_img] 최신의 Reset CSS (reset, normalize나 reboot) 이 사용됨 *(Bootstrap이나 Foundation 같은 CSS 프레임워크를 사용할 경우, Normalize가 이미 포함되어 있음)*
 
@@ -360,6 +384,14 @@ browserconfig.xml 파일에서 사용되는 최소한의 XML 내용은 다음과
 
 * [ ] **반응형 웹 디자인:** ![High][high_img] 모든 페이지가 다음 지점에서 테스트 완료되었음: 320px, 768px, 1024px (그 외 당신이 필요한 크기에 따라 다를 수 있음)
 
+  **Responsive Checker -**
+
+> - 🛠 [Am I Responsive?](http://ami.responsivedesign.is/)
+> - 🛠 [Mobile Friendly Test](https://search.google.com/test/mobile-friendly)
+> - 🛠 [Responsive Website Design Tester](https://responsivedesignchecker.com/)
+> - 🛠 [Responsinator](https://www.responsinator.com/)
+> - 🛠 [XRespond](https://xrespond.com/)
+
 * [ ] **CSS 검사기:** ![Medium][medium_img] CSS가 제대로 테스트 되었고, 오류들이 알맞게 수정되었음
 
 > * 🛠 [CSS 검사기](https://jigsaw.w3.org/css-validator/)
@@ -368,7 +400,7 @@ browserconfig.xml 파일에서 사용되는 최소한의 XML 내용은 다음과
 * [ ] **모바일 브라우저:**  ![High][high_img] 모든 페이지가 모든 현존하는 모바일 브라우저에서 테스트 됨 (Native browser, Chrome, Safari... 등).
 * [ ] **운영체제:**  ![High][high_img] 모든 페이지가 모든 현존하는 운영체제에서 테스트 됨 (Windows, Android, iOS, Mac... 등).
 
-- [ ] **Pixel perfect:** ![High][high_img] 페이지가 Pixel perfect한 상태(원래 의도했던 디자인대로 화면에 보여짐)인가? 창작물에 따라서 100% 정확하지 않을 수도 있지만, 의도했던 템플릿에 가까워야 함
+- [ ] **디자인과의 정확도:** [![Low](https://github.com/thedaviddias/Front-End-Checklist/raw/master/data/images/priority/low.svg)](https://github.com/thedaviddias/Front-End-Checklist/blob/master/data/images/priority/low.svg) 프로젝트에 따라 원래 의도했던 디자인대로 화면에 보여지는지 정확도가 요구될 수 있음. 도구들을 사용해서 실행된 코드와 비교하고 일관성을 유지.
 
 > [Pixel Perfect - Chrome 확장도구](https://chrome.google.com/webstore/detail/perfectpixel-by-welldonec/dkaagdgjmgdmbnecmcefdhjekcoceebi?hl=en)
 
@@ -392,6 +424,10 @@ browserconfig.xml 파일에서 사용되는 최소한의 XML 내용은 다음과
 > * 🛠 [Imagemin](https://github.com/imagemin/imagemin)
 > * 🛠 [ImageOptim](https://imageoptim.com/)를 사용하여 당신의 이미지를 무료로 최적화하세요
 > * 🛠 [Kraken.io](https://kraken.io/web-interface)를 사용하여 png와 jpg을 꽤나 대단하게 최적화 할 수 있습니다. 파일 당 1MB에 대해서는 무료입니다.
+> * 🛠  [KeyCDN Image Processing](https://www.keycdn.com/support/image-processing) 사용하여 실시간으로 이미지 최적화
+> * 🛠 [TinyPNG](https://tinypng.com/) png, apng (animated png), jpg images를 무손실 최적화 할 수 있습니다. 무료 버전과 유료 버전이 존재 
+> * 🛠 [SVGO](https://github.com/svg/svgo)  SVG 벡터 그래픽 파일들을 최적화하는 Nodejs 기반 도구 
+> * 🛠 [SVGOMG](https://jakearchibald.github.io/svgomg/) SVGO의 웹 버전 
 
 * [ ] **Picture/Srcset:** ![Medium][medium_img] picture와 srcset을 이용하여 사용자의 현재 뷰포트에 가장 적합한 이미지를 제공하였음
 
@@ -405,6 +441,8 @@ browserconfig.xml 파일에서 사용되는 최소한의 XML 내용은 다음과
 > * 📖 [대체 텍스트: 최고의 가이드](https://axesslab.com/alt-texts/)
 
 * [ ] **Lazy 로딩:** ![Medium][medium_img] 이미지들이 lazy 로드 됨 (자바스크립트 미지원에 대한 예외처리가 항상 제공 되어야 함)
+
+> - 🛠 [Native lazy loading polyfill](https://github.com/mfranzke/loading-attribute-polyfill/)
 
 **[⬆ 목차로](#목차)**
 
@@ -420,9 +458,9 @@ browserconfig.xml 파일에서 사용되는 최소한의 XML 내용은 다음과
 
 > * [리소스(HTML, CSS, and JavaScript) 최소화하기](https://developers.google.com/speed/docs/insights/MinifyResources)
 
-* [ ] **자바스크립트 보안:**
+* [ ] **자바스크립트 보안: ![High][high_img]**
 
-> * [자바스크립트를 활용하여 보안에 안전한 어플리케이션 개발 가이드라인](https://www.owasp.org/index.php/DOM_based_XSS_Prevention_Cheat_Sheet#Guidelines_for_Developing_Secure_Applications_Utilizing_JavaScript)*
+> * [자바스크립트를 활용하여 보안에 안전한 어플리케이션 개발 가이드라인](https://www.owasp.org/index.php/DOM_based_XSS_Prevention_Cheat_Sheet#Guidelines_for_Developing_Secure_Applications_Utilizing_JavaScript)
 
 * [ ] **`noscript` 태그:** ![Medium][medium_img] 브라우저 내에 자바스크립트를 지원하지 않거나 꺼져 있을 경우를 고려하여 HTML 내에 `<noscript>` 태그를 사용하시오. 이는 React.js 어플리케이션처럼 클라이언트 사이드에 렌더링이 굉장히 무거운 어플리케이션의 경우 굉장히 유용함. 다음의 [예제](https://webdesign.tutsplus.com/tutorials/quick-tip-dont-forget-the-noscript-element--cms-25498) 를 살펴보시오
 
@@ -435,6 +473,11 @@ browserconfig.xml 파일에서 사용되는 최소한의 XML 내용은 다음과
 * [ ] **Non-blocking:** ![Medium][medium_img] JavaScript 파일들은 `async`와 `defer` 속성값을 이용하여 비동기적으로 로드 되어야 함
 
 > * 📖 [렌더링을 막는 자바스크립트 제거하기](https://developers.google.com/speed/docs/insights/BlockingJS)
+
+* [ ] **Optimized and updated JS libraries:** [![Medium](https://github.com/thedaviddias/Front-End-Checklist/raw/master/data/images/priority/medium.svg)](https://github.com/thedaviddias/Front-End-Checklist/blob/master/data/images/priority/medium.svg) All JavaScript libraries used in your project are necessary (prefer Vanilla Javascript for simple functionalities), updated to their latest version and don't overwhelm your JavaScript with unnecessary methods.
+
+> - 📖 [You may not need jQuery](http://youmightnotneedjquery.com/)
+> - 📖 [Vanilla JavaScript for building powerful web applications](https://plainjs.com/)
 
 * [ ] **Modernizr:** ![Low][low_img] 특정한 기능을 지칭하고 싶다면, 커스터마이징 된 Modernizr를 이용하여 `<html>` 태그 내에 클래스들을 추가할 수 있음
 
@@ -456,11 +499,10 @@ browserconfig.xml 파일에서 사용되는 최소한의 XML 내용은 다음과
 
 > * [securityheaders.io](https://securityheaders.io/)
 > * [Observatory by Mozilla](https://observatory.mozilla.org/)
-> * [ASafaWeb - Automated Security Analyser for ASP.NET Websites](https://asafaweb.com/)
 
 ### 모범 사례
 
-* [ ] **HTTPS:** ![Medium][medium_img] 페이지 내에 존재하는 모든 외부 컨텐츠(플러그인, 이미지...)에 대해서도 HTTPS 가 사용되었음.
+* [ ] **HTTPS:** ![High][high_img] 페이지 내에 존재하는 모든 외부 컨텐츠(플러그인, 이미지...)에 대해서도 HTTPS 가 사용되었음.
 
 > * 🛠 [Let's Encrypt - Free SSL/TLS Certificates](https://letsencrypt.org/)
 > * 🛠 [Free SSL Server Test](https://www.ssllabs.com/ssltest/index.html)
@@ -481,7 +523,7 @@ browserconfig.xml 파일에서 사용되는 최소한의 XML 내용은 다음과
 > * 📖 [XSS 예방 참조서 - OWASP](https://www.owasp.org/index.php/XSS_(Cross_Site_Scripting)_Prevention_Cheat_Sheet)
 > * 📖 [DOM 기반 XSS 예방 참조서  - OWASP](https://www.owasp.org/index.php/DOM_based_XSS_Prevention_Cheat_Sheet)
 
-* [ ] **Content Type Options:** ![Medium][medium_img] Prevents Google Chrome and Internet Explorer from trying to mime-sniff the content-type of a response away from the one being declared by the server.
+* [ ] **Content Type Options:** ![Medium][medium_img] 서버에서 설정한 타입과 다른 응답이 올 경우 mime-sniffing을 하지 않도록 함
 
 > * 📖 [X-Content-Type-Options - Scott Helme](https://scotthelme.co.uk/hardening-your-http-response-headers/#x-content-type-options)
 
@@ -505,9 +547,13 @@ browserconfig.xml 파일에서 사용되는 최소한의 XML 내용은 다음과
 
 ### 모범 사례
 
-- [ ] **페이지 용량:** ![High][high_img] 각 페이지의 용량이 500KB 이하임
+- [ ]  **Goals to achieve:** [![Medium](https://github.com/thedaviddias/Front-End-Checklist/raw/master/data/images/priority/medium.svg)](https://github.com/thedaviddias/Front-End-Checklist/blob/master/data/images/priority/medium.svg) 페이지가 이 목표에 도달하는 것이 좋음:
+  - First Meaningful Paint (사용자에게 의미 있는 컨텐츠가 그려지는 첫 순간)은 1초 이하여야 한다
+  - Time-To-Interactive는 5초 이하여야 하며  (a $200 Android on a slow 3G network with 400ms RTT and 400kbps transfer speed) and 재접속의 경우 2초 이하여야 한다
+  - Critical file size under 170Kb gzipped
 
 > * 🛠 [웹사이트 페이지 분석](https://tools.pingdom.com)
+> * 🛠 [WebPageTest](https://www.webpagetest.org/)
 > * 📖 [페이지 용량을 제한함으로써 웹을 더욱 가볍게 만드세요](https://evilmartians.com/chronicles/size-limit-make-the-web-lighter)
 
 - [ ] **최소화:** ![Medium][medium_img] HTML이 최소화가 되었음
@@ -562,6 +608,7 @@ browserconfig.xml 파일에서 사용되는 최소한의 XML 내용은 다음과
 > * 🛠 [Google에서 모바일 속도를 측정해보세요](https://testmysite.withgoogle.com)
 > * 🛠 [WebPagetest - 웹사이트 성능 및 최적화 테스트](https://www.webpagetest.org/)
 > * 🛠 [GTmetrix - 웹사이트 속도 및 성능 최적화](https://gtmetrix.com/)
+> * 🛠 [Speedrank - Improve the performance of your website](https://speedrank.app/)
 
 **[⬆ 목차로](#목차)**
 
@@ -587,15 +634,6 @@ browserconfig.xml 파일에서 사용되는 최소한의 XML 내용은 다음과
 * [ ] **헤딩:** ![High][high_img] 헤딩이 올바른 순서(H1부터 H6까지)로 적절히 사용되어야 함
 
 > * 📹 [헤딩과 랜드마크가 그렇게 중요한 이유 -- A11ycasts #18](https://www.youtube.com/watch?v=vAAzdi1xuUY&index=9&list=PLNYkxOF6rcICWx0C9LVWWVqvHlYJyqw7g)
-
-#### 랜드마크
-
-- [ ] **banner 역할:** ![High][high_img] `<header>` 태그가 `role="banner"` 속성값을 가지고 있음
-- [ ] **navigation 역할:** ![High][high_img] `<nav>` 태그가 `role="navigation"` 속성값을 가지고 있음
-- [ ] **main 역할:** ![High][high_img] `<main>` 태그가 `role="main"` 속성값을 가지고 있음
-
-> * 📖 [ARIA 랜드마크를 이용하여 페이지 내의 특정 지점을 식별하기](https://www.w3.org/WAI/GL/wiki/Using_ARIA_landmarks_to_identify_regions_of_a_page)
-> * 📖 [ARIA 역할의 범주](https://www.w3.org/TR/wai-aria/roles#roles_categorization)
 
 ### 시맨틱
 
@@ -627,10 +665,14 @@ browserconfig.xml 파일에서 사용되는 최소한의 XML 내용은 다음과
 
 ## SEO
 
-* [ ] **구글 애널리틱스:** ![High][high_img] 구글 애널리틱스가 설치되었고 제대로 설정되었음
+* [ ] **구글 애널리틱스:** ![Low][low_img] 구글 애널리틱스가 설치되었고 제대로 설정되었음
 
 > * 🛠 [구글 애널리틱스](https://analytics.google.com/analytics/web/)
 > * 🛠 [구글 애널리틱스 체커 (및...)](http://www.gachecker.com/)
+
+* [ ] **Search Console:** [![Low](https://github.com/thedaviddias/Front-End-Checklist/raw/master/data/images/priority/low.svg)](https://github.com/thedaviddias/Front-End-Checklist/blob/master/data/images/priority/low.svg) Search Console은 google이 제공하는 무료 서비스이며 사이트의 검색 트래픽 및 실적을 측정하고, 문제를 해결하며, Google 검색결과에서 사이트가 돋보이게 할 수 있습니다.
+
+> - 🛠 [Search Console](https://search.google.com/search-console/about)
 
 * [ ] **적절한 제목 배치:** ![Medium][medium_img] 제목은 현 페이지의 내용을 이해하는 데에 도움을 줌
 
@@ -648,10 +690,9 @@ browserconfig.xml 파일에서 사용되는 최소한의 XML 내용은 다음과
 * [ ] **구조화 된 데이터:** ![High][high_img] 구조화 된 데이터를 사용하여 페이지가 테스트되었고 에러가 존재하지 않는가? 구조화 된 데이터는 웹 크롤러가 현 페이지 내의 컨텐츠를 이해하는 데에 도움이 됨
 
 > * 📖 [구조화 된 데이터 소개 - Search - Google Developers](https://developers.google.com/search/docs/guides/intro-structured-data)
-> * 📖 [RDFa - Linked Data in HTML](https://rdfa.info/)
 > * 📖 [JSON-LD](https://json-ld.org/)
 > * 📖 [Microdata](https://www.w3.org/TR/microdata/)
-> * 🛠 [구조화 된 데이터 테스트 도구](https://developers.google.com/structured-data/testing-tool/)를 이용하여 당신의 페이지를 테스트 해보세요
+> * 🛠Test your page with the [Rich Restults Test](https://search.google.com/test/rich-results)
 > * 🛠 구조화 된 데이터로 사용될 수 있는 단어들의 목록을 만들어보세요 [Schema.org Full Heirarchy](http://schema.org/docs/full.html)
 
 * [ ] **HTML 사이트맵:** ![Medium][medium_img] HTML 사이트맵이 제공되었으며 웹사이트의 푸터 내에 존재하는 링크를 통하여 접근이 가능함
@@ -687,6 +728,8 @@ browserconfig.xml 파일에서 사용되는 최소한의 XML 내용은 다음과
 * 🇫🇷 French: [ynizon/Front-End-Checklist](https://github.com/ynizon/Front-End-Checklist)
 * 🇷🇺 Russian: [ungear/Front-End-Checklist](https://github.com/ungear/Front-End-Checklist)
 * 🇹🇷 Turkish: [eraycetinay/Front-End-Checklist](https://github.com/eraycetinay/Front-End-Checklist)
+* 🇩🇪 German: [xfuture603/Front-End-Checklist](https://github.com/xFuture603/Front-End-Checklist)
+* 🇵🇱 Polish: [mbiesiad/Front-End-Checklist](https://github.com/mbiesiad/Front-End-Checklist)
 
 ---
 
@@ -768,6 +811,6 @@ Support this project by becoming a sponsor. Your logo will show up here with a l
 
 **[⬆ 목차로](#목차)**
 
-[low_img]: https://front-end-checklist.now.sh/low.svg
-[medium_img]: https://front-end-checklist.now.sh/medium.svg
-[high_img]: https://front-end-checklist.now.sh/high.svg
+[low_img]: data/images/priority/low.svg
+[medium_img]:data/images/priority/medium.svg
+[high_img]: data/images/priority/high.svg
