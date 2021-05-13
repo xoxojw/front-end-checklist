@@ -117,39 +117,39 @@
 
 > * 📖 [Meta Description - HTML - MDN](https://developer.mozilla.org/en-US/docs/Learn/HTML/Introduction_to_HTML/The_head_metadata_in_HTML#Adding_an_author_and_description)
 
-* [ ] **Favicons:** ![Medium][medium_img] 각각의 favicon이 제대로 생성되었고 올바르게 보여지는가? 만약 `favicon.ico` 파일만 가지고 있다면, 해당 내용을 페이지의 상단부에 추가하라. 일반적으로는 해당 태그를 사용할 필요는 없지만, 아래의 예시를 포함하는 것이 좋은 습관임. 오늘날에는 `.ico` 포맷보다 **PNG 포맷의 아이콘 사용을 추천**함(크기: 32x32px).
+* [ ] **파비콘:** ![Medium][medium_img] 각각의 파비콘이 제대로 생성되었고 올바르게 보여지는가? 만약 `favicon.ico` 파일만 가지고 있다면, 해당 내용을 페이지의 상단부에 추가하라. 일반적으로는 해당 태그를 사용할 필요는 없지만, 아래의 예시를 포함하는 것이 좋은 습관임. 오늘날에는 `.ico` 포맷보다 **PNG 포맷의 아이콘 사용을 추천**함(크기: 32x32px).
 
 ```html
-<!-- 표준 favicon -->
+<!-- 표준 파비콘 -->
 <link rel="icon" type="image/x-icon" href="https://example.com/favicon.ico">
-<!-- 추천 favicon 포맷 -->
+<!-- 추천 파비콘 포맷 -->
 <link rel="icon" type="image/png" href="https://example.com/favicon.png">
 ```
 
-> * 🛠 [Favicon Generator](https://www.favicon-generator.org/)
-> * 🛠 [RealFaviconGenerator](https://realfavicongenerator.net/)
-> * 📖 [Favicon Cheat Sheet](https://github.com/audreyr/favicon-cheat-sheet)
-> * 📖 [Favicons, Touch Icons, Tile Icons, etc. Which Do You Need? - CSS Tricks](https://css-tricks.com/favicon-quiz/)
-> * 📖 [PNG favicons - caniuse](https://caniuse.com/#feat=link-icon-png)
+> * 🛠 [파비콘 생성기](https://www.favicon-generator.org/)
+> * 🛠 [진짜파비콘생성기](https://realfavicongenerator.net/)
+> * 📖 [파비콘 안내서](https://github.com/audreyr/favicon-cheat-sheet)
+> * 📖 [파비콘, 터치 아이콘, 타일 아이콘. 나한테 필요한 것은? - CSS Tricks](https://css-tricks.com/favicon-quiz/)
+> * 📖 [PNG 파비콘 - caniuse](https://caniuse.com/#feat=link-icon-png)
 
-* [ ] **Apple Web App Meta:** [![Low](https://github.com/thedaviddias/Front-End-Checklist/raw/master/data/images/priority/low.svg)](https://github.com/thedaviddias/Front-End-Checklist/blob/master/data/images/priority/low.svg) Apple meta-tags are present.
+* [ ] **Apple 웹 앱 메타 태그 설정:** [![Low](https://github.com/thedaviddias/Front-End-Checklist/raw/master/data/images/priority/low.svg)](https://github.com/thedaviddias/Front-End-Checklist/blob/master/data/images/priority/low.svg) Apple 의 메타 태그가 제대로 설정되었음
 
 ```html
 <!-- Apple 터치 아이콘 (최소한 200x200 px) -->
 <link rel="apple-touch-icon" href="/custom-icon.png">
 
-<!-- To run web application in full-screen -->
+<!-- 웹 어플리케이션 모드 설정하기 (Apple 웹 앱을 위해 기본적으로 필요함) -->
 <meta name="apple-mobile-web-app-capable" content="yes">
 
-<!-- Status Bar Style (see Supported Meta Tags below for available values) -->
-<!-- Has no effect unless you have the previous meta tag -->
+<!-- 상태창 스타일 (밑의 링크에서 지원 가능한 메타 태그들을 확인해보세요) -->
+<!-- 웹 어플리케이션 모드여야 동작함 -->
 <meta name="apple-mobile-web-app-status-bar-style" content="black">
 ```
 
-> * 📖 [웹 어플리케이션 설정하기](https://developer.apple.com/library/content/documentation/AppleApplications/Reference/SafariWebContent/ConfiguringWebApplications/ConfiguringWebApplications.html)
-> * 📖 [Meta Tags 지원하기](https://developer.apple.com/library/content/documentation/AppleApplications/Reference/SafariHTMLRef/Articles/MetaTags.html)
+> * 📖 [웹 어플리케이션 모드 설정하기](https://developer.apple.com/library/content/documentation/AppleApplications/Reference/SafariWebContent/ConfiguringWebApplications/ConfiguringWebApplications.html)
+> * 📖 [지원하는 메타 태그 목록](https://developer.apple.com/library/content/documentation/AppleApplications/Reference/SafariHTMLRef/Articles/MetaTags.html)
 
-- [ ] **윈도우 타일:** ![Low][low_img] Windows tiles are present and linked.
+- [ ] **윈도우 타일:** ![Low][low_img] 윈도우의 타일 관련 정보를 설정하였고 제대로 연결하였음
 
 ```html
 <!-- Microsoft 타일 -->
@@ -193,7 +193,7 @@ browserconfig.xml 파일에서 사용되는 최소한의 XML 내용은 다음과
 * [ ] **글자 방향 속성:** ![Medium][medium_img] 글자들의 방향이 제대로 설정됨 (우리나라에서는 좌에서 우로 글씨를 읽고 쓰지만 몇몇 나라에서는 우에서 좌로 읽고 쓰는 경우도 있음)
 
 ```html
-<!-- rtl: right to left -->
+<!-- rtl: right to left; 오른쪽에서 왼쪽 방향으로 -->
 <html dir="rtl">
 ```
 
@@ -227,9 +227,10 @@ browserconfig.xml 파일에서 사용되는 최소한의 XML 내용은 다음과
 
 ### 소셜미디어 관련 메타 태그
 
-Visualize and generate automatically our social meta tags with [Meta Tags](https://metatags.io/)
+[Meta Tags](https://metatags.io/) 를 사용하여 메타 태그를 시각화하고 생성하세요.
 
-***Facebook OG*** and ***Twitter Cards*** are, for any website, highly recommended. The other social media tags can be considered if you target a particular presence on those and want to ensure the display.
+
+기본적으로 ***Facebook 의 Open Graph*** 와 ***Twitter 의 Card*** 는 반드시 설정하는 것을 추천합니다. 다른 소셜미디어 태그들은 특정한 상대를 대상으로 할 경우에 고려해보세요.
 
 * [ ] **Facebook Open Graph:** ![Low][low_img] 모든 Facebook의 Open Graph (OG) 가 테스트 되었으며, 그것들 중에 누락된 정보나 잘못된 정보를 가지고 있지는 않나? (이미지의 경우 최소한 600 x 315 픽셀은 되어야 하며, 1200 x 630 픽셀 크기를 권장함)
 
@@ -238,12 +239,13 @@ Visualize and generate automatically our social meta tags with [Meta Tags](https
 ```html
 <meta property="og:type" content="website">
 <meta property="og:url" content="https://example.com/page.html">
-<meta property="og:title" content="Content Title">
+<meta property="og:title" content="제목">
 <meta property="og:image" content="https://example.com/image.jpg">
-<meta property="og:description" content="Description Here">
-<meta property="og:site_name" content="Site Name">
+<meta property="og:description" content="내용에 대한 설명">
+<meta property="og:site_name" content="사이트명">
 <meta property="og:locale" content="en_US">
-<!-- 다음의 태그는 필수는 아니지만, 포함하는 것을 추천함 -->
+
+<!-- 다음의 태그는 필수는 아니지만, 성능을 위하여 포함하는 것을 추천함 -->
 <meta property="og:image:width" content="1200">
 <meta property="og:image:height" content="630">
 ```
@@ -259,8 +261,8 @@ Visualize and generate automatically our social meta tags with [Meta Tags](https
 <meta name="twitter:site" content="@site_account">
 <meta name="twitter:creator" content="@individual_account">
 <meta name="twitter:url" content="https://example.com/page.html">
-<meta name="twitter:title" content="Content Title">
-<meta name="twitter:description" content="Content description less than 200 characters">
+<meta name="twitter:title" content="제목">
+<meta name="twitter:description" content="내용에 대한 설명. 200자 미만이어야 함.">
 <meta name="twitter:image" content="https://example.com/image.jpg">
 ```
 
@@ -279,21 +281,21 @@ Visualize and generate automatically our social meta tags with [Meta Tags](https
 
 > * 📖 [HTML 레퍼런스](http://htmlreference.io/)
 
-* [ ] **에러 페이지:** ![High][high_img] 에러를 위한 404 페이지와 5xx 페이지가 존재하는가? 5xx 페이지는 서버로부터의 데이터를 전송받지 않고 독립적인 자체 CSS를 포함하고 있어야 함을 기억하라 (5xx 에러는 서버 에러이므로!).
+* [ ] **에러 페이지:** ![High][high_img] 에러를 위한 404 페이지와 5xx 페이지가 존재하는가? 5xx 페이지는 서버 에러이기 때문에, 서버로부터의 별도의 추가적인 데이터를 전송받지 않고 독립적인 자체 CSS를 포함하고 있어야 함을 기억함
 
-* [ ] **Noopener:** ![Medium][medium_img] 외부 링크를 `target="_blank"`를 이용하여 연 경우, [tab nabbing 피싱 공격](https://blog.coderifleman.com/2017/05/30/tabnabbing_attack_and_noopener/)을 방지하기 위하여 `rel="noopener"` 속성을 사용해야만 한다. 만약 Firefox 옛 버전을 지원해야만 한다면, `rel="noopener noreferrer"` 을 사용하라.
+* [ ] **Noopener:** ![Medium][medium_img] 외부 링크를 `target="_blank"`를 이용하여 연 경우, [tab nabbing 피싱 공격](https://blog.coderifleman.com/2017/05/30/tabnabbing_attack_and_noopener/)을 방지하기 위하여 `rel="noopener"` 속성을 사용해야만 함. 만약 Firefox 옛 버전을 지원해야만 한다면, `rel="noopener noreferrer"` 을 사용함
 
 > * 📖 [rel=noopener에 대하여](https://mathiasbynens.github.io/rel-noopener/)
 
-* [ ] **주석 지우기:** ![Low][low_img] 웹사이트를 프로덕션 하기 이전에 불필요한 코드는 제거하였는지, 주석은 제거하였는지 점검하라
+* [ ] **주석 지우기:** ![Low][low_img] 웹사이트를 프로덕션 하기 이전에 불필요한 코드는 제거하였는지, 주석은 제거하였는지 점검함
 
 ### HTML testing
 
-* [ ] **W3C 규격:** ![High][high_img] 모든 페이지는 HTML 코드 내에서 일어날 수 있는 경우를 확인하기 위하여 W3C 의 validator를 이용하여 테스트 되어야 함
+* [ ] **W3C 규격:** ![High][high_img] 페이지 내의 모든 HTML 이 표준에 맞게 정상적으로 작성되었는지 W3C 의 validator를 이용하여 테스트 함
 
 > * 🛠 [W3C 검사기](https://validator.w3.org/)
 
-* [ ] **HTML Lint:** ![High][high_img] 도구를 이용하여 HTML 코드 내에 발생할 수 있는 문제들을 분석하도록 하자
+* [ ] **HTML Lint:** ![High][high_img] Lint 도구를 이용하여 HTML 코드 내에 발생할 수 있는 코드 상의 문제들을 분석함
 
 > * 🛠 [Dirty markup](https://dirtymarkup.com/): HTML 코드를 정돈해주는 온라인 도구
 
@@ -302,9 +304,9 @@ Visualize and generate automatically our social meta tags with [Meta Tags](https
 
 > * 🛠 [W3C Link Checker](https://validator.w3.org/checklink)
 
-* [ ] **광고차단기 테스트:** ![Medium][medium_img] 광고차단기가 활성화 된 상태에서도 컨텐츠가 제대로 보여짐 (사람들에게 광고차단기를 비활성화 해달라고 메세지를 알릴수도 있습니다)
+* [ ] **광고차단기 테스트:** ![Medium][medium_img] 광고차단기가 활성화 된 상태에서도 컨텐츠가 제대로 보여짐 (사람들에게 광고차단기를 비활성화 해달라고 메세지를 알릴수도 있음)
 
-> - 📖 [Use AdBlocking in your Dev Environment](https://andreicioara.com/use-adblocking-in-your-dev-environment-48db500d9b86)
+> - 📖 [개발 환경에서 광고차단기 사용하기](https://andreicioara.com/use-adblocking-in-your-dev-environment-48db500d9b86)
 
 
 **[⬆ 목차로](#목차)**
@@ -319,14 +321,14 @@ Visualize and generate automatically our social meta tags with [Meta Tags](https
 
 * [ ] **웹폰트 포맷:** ![High][high_img] WOFF, WOFF2 와 TTF는 모든 최신 브라우저에서 지원됨
 
-> * 📖 [WOFF - Web Open Font Format - Caniuse](https://caniuse.com/#feat=woff).
-> * 📖 [WOFF 2.0 - Web Open Font Format - Caniuse](https://caniuse.com/#feat=woff2).
-> * 📖 [TTF/OTF - TrueType and OpenType font support](https://caniuse.com/#feat=ttf)
-> * 📖 [Using @font-face - CSS-Tricks](https://css-tricks.com/snippets/css/using-font-face/)
+> * 📖 [WOFF - 웹 오픈 폰트 포맷- Caniuse](https://caniuse.com/#feat=woff).
+> * 📖 [WOFF 2.0 - 웹 오픈 폰트 포맷 - Caniuse](https://caniuse.com/#feat=woff2).
+> * 📖 [TTF/OTF - 트루타입 폰트와 오픈타입 폰트 지원 여부 - Caniuse](https://caniuse.com/#feat=ttf)
+> * 📖 [@font-face 사용하기 - CSS-Tricks](https://css-tricks.com/snippets/css/using-font-face/)
 
-* [ ] **웹폰트 크기:** ![High][high_img] 모든 종류(이탤릭, 볼드체 등등)를 포함한 웹폰트 크기의 총 합계는 2 MB를 넘지 않도록 함
+* [ ] **웹폰트 크기:** ![High][high_img] 모든 종류(이탤릭, 볼드체 등등을 포함)의 웹폰트 크기의 총 합계는 2 MB를 넘지 않도록 함
 
-* [ ] **웹폰트 로더:** ![Low][low_img] 웹폰트 로더를 이용하여 폰트가 로딩되는 동작을 제어하시오
+* [ ] **웹폰트 로더:** ![Low][low_img] 웹폰트 로더를 이용하여 폰트가 로딩되는 동작을 제어함
 
 > * 🛠 [Typekit 웹폰트 로더](https://github.com/typekit/webfontloader)
 
@@ -339,8 +341,8 @@ Visualize and generate automatically our social meta tags with [Meta Tags](https
 * [ ] **반응형 웹 디자인:** ![High][high_img] 웹사이트가 반응형으로 디자인 됨
 * [ ] **CSS Print:** ![Medium][medium_img] 프린터가 사용할 print 스타일시트 값이 설정되었고, 각각의 페이지마다 올바르게 설정됨
 * [ ] **CSS 전처리기:** [![Low](https://github.com/thedaviddias/Front-End-Checklist/raw/master/data/images/priority/low.svg)](https://github.com/thedaviddias/Front-End-Checklist/blob/master/data/images/priority/low.svg)  디자인에 CSS 전처리기를 이용함 (추천:  [Sass](http://sass-lang.com/), [Less](http://lesscss.org/), [Stylus](http://stylus-lang.com/)).
-* [ ] **고유 ID값:** ![High][high_img] 여러 개의 ID 값이 사용된 경우, 각각의 ID 값은 페이지 내에 고유해야함
-* [ ] **Reset CSS:** ![High][high_img] 최신의 Reset CSS (reset, normalize나 reboot) 이 사용됨 *(Bootstrap이나 Foundation 같은 CSS 프레임워크를 사용할 경우, Normalize가 이미 포함되어 있음)*
+* [ ] **고유 ID값:** ![High][high_img] 여러 개의 ID 값이 사용된 경우, 각각의 ID 값은 페이지 내에서 고유해야함
+* [ ] **Reset CSS:** ![High][high_img] 최신의 Reset CSS (reset, normalize 혹은 reboot) 이 사용됨 *(Bootstrap이나 Foundation 같은 CSS 프레임워크를 사용할 경우, 아마도 Normalize가 이미 포함되어 있을 것임)*
 
 > * 📖 [Reset.css](https://meyerweb.com/eric/tools/css/reset/)
 > * 📖 [Normalize.css](https://necolas.github.io/normalize.css/)
@@ -354,7 +356,7 @@ Visualize and generate automatically our social meta tags with [Meta Tags](https
 <div id="id-used-by-cms" class="js-slider my-slider">
 ```
 
-* [ ] **CSS 임베딩 또는 인라인:** ![High][high_img] 어떠한 경우에도 CSS를 직접 임베딩하거나 인라인으로 사용하지 마시오! 타당한 이유가 있는 경우에만 사용하시오 (예: 슬라이더 내의 background-image, 또는 CSS critical)
+* [ ] **CSS 임베딩 또는 인라인:** ![High][high_img] 어떠한 경우에도 CSS를 직접 임베딩하거나 인라인으로 사용하지 않기. 타당한 이유가 있는 경우에만 사용 (예: 슬라이더 내의 background-image, 혹은 critical CSS)
 * [ ] **벤더 프리픽스:** ![High][high_img] CSS 벤더 프리픽스들이 사용되었고 브라우저 지원 호환성에 따라 알맞게 생성되었는지 확인
 
 > * 🛠 [Autoprefixer CSS online](https://autoprefixer.github.io/)
@@ -363,16 +365,16 @@ Visualize and generate automatically our social meta tags with [Meta Tags](https
 
 - [ ] **파일 단일화:** ![High][high_img] CSS 파일들이 하나의 CSS 파일로 단일화 되었음 *(HTTP/2의 경우는 여러 개의 파일을 사용하는 것이 더 성능에 좋음)*
 - [ ] **최소화:** ![High][high_img] 모든 CSS 파일들이 최소화 됨
-- [ ] **Non-blocking:** ![Medium][medium_img] CSS 파일들은 DOM이 로딩하는데에 방해가 되지 않도록 비동기적으로 로드 되어야 함
+- [ ] **논 블로킹:** ![Medium][medium_img] CSS 파일들은 DOM이 로딩하는데에 방해가 되지 않도록 비동기적으로 로드 되어야 함
 
-> * 📖 [loadCSS by filament group](https://github.com/filamentgroup/loadCSS)
-> * 📖 [Example of preload CSS using loadCSS](https://gist.github.com/thedaviddias/c24763b82b9991e53928e66a0bafc9bf)
+> * 📖 [비동기로 로드하는 CSS (loadCSS)](https://github.com/filamentgroup/loadCSS)
+> * 📖 [loadCSS 를 이용한 CSS preload 예시](https://gist.github.com/thedaviddias/c24763b82b9991e53928e66a0bafc9bf)
 
 - [ ] **사용하지 않은 CSS:** ![Low][low_img] 사용되지 않은 CSS는 제거함
 
 > * 🛠 [UnCSS Online](https://uncss-online.com/)
 > * 🛠 [PurifyCSS](https://github.com/purifycss/purifycss)
-> * 🛠 [Chrome DevTools Coverage](https://developers.google.com/web/updates/2017/04/devtools-release-notes#coverage)
+> * 🛠 [크롬 개발자 도구 커버리지](https://developers.google.com/web/updates/2017/04/devtools-release-notes#coverage)
 
 
 ### CSS 테스트
@@ -434,7 +436,7 @@ Visualize and generate automatically our social meta tags with [Meta Tags](https
 > * 📖 [srcset을 사용하여 반응형 이미지 만드는 방법](https://www.sitepoint.com/how-to-build-responsive-images-with-srcset/)
 
 * [ ] **레티나 디스플레이 지원:** ![Low][low_img] 레티나 디스플레이를 지원하기 위하여 당신의 현 레이아웃에 해당하는 2배, 또는 3배 이상 큰 이미지를 지원함
-* [ ] **[이미지 스프라이트](https://www.w3schools.com/css/css_image_sprites.asp):** ![Medium][medium_img] 작은 이미지의 경우 스프라이트 파일로 구성되어져 있음 (아이콘의 경우, SVG 스프라이트 이미지 일 수도 있음).
+* [ ] **[이미지 스프라이트](https://www.w3schools.com/css/css_image_sprites.asp):** ![Medium][medium_img] 작은 이미지의 경우 스프라이트 파일로 구성되어져 있음 (아이콘의 경우, SVG 스프라이트 이미지 일 수도 있음)
 * [ ] **너비와 높이:** ![High][high_img] 모든 `<img>` 태그에 너비와 높이가 설정되었음 (px이나 %로 지정하지 마시오)
 * [ ] **대체 텍스트:** ![High][high_img] 모든 `<img>` 태그가 이미지를 잘 서술하는 대체 텍스트를 가지고 있음 (`alt` 속성으로 부여)
 
@@ -442,7 +444,7 @@ Visualize and generate automatically our social meta tags with [Meta Tags](https
 
 * [ ] **Lazy 로딩:** ![Medium][medium_img] 이미지들이 lazy 로드 됨 (자바스크립트 미지원에 대한 예외처리가 항상 제공 되어야 함)
 
-> - 🛠 [Native lazy loading polyfill](https://github.com/mfranzke/loading-attribute-polyfill/)
+> - 🛠 [네이티브 레이지 로딩 폴리필](https://github.com/mfranzke/loading-attribute-polyfill/)
 
 **[⬆ 목차로](#목차)**
 
@@ -470,11 +472,11 @@ Visualize and generate automatically our social meta tags with [Meta Tags](https
 </noscript>
 ```
 
-* [ ] **Non-blocking:** ![Medium][medium_img] JavaScript 파일들은 `async`와 `defer` 속성값을 이용하여 비동기적으로 로드 되어야 함
+* [ ] **논 블로킹:** ![Medium][medium_img] JavaScript 파일들은 `async`와 `defer` 속성값을 이용하여 비동기적으로 로드 되어야 함
 
 > * 📖 [렌더링을 막는 자바스크립트 제거하기](https://developers.google.com/speed/docs/insights/BlockingJS)
 
-* [ ] **Optimized and updated JS libraries:** [![Medium](https://github.com/thedaviddias/Front-End-Checklist/raw/master/data/images/priority/medium.svg)](https://github.com/thedaviddias/Front-End-Checklist/blob/master/data/images/priority/medium.svg) All JavaScript libraries used in your project are necessary (prefer Vanilla Javascript for simple functionalities), updated to their latest version and don't overwhelm your JavaScript with unnecessary methods.
+* [ ] **최신 자바스크립트 라이브러리 사용하기, 자바스크립트 최적화하기:** [![Medium](https://github.com/thedaviddias/Front-End-Checklist/raw/master/data/images/priority/medium.svg)](https://github.com/thedaviddias/Front-End-Checklist/blob/master/data/images/priority/medium.svg) 프로젝트 내에서 사용하는 모든 자바스크립트 라이브러리가 필수적인 것들임 (간단한 기능들에 대해서는 기본 자바스크립트만을 쓰도록 하자). 자바스크립트 라이브러리를 최신 버전으로 업데이트 했으며, 하나의 작은 기능을 사용하기 위해 과도하게 큰 라이브러리를 포함하지 않음 (가령 debounce 하나를 쓰기 위해 lodash 전체를 포함하지 말기) 
 
 > - 📖 [You may not need jQuery](http://youmightnotneedjquery.com/)
 > - 📖 [Vanilla JavaScript for building powerful web applications](https://plainjs.com/)
@@ -547,10 +549,10 @@ Visualize and generate automatically our social meta tags with [Meta Tags](https
 
 ### 모범 사례
 
-- [ ]  **Goals to achieve:** [![Medium](https://github.com/thedaviddias/Front-End-Checklist/raw/master/data/images/priority/medium.svg)](https://github.com/thedaviddias/Front-End-Checklist/blob/master/data/images/priority/medium.svg) 페이지가 이 목표에 도달하는 것이 좋음:
+- [ ]  **성취 목표:** [![Medium](https://github.com/thedaviddias/Front-End-Checklist/raw/master/data/images/priority/medium.svg)](https://github.com/thedaviddias/Front-End-Checklist/blob/master/data/images/priority/medium.svg) 페이지가 이 목표에 도달하는 것이 좋음:
   - First Meaningful Paint (사용자에게 의미 있는 컨텐츠가 그려지는 첫 순간)은 1초 이하여야 한다
-  - Time-To-Interactive는 5초 이하여야 하며  (a $200 Android on a slow 3G network with 400ms RTT and 400kbps transfer speed) and 재접속의 경우 2초 이하여야 한다
-  - Critical file size under 170Kb gzipped
+  - 3G 네트워크를 사용하는 저가형 안드로이드 폰, 400kbps 전송 속도와 400ms 의 네트워크 대기 시간 기준으로, 페이지가 활성화 되기까지의 응답 속도는 최대 5초 이하여야 하며, 재접속의 경우 최대 2초 이하여야 함
+  - 핵심적인 파일들은 GZIP 압축 시 170Kb 이하여야 함
 
 > * 🛠 [웹사이트 페이지 분석](https://tools.pingdom.com)
 > * 🛠 [WebPageTest](https://www.webpagetest.org/)
@@ -558,7 +560,7 @@ Visualize and generate automatically our social meta tags with [Meta Tags](https
 
 - [ ] **최소화:** ![Medium][medium_img] HTML이 최소화가 되었음
 
-* [ ] **Lazy 로딩:** ![Medium][medium_img] 이미지, 스크립트, CSS 파일들이 lazy 로드 되어서 현 페이지의 응답시간을 향상시킴 (각 섹션의 자세한 부분을 참조하시오).
+* [ ] **Lazy 로딩:** ![Medium][medium_img] 이미지, 스크립트, CSS 파일들이 lazy 로드 되어서 현 페이지의 응답시간을 향상시킴 (각 섹션의 자세한 부분을 참조하시오)
 
 * [ ] **쿠키 크기:** 쿠키를 사용한다면, 각 쿠키의 크기가 4096 바이트를 넘지 않고, 도메인 내에 20개 이상의 쿠키를 가지지 않도록 주의하시오
 
@@ -574,25 +576,25 @@ Visualize and generate automatically our social meta tags with [Meta Tags](https
 
 > * 📖 [다음 기술들에 대한 설명](https://css-tricks.com/prefetching-preloading-prebrowsing/)
 
-* [ ] **DNS resolution:** ![Low][low_img] DNS of third-party services that may be needed are resolved in advance during idle time using `dns-prefetch`.
+* [ ] **DNS resolution:** ![Low][low_img] `dns-prefetch` 를 사용하여 서드파티 서비스의 DNS 가 유휴 시간에 미리 resolve 되도록 함
 
 ```html
 <link rel="dns-prefetch" href="https://example.com">
 ```
 
-* [ ] **Preconnection:** ![Low][low_img] DNS lookup, TCP handshake and TLS negotiation with services that will be needed soon is done in advance during idle time using `preconnect`.
+* [ ] **Preconnect:** ![Low][low_img] `preconnect` 를 사용하여 바로 필요한 서비스의 DNS 의 룩업, TCP 핸드셰이크와 TLS 협상을 유휴 시간에 미리 처리하도록 함
 
 ```html
 <link rel="preconnect" href="https://example.com">
 ```
 
-* [ ] **Prefetching:** ![Low][low_img] Resources that will be needed soon (e.g. lazy loaded images) are requested in advance during idle time using `prefetch`.
+* [ ] **Prefetching:** ![Low][low_img] `prefetch` 를 사용하여 바로 필요한 리소스들(예시: 레이지 로드 되는 이미지) 을 유휴 시간에 미리 요청하도록 함
 
 ```html
 <link rel="prefetch" href="image.png">
 ```
 
-* [ ] **Preloading:** ![Low][low_img] Resources needed in the current page (e.g. scripts placed at the end of `<body>`) in advance using `preload`.
+* [ ] **Preloading:** ![Low][low_img] `preload` 를 사용하여 유휴 시간에 현재 페이지 내에 필요한 리소스들 (예시: body 하단에 위치하고 있는 자바스크립트들) 을 유휴 시간에 미리 요청하도록 함
 
 ```html
 <link rel="preload" href="app.js">
@@ -608,7 +610,7 @@ Visualize and generate automatically our social meta tags with [Meta Tags](https
 > * 🛠 [Google에서 모바일 속도를 측정해보세요](https://testmysite.withgoogle.com)
 > * 🛠 [WebPagetest - 웹사이트 성능 및 최적화 테스트](https://www.webpagetest.org/)
 > * 🛠 [GTmetrix - 웹사이트 속도 및 성능 최적화](https://gtmetrix.com/)
-> * 🛠 [Speedrank - Improve the performance of your website](https://speedrank.app/)
+> * 🛠 [Speedrank - 웹사이트의 성능을 개선해보세요](https://speedrank.app/)
 
 **[⬆ 목차로](#목차)**
 
@@ -698,14 +700,14 @@ Visualize and generate automatically our social meta tags with [Meta Tags](https
 * [ ] **HTML 사이트맵:** ![Medium][medium_img] HTML 사이트맵이 제공되었으며 웹사이트의 푸터 내에 존재하는 링크를 통하여 접근이 가능함
 
 > * 📖 [사이트맵 가이드라인 - Google Support](https://support.google.com/webmasters/answer/183668?hl=ko)
-* [ ] **Pagination link tags:** ![Medium][medium_img] Provide `rel="prev"` and `rel="next"` to indicate paginated content.
+* [ ] **페이지네이션 링크 태그:** ![Medium][medium_img] 페이지네이션 된 컨텐츠임을 알리기 위하여 `rel="prev"` 와 `rel="next"` 태그를 제공함
 
-> * 🛠 [Pagination (rel="prev/next") Testing Tool](https://technicalseo.com/seo-tools/rel-prev-next/)
+> * 🛠 [페이지네이션 링크 태그 (rel="prev/next") 테스트 도구](https://technicalseo.com/seo-tools/rel-prev-next/)
 
-> * 📖 [Pagination guidelines - Google Support](https://support.google.com/webmasters/answer/1663744?hl=en)
+> * 📖 [페이지네이션 가이드라인 - Google Support](https://support.google.com/webmasters/answer/1663744?hl=en)
 
 ```html
-<!-- Example: Pagination link tags for page 2 of a paginated list -->
+<!-- Example: 페이지네이션 목록의 2페이지의 페이지네이션 링크 태그 -->
 <link rel="prev" href="https://example.com/?page=1">
 <link rel="next" href="https://example.com/?page=3">
 ```
